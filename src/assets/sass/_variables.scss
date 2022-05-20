@@ -1,35 +1,24 @@
-$color-black: #000000;
-$color-white: #FFFFFF;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+$font-poppins: Poppins;
 
+$font-color-black: #303030;
+$font-color-light-black: #4d5578;
+$font-color-white: #ffffff;
+$font-color-grey: #98a2ae;
 
-$color-background_dashboard :#F7F5F4;
-$color-navbar: #455163;
-$color-background-container:#E5E5E5;
+$color-white: #ffffff;
+$color-light-grey: #f8fafb;
+$color-dark-grey: #455163;
 
+$ticket-color-bar-blue: #16a6f8;
+$ticket-color-bar-blue-gradient: linear-gradient(90deg, #16a6f8 1.25%, #99cbe7 100%);
+$ticket-color-bar-orange: #ff8000;
+$ticket-color-bar-orange-gradient: linear-gradient(90deg, #ff8000 0%, #febb78 99.92%);
+$ticket-color-bar-turqoise: #0ab9c5;
+$ticket-color-bar-green: #57ffd7;
 
-$color-holiday:#F3EA93 ;
-
-$color-sickness: #FFC077;
-$color-sickness-gradient: gradient(90deg, #FF8000 0%, #FEBB78 99.92%);
-$color-contact_issues:#57FFD7;
-$color-search-box_background: #F3F5F7;
-$color-payroll: linear-gradient(90deg, #16A6F8 1.25%, #99CBE7 100%);
-$font-grey-light:#9196AB;
-$font-color-secondary:#303030;
-$font-color-tertiary:#343D61;
-$font-grey-dark: #4D5578;
-$font-color-quinary:#6E748B;
-
-$font-color-septenary :#98A2AE;
-$font-color_octonary: #FF8000;
-$font-color_nonary:#0AB9C5;
-$font-color_ten:#16A6F8;
-$font-color-eleven:#A5A7B4;
-
-
-
-
-
-
-
+$button-color-blue: linear-gradient(180deg, #71d1f7 0%, #4bc7f7 100%);
+$button-color-red: linear-gradient(180deg, #f87171, 0%, #ff4242 100%);
+$button-color-gray: #f0f4f5;

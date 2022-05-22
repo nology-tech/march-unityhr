@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "march-unityhr-output",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

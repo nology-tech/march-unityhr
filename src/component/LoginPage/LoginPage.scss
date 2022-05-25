@@ -1,0 +1,58 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: 10px solid red;
+  position: relative;
+  width: 900px;
+
+  &__email--label {
+    font-size: $font-size-SM;
+  }
+
+  &__email--input {
+    width: 350px;
+    height: 40px;
+  }
+
+  &__password--label {
+    font-size: $font-size-SM;
+  }
+
+  &__password--input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox {
+    border: solid 3px black;
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 40px;
+
+    &--box {
+      margin-right: 5px;
+    }
+
+    &--label {
+      margin-right: 140px;
+      font-size: $font-size-S;
+    }
+
+    &--link {
+      margin-right: 5px;
+      font-size: $font-size-S;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    width: 350px;
+    height: 40px;
+  }
+}

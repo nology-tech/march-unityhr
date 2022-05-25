@@ -1,5 +1,8 @@
 // Import the functions you need from the SDKs you need
 
+import LoginPage from "./component/LoginPage/LoginPage";
+import "./App.scss";
+
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -29,7 +32,10 @@ const analytics = getAnalytics(app);
 const App = () => {
   return (
     <div className="App">
-      <h1>UnityHR</h1>
+      <div className="login-container">
+        <h1>Login UnityHR</h1>
+        <LoginPage />
+      </div>
     </div>
   );
 };

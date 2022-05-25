@@ -1,1 +1,6 @@
 @use "./assets/sass/variables" as *;
+
+.App {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}

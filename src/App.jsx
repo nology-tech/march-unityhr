@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
-
+import "./App.scss";
+import ChangePassword from "./component/ChangePassword/ChangePassword";
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -30,6 +31,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>UnityHR</h1>
+      <ChangePassword />
     </div>
   );
 };

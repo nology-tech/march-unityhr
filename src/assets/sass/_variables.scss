@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$font-poppins: Poppins;
+
+$font-color-black: #303030;
+$font-color-light-black: #4d5578;
+$font-color-white: #ffffff;
+$font-color-grey: #98a2ae;
+
+$color-white: #ffffff;
+$color-light-grey: #f8fafb;
+$color-dark-grey: #455163;
+
+$ticket-color-bar-blue: #16a6f8;
+$ticket-color-bar-blue-gradient: linear-gradient(
+  90deg,
+  #16a6f8 1.25%,
+  #99cbe7 100%
+);
+$ticket-color-bar-orange: #ff8000;
+$ticket-color-bar-orange-gradient: linear-gradient(
+  90deg,
+  #ff8000 0%,
+  #febb78 99.92%
+);
+$ticket-color-bar-turquoise: #0ab9c5;
+$ticket-color-bar-green: #57ffd7;
+
+$button-color-blue: linear-gradient(180deg, #71d1f7 0%, #4bc7f7 100%);
+$button-color-red: linear-gradient(180deg, #f87171, 0%, #ff4242 100%);
+$button-color-gray: #f0f4f5;
+
+$font-size-S: 10px;
+$font-size-M: 20px;
+$font-size-L: 32px;

@@ -1,7 +1,14 @@
 @use "./assets/sass/variables" as *;
 
 .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: solid black 6px;
   height: 500px;
-  //   width: 60%;
+
+  &__title {
+    margin-top: 40px;
+  }
 }

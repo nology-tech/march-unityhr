@@ -5,16 +5,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  border: 10px solid red;
+  //   border: 10px solid red;
   position: relative;
-  width: 900px;
+  width: 400px;
+  height: 350px;
+  padding: 20px;
+  margin-bottom: 70px;
 
-  &__email--label {
+  &__email {
     font-size: $font-size-SM;
   }
 
   &__email--input {
-    width: 350px;
+    width: 400px;
     height: 40px;
   }
 
@@ -23,16 +26,16 @@
   }
 
   &__password--input {
-    width: 350px;
+    width: 400px;
     height: 40px;
     margin-bottom: 20px;
   }
 
   &__checkbox {
-    border: solid 3px black;
+    // border: solid 3px black;
     display: flex;
     position: relative;
-    width: 350px;
+    width: 400px;
     height: 40px;
 
     &--box {
@@ -40,7 +43,7 @@
     }
 
     &--label {
-      margin-right: 140px;
+      margin-right: 190px;
       font-size: $font-size-S;
     }
 
@@ -52,7 +55,7 @@
 
   &__button {
     margin-top: 30px;
-    width: 350px;
+    width: 400px;
     height: 40px;
   }
 }

@@ -3,7 +3,7 @@ import "./LoginPage.scss";
 const LoginPage = ({ emailInput, passwordInput, onChange }) => {
   return (
     <form className="login-form">
-      <label className="login-form__email--label">Email Address</label>
+      <label className="login-form__email">Email Address</label>
       <input
         type="text"
         placeholder="steve.walker@unity.io"
@@ -13,7 +13,7 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
 
       <br />
 
-      <label className="login-form__password--label">Password</label>
+      <label className="login-form__password">Password</label>
       <input
         type="text"
         placeholder="........."

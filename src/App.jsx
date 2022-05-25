@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="login-container">
-        <h1>Login UnityHR</h1>
+        <h1 className="login-container__title">Login UnityHR</h1>
         <LoginPage />
       </div>
     </div>

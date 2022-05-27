@@ -26,6 +26,8 @@ const ChangePassword = () => {
   }
 
   return (
+    <section className="changePasswordContainer">
+    <div></div>
     <div className="centerBox">
       <h1 className="title">Change your password</h1>
       <p className="instruction">Just enter the fields below to choose a new password.</p>
@@ -37,6 +39,7 @@ const ChangePassword = () => {
       <span className="errorText">{errorMessage}</span>
       <button type="button" className="submitButton" onClick={handleSubmit}>Submit</button>  
     </div>
+    </section>
   )
 } 
 export default ChangePassword

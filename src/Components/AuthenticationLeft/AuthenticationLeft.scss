@@ -1,4 +1,4 @@
-@use "../assets/sass/variables" as *;
+@use "../../assets/sass/variables" as *;
 
 * {
   padding: 0;
@@ -6,10 +6,10 @@
 }
 
 .login-page-left-side {
-  width: 35%;
+  width: 80%;
   height: 100vh;
   background-color: $color-white;
-  background-image: url("../assets/images/login-page-shapes.jpg");
+  background-image: url("../../assets/images/login-page-shapes.jpg");
   background-repeat: no-repeat, repeat;
   display: flex;
   justify-content: right;

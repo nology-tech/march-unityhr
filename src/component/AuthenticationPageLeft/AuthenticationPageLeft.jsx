@@ -10,8 +10,9 @@ const AuthenticationPageLeft = () => {
         </h1>
         <p>
           {" "}
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Semoer id
-          mattis ultrices sed augue pretium sagittis, cursus.{" "}
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <br />
+          Semoer id mattis ultrices sed augue pretium sagittis, cursus.{" "}
         </p>
       </div>
     </div>

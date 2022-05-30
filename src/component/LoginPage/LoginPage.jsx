@@ -1,9 +1,10 @@
+import AuthenticationPageLeft from "../AuthenticationPageLeft/AuthenticationPageLeft";
 import "./LoginPage.scss";
 
 const LoginPage = ({ emailInput, passwordInput, onChange }) => {
   return (
     <section className="login-container">
-      <div></div>
+      <AuthenticationPageLeft />
       <div>
         <h1 className="login-container__title">Login UnityHR</h1>
         <form className="login-form">

@@ -3,10 +3,9 @@ import React from "react";
 
 const ForgotPassword = () => {
   return (
-    <div className="forgotten-password">
-      <div className="forgotten-password__AuthenticationDesign">
-        <h2>Streamlined task management</h2>
-      </div>
+    <section className="forgotten-password">
+      <div ></div> 
+      <div>
       <form className="forgotten-password-form">
         <h2 className="forgotten-password-form__heading">
           Forgotten your Password{" "}
@@ -30,7 +29,8 @@ const ForgotPassword = () => {
           Submit
         </button>
       </form>
-    </div>
+      </div>
+    </section>
   );
 };
 export default ForgotPassword;

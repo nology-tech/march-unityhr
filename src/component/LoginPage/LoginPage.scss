@@ -1,42 +1,61 @@
 @use "../../assets/sass/_variables.scss" as *;
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+  &__title {
+    margin-top: 40px;
+    color: $color-dark-grey;
+  }
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  //   border: 10px solid red;
   position: relative;
-  width: 400px;
+  width: 410px;
   height: 350px;
   padding: 20px;
   margin-bottom: 70px;
 
   &__email {
     font-size: $font-size-SM;
+    margin-bottom: 18px;
+    color: $color-dark-grey;
   }
 
   &__email--input {
-    width: 400px;
-    height: 40px;
+    width: 410px;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
+    background-color: $color-light-grey-shade1;
   }
 
-  &__password--label {
+  &__password {
     font-size: $font-size-SM;
+    margin-bottom: 18px;
+    color: $color-dark-grey;
   }
 
   &__password--input {
-    width: 400px;
-    height: 40px;
+    width: 410px;
+    height: 45px;
     margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: $color-light-grey-shade1;
   }
-
   &__checkbox {
-    // border: solid 3px black;
     display: flex;
     position: relative;
-    width: 400px;
-    height: 40px;
+    width: 410px;
 
     &--box {
       margin-right: 5px;
@@ -44,18 +63,37 @@
 
     &--label {
       margin-right: 190px;
-      font-size: $font-size-S;
+      font-size: $font-size-SS;
+      margin-top: 4px;
+      color: $color-dark-grey;
     }
 
     &--link {
-      margin-right: 5px;
+      margin-right: 3px;
+      margin-top: 4px;
+      color: $button-color-blue;
       font-size: $font-size-S;
+      border-bottom: 1px dashed;
+      text-decoration: dotted;
     }
   }
 
   &__button {
     margin-top: 30px;
-    width: 400px;
-    height: 40px;
+    width: 410px;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
+    background: $button-color-blue;
+    font-weight: bold;
+  }
+
+  ::placeholder {
+    padding: 15px;
+    font-size: $font-size-SM;
+  }
+
+  #user-password::placeholder {
+    font-size: $font-size-M;
   }
 }

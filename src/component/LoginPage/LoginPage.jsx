@@ -2,41 +2,48 @@ import "./LoginPage.scss";
 
 const LoginPage = ({ emailInput, passwordInput, onChange }) => {
   return (
-    <form className="login-form">
-      <label className="login-form__email">Email Address</label>
-      <input
-        type="text"
-        placeholder="steve.walker@unity.io"
-        emailValue={emailInput}
-        className="login-form__email--input"
-      />
+    <section className="login-container">
+      <div></div>
+      <div>
+        <h1 className="login-container__title">Login UnityHR</h1>
+        <form className="login-form">
+          <label className="login-form__email">Email Address</label>
+          <input
+            type="text"
+            placeholder="steve.walker@unity.io"
+            emailValue={emailInput}
+            className="login-form__email--input"
+          />
 
-      <br />
+          <br />
 
-      <label className="login-form__password">Password</label>
-      <input
-        type="text"
-        placeholder="........."
-        passValue={passwordInput}
-        className="login-form__password--input"
-      />
-      <section className="login-form__checkbox">
-        <input
-          type="checkbox"
-          onChange={onChange}
-          value={"checked"}
-          className="login-form__checkbox--box"
-        />
-        <label className="login-form__checkbox--label">Remember Me</label>
-        <a className="login-form__checkbox--link" href="url">
-          Forgot Your PassWord?
-        </a>
-      </section>
+          <label className="login-form__password">Password</label>
+          <input
+            type="text"
+            id="user-password"
+            placeholder="••••••••••"
+            passValue={passwordInput}
+            className="login-form__password--input"
+          />
+          <section className="login-form__checkbox">
+            <input
+              type="checkbox"
+              onChange={onChange}
+              value={"checked"}
+              className="login-form__checkbox--box"
+            />
+            <label className="login-form__checkbox--label">Remember Me</label>
+            <a className="login-form__checkbox--link" href="url">
+              Forgot Your PassWord?
+            </a>
+          </section>
 
-      <button className="login-form__button" type="button">
-        Login
-      </button>
-    </form>
+          <button className="login-form__button" type="button">
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };
 

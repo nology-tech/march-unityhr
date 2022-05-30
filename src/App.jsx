@@ -1,3 +1,5 @@
+import "./App.scss";
+
 // Import the functions you need from the SDKs you need
 
 /*import { initializeApp } from "firebase/app";
@@ -29,7 +31,6 @@ import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
 const App = () => {
   return (
     <div className="App">
-      <h1>UnityHR</h1>
       <div>
         <ForgotPassword />
       </div>

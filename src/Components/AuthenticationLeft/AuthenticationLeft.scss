@@ -1,0 +1,34 @@
+@use "../../assets/sass/variables" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.login-page-left-side {
+  width: 35%;
+  height: 100vh;
+  background-color: $color-white;
+  background-image: url("../../assets/images/login-page-shapes.jpg");
+  background-repeat: no-repeat, repeat;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  &__text {
+    background-color: $color-white;
+    width: 80%;
+    height: 20%;
+    padding: 7%;
+    color: $font-color-grey;
+    font-size: $font-size-M;
+    line-height: 1.5;
+
+    &__header {
+      color: $font-color-dark-blue;
+      margin-bottom: 5%;
+      font-size: $font-size-L;
+      line-height: 1.2;
+    }
+  }
+}

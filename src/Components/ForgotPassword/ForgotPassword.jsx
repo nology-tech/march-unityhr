@@ -1,12 +1,16 @@
 import "./ForgotPassword.scss";
+
+import AuthenticationLeft from "../AuthenticationLeft/AuthenticationLeft";
 import React from "react";
 
 const ForgotPassword = () => {
   return (
     <section className="forgotten-password">
-      <div ></div> 
-      <div>
-      <form className="forgotten-password-form">
+      <div className="authentication-left-Side">
+        <AuthenticationLeft />
+      </div>
+      <div className="forgotten-password-form">
+        {/* <form className="forgotten-password-form"> */}
         <h2 className="forgotten-password-form__heading">
           Forgotten your Password{" "}
         </h2>
@@ -28,7 +32,7 @@ const ForgotPassword = () => {
         <button className="forgotten-password-form__SubmitButton">
           Submit
         </button>
-      </form>
+        {/* </form> */}
       </div>
     </section>
   );

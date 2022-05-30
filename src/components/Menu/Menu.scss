@@ -1,0 +1,11 @@
+@use "../../assets/sass/variables" as *;
+
+.menu-section {
+  width: 20vh;
+  height: 100%;
+  background-color: $color-light-grey;
+
+  &__item {
+    padding: 5%;
+  }
+}

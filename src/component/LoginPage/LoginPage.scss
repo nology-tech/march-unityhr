@@ -2,19 +2,30 @@
 
 .login-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  //  flex-direction: column;
+  justify-content: space-evenly;
+  // align-items: center;
   height: 500px;
 
   &__title {
+    margin-bottom: 40px;
+    margin-left: 100px;
     margin-top: 40px;
     color: $color-dark-grey;
+    font-family: $font-poppins;
   }
 }
+// #login-container__title {
+//   display: flex;
+//   margin-bottom: 40px;
+//   align-items: center;
+//   margin-top: 40px;
+//   color: $color-dark-grey;
+// }
 
 .login-form {
   display: flex;
+  margin-right: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: left;
@@ -32,7 +43,7 @@
 
   &__email--input {
     width: 410px;
-    height: 45px;
+    height: 150px;
     border-radius: 6px;
     border: none;
     background-color: $color-light-grey-shade1;
@@ -46,7 +57,7 @@
 
   &__password--input {
     width: 410px;
-    height: 45px;
+    height: 150px;
     margin-bottom: 20px;
     border-radius: 6px;
     border: none;
@@ -58,7 +69,9 @@
     width: 410px;
 
     &--box {
+      margin-top: 5px;
       margin-right: 5px;
+      //background: $button-color-blue;
     }
 
     &--label {
@@ -81,7 +94,7 @@
   &__button {
     margin-top: 30px;
     width: 410px;
-    height: 45px;
+    height: 150px;
     border-radius: 6px;
     border: none;
     background: $button-color-blue;
@@ -90,10 +103,10 @@
 
   ::placeholder {
     padding: 15px;
-    font-size: $font-size-SM;
+    font-size: $font-size-SS;
   }
 
   #user-password::placeholder {
-    font-size: $font-size-M;
+    font-size: $font-size-SS;
   }
 }

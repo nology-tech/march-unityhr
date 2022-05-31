@@ -1,6 +1,6 @@
-import "../AuthenticationLeft/AuthenticationLeft.scss";
+import "./AuthenticationPageLeft.scss";
 
-const AuthenticationLeft = () => {
+const AuthenticationPageLeft = () => {
   return (
     <div className="login-page-left-side">
       <div className="login-page-left-side__text">
@@ -18,4 +18,4 @@ const AuthenticationLeft = () => {
   );
 };
 
-export default AuthenticationLeft;
+export default AuthenticationPageLeft;

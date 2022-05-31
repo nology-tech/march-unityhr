@@ -6,7 +6,7 @@
 }
 
 .login-page-left-side {
-  width: 80%;
+  width: 60%;
   height: 100vh;
   background-color: $color-white;
   background-image: url("../../assets/images/login-page-shapes.jpg");
@@ -23,6 +23,7 @@
     color: $font-color-grey;
     font-size: $font-size-M;
     line-height: 1.5;
+    text-align: left;
 
     &__header {
       color: $font-color-dark-blue;

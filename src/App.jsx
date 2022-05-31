@@ -1,3 +1,5 @@
+import "./App.scss";
+
 // Import the functions you need from the SDKs you need
 import "./App.scss";
 import MainScreen from "./containers/MainScreen/MainScreen";
@@ -27,11 +29,14 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 const App = () => {
   return (
     <div className="app">
-      <MainScreen />
+      <>
+        <ForgotPassword />
+        <MainScreen />
+      </>
     </div>
   );
 };

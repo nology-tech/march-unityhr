@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 $font-poppins: Poppins;
 
 $font-color-black: #303030;
 $font-color-light-black: #4d5578;
 $font-color-white: #ffffff;
 $font-color-grey: #98a2ae;
+$font-color-dark-blue: #262d4b;
 
 $color-white: #ffffff;
 $color-light-grey: #e8eaeb;

@@ -6,6 +6,7 @@ import LoginPage from "./components/LoginPage/LoginPage";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 import "./App.scss";
 
+//test
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 

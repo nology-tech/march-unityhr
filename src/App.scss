@@ -1,2 +1,12 @@
 @use "./assets/sass/variables" as *;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  box-sizing: border-box;
+  height: 100vh;
+}
+

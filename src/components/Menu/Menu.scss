@@ -1,0 +1,26 @@
+@use "../../assets/sass/variables" as *;
+
+.menu-section {
+  width: 20vh;
+  height: 100%;
+  margin-top: 5%;
+
+  &__item {
+    padding: 10% 2%;
+    display: flex;
+    color: $font-color-grey;
+
+    img {
+      margin: 0 5%;
+    }
+
+    p {
+      margin: 0 5%;
+    }
+
+    &--selected {
+      color: $font-color-black;
+      background-color: $color-light-grey;
+    }
+  }
+}

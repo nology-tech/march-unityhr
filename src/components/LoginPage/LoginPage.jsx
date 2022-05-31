@@ -12,6 +12,7 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
         <input
           type="text"
           placeholder="steve.walker@unity.io"
+          required
           emailValue={emailInput}
           className="login-form__email--input"
         />
@@ -20,9 +21,11 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
 
         <label className="login-form__password">Password</label>
         <input
-          type="text"
+          type="password"
+          required
           id="user-password"
           placeholder="••••••••••"
+          minLength="8"
           passValue={passwordInput}
           className="login-form__password--input"
         />

@@ -1,6 +1,6 @@
 import "./ForgotPassword.scss";
 
-import AuthenticationLeft from "../AuthenticationLeft/AuthenticationLeft";
+import AuthenticationLeft from "../../components/AuthenticationPageLeft/AuthenticationPageLeft";
 import React from "react";
 
 const ForgotPassword = () => {

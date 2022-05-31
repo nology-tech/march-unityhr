@@ -1,5 +1,3 @@
-import "./App.scss";
-
 // Import the functions you need from the SDKs you need
 
 import LoginPage from "./components/LoginPage/LoginPage";

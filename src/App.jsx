@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import "./App.scss";
 import MainScreen from "./containers/MainScreen/MainScreen";
 
 /*import { initializeApp } from "firebase/app";
@@ -29,7 +30,7 @@ const analytics = getAnalytics(app);
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <MainScreen />
     </div>
   );

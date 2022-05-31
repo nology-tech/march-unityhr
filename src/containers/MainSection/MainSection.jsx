@@ -5,8 +5,8 @@ import MyTicketsBoard from "../MyTicketsBoard/MyTicketsBoard";
 const MainSection = () => {
   return (
     <div className="main-section">
-      <Menu />
-      <MyTicketsBoard />
+      <Menu className="main-section__menu"/>
+      <MyTicketsBoard className="main-section__my-tickets-board" />
     </div>
   );
 };

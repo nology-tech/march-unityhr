@@ -7,4 +7,9 @@
 
 .main-section{
   display: flex;
+  height: 100%;
+
+  &__my-tickets-board {
+    height: 100%;
+  }
 }

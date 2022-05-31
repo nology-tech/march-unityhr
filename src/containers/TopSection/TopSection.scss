@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.top-section-area {
+.top-section {
   height: 8vh;
   display: flex;
   justify-content: space-between;
@@ -36,10 +36,9 @@
     justify-content: center;
 
     div {
-      background-color: $button-color-blue;
-      border: 1px solid $button-color-blue;
-      height: 4vh;
-      width: 4vh;
+      background-color: $ticket-color-bar-blue;
+      height: 5vh;
+      width: 5vh;
       border-radius: 50%;
     }
 

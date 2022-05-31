@@ -4,9 +4,9 @@ import MainSection from "../MainSection/MainSection";
 
 const MainScreen = () => {
   return (
-    <div className="main-screen-section">
-      <TopSection />
-      <MainSection />
+    <div className="main-screen">
+      <TopSection className="main-screen__top-section" />
+      <MainSection className="main-screen__main-section" />
     </div>
   );
 };

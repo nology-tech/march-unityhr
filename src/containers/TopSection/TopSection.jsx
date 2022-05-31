@@ -7,11 +7,11 @@ const TopSection = () => {
   return (
     <div className="top-section">
       <div className="top-section__logo-section">
-        <img src={Logo}/>
+        <img src={Logo} alt="Logo"/>
         <p>UnityHR</p>
       </div>
       <div className="top-section__search-section"><Search /></div>
-      <div className="top-section__avatar-section"><div className="circle"></div><img src={DropDown} /></div>
+      <div className="top-section__avatar-section"><div className="circle"></div><img src={DropDown} alt="DropDown" /></div>
     </div>
   );
 };

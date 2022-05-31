@@ -33,10 +33,8 @@ import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 const App = () => {
   return (
     <div className="app">
-      <>
         <ForgotPassword />
         <MainScreen />
-      </>
     </div>
   );
 };

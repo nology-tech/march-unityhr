@@ -1,4 +1,5 @@
 import "./ChangePassword.scss"
+// import AuthenticationPageLeft from "../"
 import React from "react"
 import { useState } from "react"
 
@@ -27,18 +28,19 @@ const ChangePassword = () => {
 
   return (
     <section className="changePasswordContainer">
+      {/* <AuthenticationPageLeft /> instead of div placeholder */}
     <div></div>
-    <div className="centerBox">
+    <form className="centerBox">
       <h1 className="title">Change your password</h1>
       <p className="instruction">Just enter the fields below to choose a new password.</p>
-      <p className="passwordHeading">New Password</p>
-      <input className="inputPassword" onInput={handlePassword1}></input>
-      <p className="passwordHeading">Confirm New Password</p>
-      <input className="inputPassword" onInput={handlePassword2}></input>
+      <label htmlFor="password-one" className="passwordHeading">New Password</label>
+      <input data-testid="password-one" name="password-one" className="inputPassword" onInput={handlePassword1}></input>
+      <label htmlFor="password-two" className="passwordHeading">Confirm New Password</label>
+      <input data-testid="password-two" name="password-two" className="inputPassword" onInput={handlePassword2}></input>
       <br/>
       <span className="errorText">{errorMessage}</span>
       <button type="button" className="submitButton" onClick={handleSubmit}>Submit</button>  
-    </div>
+    </form>
     </section>
   )
 } 

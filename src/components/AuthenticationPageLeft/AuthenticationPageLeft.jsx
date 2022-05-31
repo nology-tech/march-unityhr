@@ -9,9 +9,8 @@ const AuthenticationPageLeft = () => {
           management.
         </h1>
         <p>
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Semoer id
-          mattis ultrices sed augue pretium sagittis, cursus.{" "}
+          mattis ultrices sed augue pretium sagittis, cursus.
         </p>
       </div>
     </div>

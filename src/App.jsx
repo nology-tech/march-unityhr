@@ -30,7 +30,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 const App = () => {
   return (
     <div className="app">

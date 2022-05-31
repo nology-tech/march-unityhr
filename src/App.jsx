@@ -27,7 +27,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 const App = () => {
   return (
     <div className="App">

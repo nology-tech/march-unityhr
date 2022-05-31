@@ -2,7 +2,8 @@ import "./App.scss";
 
 // Import the functions you need from the SDKs you need
 
-import LoginPage from "./component/LoginPage/LoginPage";
+import LoginPage from "./components/LoginPage/LoginPage";
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 import "./App.scss";
 
 /*import { initializeApp } from "firebase/app";
@@ -30,7 +31,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
+
 const App = () => {
   return (
     <div className="App">

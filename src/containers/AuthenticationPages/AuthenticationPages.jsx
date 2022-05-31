@@ -6,6 +6,7 @@ const AuthenticationPages = () => {
 
   const handleInput = (event) => {
     const input = event.target.value;
+    console.log(input);
     setInput(input);
   };
 

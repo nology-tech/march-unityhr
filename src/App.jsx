@@ -2,7 +2,7 @@
 import "./App.scss";
 import MainScreen from "./containers/MainScreen/MainScreen";
 import LoginPage from "./components/LoginPage/LoginPage";
-import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
+import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 
 //test
 /*import { initializeApp } from "firebase/app";
@@ -23,27 +23,20 @@ const firebaseConfig = {
   appId: "1:248434926957:web:59af8d32d0fbb8b25d6664",
   measurementId: "G-Z8WNYTW1QG"
 };
-
-<<<<<<< HEAD
-=======
+S
 // test1//
->>>>>>> ce2ab2f2a3a3556a7d85788baf56ee33361ad94b
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
-=======
 
-
->>>>>>> ce2ab2f2a3a3556a7d85788baf56ee33361ad94b
 const App = () => {
   return (
     <div className="app">
-        <LoginPage />
-        <ForgotPassword />
-        <MainScreen />
+      <LoginPage />
+      <AuthenticationPages />
+      <MainScreen />
     </div>
   );
 };

@@ -24,17 +24,20 @@ const firebaseConfig = {
   measurementId: "G-Z8WNYTW1QG"
 };
 
-
+// test//
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
 const App = () => {
   return (
     <div className="App">
-      <LoginPage />
+      <div>
+        <LoginPage />
+        <ForgotPassword />
+      </div>
     </div>
   );
 };

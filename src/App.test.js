@@ -1,8 +1,9 @@
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
+import App from "./App";
+import { render, screen } from "@testing-library/react";
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   //const linkElement = screen.getByText(/UnityHR/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+it("should render the Login", () => {
+  render(<App />);
+  const text = screen.queryByText(/Streamlined/i);
+
+  expect(text).toBeInTheDocument();
+});

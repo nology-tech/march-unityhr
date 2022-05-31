@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.my-tickets-board {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+  }
+}

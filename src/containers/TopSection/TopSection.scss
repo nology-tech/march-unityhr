@@ -13,21 +13,40 @@
 
   &__logo-section {
     width: 10%;
-    background-color: $ticket-color-bar-blue;
     display: flex;
+    align-items: center;
 
     p {
       font-size: $font-size-M;
+      font-weight: 700;
     }
   }
 
   &__search-section {
     width: 80%;
-    background-color: $color-dark-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__avatar-section{
-    width:10%;
-    background-color: $ticket-color-bar-blue;
+  &__avatar-section {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      background-color: $button-color-blue;
+      border: 1px solid $button-color-blue;
+      height: 4vh;
+      width: 4vh;
+      border-radius: 50%;
+    }
+
+    img {
+      width: 8px;
+      height: 4px;
+      margin: 0 5%;
+    }
   }
 }

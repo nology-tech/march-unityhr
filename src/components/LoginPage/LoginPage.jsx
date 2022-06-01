@@ -21,7 +21,7 @@ const LoginPage = ({ onChange }) => {
     if (password === "") {
       setPasswordErrorMessage("Please enter a valid password");
     } else if (password.length <= 8) {
-      setPasswordErrorMessage("Your password should be more than 8 characters");
+      setPasswordErrorMessage("Password should be more than 8 characters");
     } else {
       setPasswordErrorMessage("Valid Password");
     }
@@ -53,11 +53,13 @@ const LoginPage = ({ onChange }) => {
 
         <br />
 
-        <label className="login-form__password">Password</label>
+        <label htmlFor="password" className="login-form__password">
+          Password
+        </label>
         <input
+          id="password"
           type="password"
           required
-          id="user-password"
           placeholder="••••••••••"
           onInput={handlePassword}
           className="login-form__password--input"

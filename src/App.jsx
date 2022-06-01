@@ -1,14 +1,11 @@
 // Import the functions you need from the SDKs you need
 import "./App.scss";
-<<<<<<< HEAD
 import ChangePassword from "./components/ChangePassword/ChangePassword";
-=======
 import MainScreen from "./containers/MainScreen/MainScreen";
 import LoginPage from "./components/LoginPage/LoginPage";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 
 //test
->>>>>>> ce2ab2f2a3a3556a7d85788baf56ee33361ad94b
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 

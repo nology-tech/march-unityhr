@@ -1,0 +1,15 @@
+@use "../../assets/sass/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-section{
+  display: flex;
+  height: 100%;
+
+  &__my-tickets-board {
+    height: 100%;
+  }
+}

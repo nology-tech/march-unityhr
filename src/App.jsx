@@ -1,6 +1,14 @@
 // Import the functions you need from the SDKs you need
 import "./App.scss";
+<<<<<<< HEAD
 import ChangePassword from "./components/ChangePassword/ChangePassword";
+=======
+import MainScreen from "./containers/MainScreen/MainScreen";
+import LoginPage from "./components/LoginPage/LoginPage";
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
+
+//test
+>>>>>>> ce2ab2f2a3a3556a7d85788baf56ee33361ad94b
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -20,18 +28,21 @@ const firebaseConfig = {
   measurementId: "G-Z8WNYTW1QG"
 };
 
-
+// test1//
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>UnityHR</h1>
-      <ChangePassword />
+    <div className="app">
+        <LoginPage />
+        <ForgotPassword />
+        <ChangePassword />
+        <MainScreen />
     </div>
   );
 };

@@ -34,9 +34,9 @@ const ChangePassword = () => {
       <h1 className="title">Change your password</h1>
       <p className="instruction">Just enter the fields below to choose a new password.</p>
       <label htmlFor="password-one" className="passwordHeading">New Password</label>
-      <input data-testid="password-one" name="password-one" className="inputPassword" onInput={handlePassword1}></input>
+      <input data-testid="password-one" type="password" name="password-one" className="inputPassword" onInput={handlePassword1}></input>
       <label htmlFor="password-two" className="passwordHeading">Confirm New Password</label>
-      <input data-testid="password-two" name="password-two" className="inputPassword" onInput={handlePassword2}></input>
+      <input data-testid="password-two" type="password" name="password-two" className="inputPassword" onInput={handlePassword2}></input>
       <br/>
       <span className="errorText">{errorMessage}</span>
       <button type="button" className="submitButton" onClick={handleSubmit}>Submit</button>  

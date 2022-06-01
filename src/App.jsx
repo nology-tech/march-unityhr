@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import "./App.scss";
-import ChangePassword from "./component/ChangePassword/ChangePassword";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
 /*import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 

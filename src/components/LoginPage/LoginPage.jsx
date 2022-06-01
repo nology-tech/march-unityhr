@@ -1,7 +1,38 @@
+import React from "react";
+import { useState } from "react";
 import AuthenticationPageLeft from "../AuthenticationPageLeft/AuthenticationPageLeft";
 import "./LoginPage.scss";
 
-const LoginPage = ({ emailInput, passwordInput, onChange }) => {
+const LoginPage = ({ onChange }) => {
+  const [password, setPassword] = useState("");
+  const [passwordErrorMessage, setPasswordErrorMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [emailErrorMessage, setEmailErrorMessage] = useState("");
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (password === "") {
+      setPasswordErrorMessage("Please enter a valid password");
+    } else if (password.length <= 8) {
+      setPasswordErrorMessage("Your password should be more than 8 characters");
+    } else {
+      setPasswordErrorMessage("Valid Password");
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!!email && typeof email === "string" && email.match(emailRegex)) {
+      setEmailErrorMessage("Valid Email");
+    } else {
+      setPasswordErrorMessage("Please enter a valid email address");
+    }
+  };
+
   return (
     <section className="login-container">
       <AuthenticationPageLeft />
@@ -13,7 +44,7 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
           type="text"
           placeholder="steve.walker@unity.io"
           required
-          emailValue={emailInput}
+          onInput={handleEmail}
           className="login-form__email--input"
         />
 
@@ -25,10 +56,12 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
           required
           id="user-password"
           placeholder="••••••••••"
-          minLength="8"
-          passValue={passwordInput}
+          onInput={handlePassword}
           className="login-form__password--input"
         />
+        <span className="errorText">{passwordErrorMessage}</span>
+        <span className="errorText">{emailErrorMessage}</span>
+        <br />
         <section className="login-form__checkbox">
           <input
             type="checkbox"
@@ -42,7 +75,11 @@ const LoginPage = ({ emailInput, passwordInput, onChange }) => {
           </a>
         </section>
 
-        <button className="login-form__button" type="button">
+        <button
+          className="login-form__button"
+          type="button"
+          onClick={handleSubmit}
+        >
           Login
         </button>
       </form>

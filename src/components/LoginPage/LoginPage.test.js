@@ -55,7 +55,7 @@ it("should render the error message when email inputs are missing @ symbol and a
 it("should render the success message when password inputs is more than 8 characters and success message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole(/password/i);
+  const passwordInput = screen.getByRole("textbox", { name: /password/i });
   userEvent.type(passwordInput, "••••••••••");
 
   const button = screen.getByRole("button", { name: /login/i });
@@ -67,7 +67,7 @@ it("should render the success message when password inputs is more than 8 charac
 it("should render the error message when password inputs is empty and error message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole(/password/i);
+  const passwordInput = screen.getByRole("textbox", { name: /password/i });
   userEvent.type(passwordInput, "");
 
   const button = screen.getByRole("button", { name: /login/i });
@@ -79,7 +79,7 @@ it("should render the error message when password inputs is empty and error mess
 it("should render the error message when password less than or equal to 8 characters and error message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole(/password/i);
+  const passwordInput = screen.getByRole("textbox", { name: /password/i });
   userEvent.type(passwordInput, "••••••");
 
   const button = screen.getByRole("button", { name: /login/i });

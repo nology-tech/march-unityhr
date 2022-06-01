@@ -23,7 +23,7 @@
   align-items: left;
   position: relative;
   width: 40%;
-  height: 450px;
+  height: 470px;
   padding: 20px;
   margin-bottom: 70px;
 
@@ -101,5 +101,9 @@
 
   #user-password::placeholder {
     font-size: $font-size-SS;
+  }
+  .errorText {
+    color: $validation-message-red;
+    font-size: $font-size-S;
   }
 }

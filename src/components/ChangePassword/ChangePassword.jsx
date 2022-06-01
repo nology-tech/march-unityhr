@@ -1,5 +1,5 @@
 import "./ChangePassword.scss"
-// import AuthenticationPageLeft from "../"
+import AuthenticationPageLeft from "../AuthenticationPageLeft/AuthenticationPageLeft"
 import React from "react"
 import { useState } from "react"
 
@@ -28,8 +28,8 @@ const ChangePassword = () => {
 
   return (
     <section className="changePasswordContainer">
-      {/* <AuthenticationPageLeft /> instead of div placeholder */}
-    <div></div>
+      <AuthenticationPageLeft />
+    
     <form className="centerBox">
       <h1 className="title">Change your password</h1>
       <p className="instruction">Just enter the fields below to choose a new password.</p>

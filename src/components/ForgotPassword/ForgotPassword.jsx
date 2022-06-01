@@ -4,13 +4,13 @@ import AuthenticationLeft from "../AuthenticationPageLeft/AuthenticationPageLeft
 import React from "react";
 
 const ForgotPassword = (props) => {
-  const { handleInput } = props;
+  const { handleInput ,emailInput,handleSubmit,ErrorMessage} = props;
   return (
     <section className="forgotten-password">
       <AuthenticationLeft />
 
       {/* <div className="forgotten-password-form"> */}
-      <form className="forgotten-password-form">
+      <form className="forgotten-password-form"  onSubmit={handleSubmit}>
         <h2 className="forgotten-password-form__heading">
           Forgotten your Password{" "}
         </h2>
@@ -28,15 +28,18 @@ const ForgotPassword = (props) => {
           className="forgotten-password-form__EmailInput"
           type="text"
           name="Email Address"
+          value={emailInput}
           onInput={handleInput}
         ></input>
         <button
           className="forgotten-password-form__SubmitButton"
-          // onClick={handleClick}
-        >
+       
+        >      
           Submit
         </button>
+       
       </form>
+      <p> {ErrorMessage}</p>
     </section>
   );
 };

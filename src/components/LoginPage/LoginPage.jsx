@@ -37,10 +37,13 @@ const LoginPage = ({ onChange }) => {
     <section className="login-container">
       <AuthenticationPageLeft />
 
-      <form className="login-form">
+      <form className="login-form" name="Login">
         <h1 className="login-container__title">Login UnityHR</h1>
-        <label className="login-form__email">Email Address</label>
+        <label htmlFor="email" className="login-form__email">
+          Email Address
+        </label>
         <input
+          id="email"
           type="text"
           placeholder="steve.walker@unity.io"
           required

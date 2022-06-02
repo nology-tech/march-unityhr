@@ -1,18 +1,16 @@
 import "./ForgotPassword.scss";
 
-import AuthenticationLeft from "../../components/AuthenticationPageLeft/AuthenticationPageLeft";
+import AuthenticationLeft from "../AuthenticationPageLeft/AuthenticationPageLeft";
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const ForgotPassword = () => {
-  const { ForgotPasswordID } = useParams();
+const ForgotPassword = (props) => {
+  const { handleInput, emailInput, handleSubmit, errorMessage } = props;
   return (
     <section className="forgotten-password">
-      <div className="authentication-left-Side">
-        <AuthenticationLeft />
-      </div>
-      <div className="forgotten-password-form">
-        {/* <form className="forgotten-password-form"> */}
+      <AuthenticationLeft />
+
+      <form className="forgotten-password-form" onSubmit={handleSubmit}>
         <h2 className="forgotten-password-form__heading">
           Forgotten your Password{" "}
         </h2>
@@ -21,21 +19,23 @@ const ForgotPassword = () => {
           your email address below to get a link to change your password
         </p>
         <label
-          className="forgotten-password-form__EmailLabel"
+          className="forgotten-password-form__emailLabel"
           htmlFor="Email Address"
         >
           Email Address
         </label>
         <input
-          className="forgotten-password-form__EmailInput"
+          className="forgotten-password-form__emailInput"
           type="text"
           name="Email Address"
+          value={emailInput}
+          onInput={handleInput}
         ></input>
-        <button className="forgotten-password-form__SubmitButton">
+        <button className="forgotten-password-form__submitButton">
           Submit
         </button>
-        {/* </form> */}
-      </div>
+        <p className="forgotten-password-form__textMessage"> {errorMessage}</p>
+      </form>
     </section>
   );
 };

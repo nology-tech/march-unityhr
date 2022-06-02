@@ -1,0 +1,43 @@
+@use "../../assets/sass/variables" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.my-tickets-board {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+
+  &__top {
+    display: flex;
+    width: 100%;
+    height: 10%;
+
+    &__header {
+      width: 75%;
+    }
+
+    &__schemas{
+      width: 15%;
+    }
+
+    &__filters {
+      width: 10%;
+    }
+  }
+
+  &__main {
+    height: 80%;
+  }
+
+  &__add-ticket {
+    border: 1px dashed $color-dark-grey;
+    border-radius: 5px;
+    width: 20%;
+    padding: 1%;
+    background-color: $color-very-light-grey;
+  }
+}

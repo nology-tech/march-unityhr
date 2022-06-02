@@ -7,7 +7,7 @@
 
 .ticket {
   width: 250px;
-  height: 150px;
+  height: 200px;
   background-color: $color-white;
   border-radius: 5%;
   display: flex;
@@ -21,21 +21,50 @@
   }
 
   &__main {
-    padding: 5%;
+    padding: 8%;
 
     &__category {
       color: $ticket-color-bar-orange;
-      margin-bottom: 2%;
+      margin-bottom: 3%;
     }
 
     &__summary {
-      margin-bottom: 2%;
+      margin-bottom: 3%;
       color: $font-color-black;
     }
 
     &__body {
       font-size: $font-size-S;
-      color: $color-dark-grey;
+      color: $font-color-grey;
+      margin-bottom: 8%;
+    }
+
+    &__user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--avatar {
+        display: flex;
+        width: 80%;
+
+        &-circle {
+          background-color: $ticket-color-bar-blue;
+          height: 35px;
+          width: 35px;
+          border-radius: 50%;
+        }
+
+        &-text {
+          font-size: $font-size-SM;
+          margin: 0 5%;
+
+          &-date {
+            font-size: $font-size-S;
+            color: $font-color-grey;
+          }
+        }
+      }
     }
   }
 }

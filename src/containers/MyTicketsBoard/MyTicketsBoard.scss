@@ -19,9 +19,10 @@
 
     &__header {
       width: 75%;
+      margin-bottom: 2%;
     }
 
-    &__schemas{
+    &__schemas {
       width: 15%;
     }
 
@@ -35,9 +36,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: auto;
+    gap: 10px;
+
+    &-header {
+      font-weight: 700;
+      color: $color-dark-grey;
+    }
   }
 
   &__add-ticket {
+    margin-top: 15px;
     border: 1px dashed $color-dark-grey;
     border-radius: 5px;
     width: 20%;

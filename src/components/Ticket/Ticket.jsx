@@ -1,7 +1,9 @@
 import "./Ticket.scss";
+import Dots from "../../assets/images/three-dots.png";
 
 const Ticket = () => {
   return (
+    <>
     <div className="ticket">
       <div className="ticket__top"></div>
       <div className="ticket__main">
@@ -13,11 +15,23 @@ const Ticket = () => {
         </div>
         <div className="ticket__main__body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-          consectetur minima blanditiis laudantium .
+          consectetur minima blanditiis laudantium...
+        </div>
+        <div className="ticket__main__user">
+          <div className="ticket__main__user--avatar">
+            <div className="ticket__main__user--avatar-circle"></div>
+            <div className="ticket__main__user--avatar-text">
+              <p>John Dow</p>
+              <p className="ticket__main__user--avatar-text-date">created: 12/02/2022</p>
+            </div>
+            </div>
+          <div className="ticket__main__user--menu">
+            <img src={Dots} />
+          </div>
         </div>
       </div>
-      <div className="ticket__user"></div>
     </div>
+    </>
   );
 };
 

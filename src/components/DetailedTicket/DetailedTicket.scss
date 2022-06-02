@@ -1,0 +1,60 @@
+@use "../../assets/sass/variables" as *;
+.modal {
+  width: 500px;
+  height: 600px;
+  border-radius: 5%;
+  position: fixed;
+  z-index: 1;
+  background-color: $color-white;
+  left: 30%;
+  top: 30%;
+
+  &__top {
+    background-color: $ticket-color-bar-orange;
+    height: 2%;
+    width: 98%;
+    border-top-left-radius: 45pt 25pt;
+    border-top-right-radius: 45pt 25pt;
+  }
+
+  &__close {
+    text-align: right;
+    margin: 2% 5%;
+  }
+
+  &__main {
+    padding: 8%;
+    display: flex;
+
+    &__user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+
+      &--avatar {
+        background-color: $ticket-color-bar-blue;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+
+      &--category {
+        color: $ticket-color-bar-orange;
+        margin-bottom: 3%;
+      }
+
+      &--summary {
+        margin-bottom: 3%;
+        color: $font-color-black;
+        font-size: $font-size-M;
+        font-weight: 100;
+      }
+    }
+  }
+}

@@ -57,6 +57,7 @@ const LoginPage = ({ onChange }) => {
           Password
         </label>
         <input
+          data-testid="login-password"
           id="password"
           type="password"
           required
@@ -64,7 +65,9 @@ const LoginPage = ({ onChange }) => {
           onInput={handlePassword}
           className="login-form__password--input"
         />
-        <span className="errorText">{passwordErrorMessage}</span>
+        <span data-testid="password-error" className="errorText">
+          {passwordErrorMessage}
+        </span>
         <span className="errorText">{emailErrorMessage}</span>
         <br />
         <section className="login-form__checkbox">
@@ -82,6 +85,7 @@ const LoginPage = ({ onChange }) => {
 
         <button
           className="login-form__button"
+          data-testid="login-button"
           type="button"
           onClick={handleSubmit}
         >

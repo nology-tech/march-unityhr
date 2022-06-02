@@ -14,14 +14,11 @@ describe("<LoginPage/> Show the correct elements", () => {
 it("should render the basic email input fields with correct email address", () => {
   render(<LoginPage />);
 
-  const emailInput = screen.getByRole("textbox", {
-    name: /email address/i,
-  });
+  const emailInput = screen.getByPlaceholderText("steve.walker@unity.io");
   userEvent.type(emailInput, "blanchejarrett@db.com");
 
   expect(emailInput).toBeInTheDocument();
 });
-// TO TEST THAT WHEN INPUTS ARE CORRECT THE SUCCESS MESSAGE IS SHOWN & ERROR MESSAGE IS NOT SHOW
 
 it("should render the success message when email inputs with @ symbol are correct and success message shown", () => {
   render(<LoginPage />);
@@ -55,37 +52,34 @@ it("should render the error message when email inputs are missing @ symbol and a
 it("should render the success message when password inputs is more than 8 characters and success message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole("textbox", { name: /password/i });
-  userEvent.type(passwordInput, "••••••••••");
+  const passwordInput = screen.getByTestId("login-password");
+  userEvent.type(passwordInput, "AbY@SF!ju");
 
-  const button = screen.getByRole("button", { name: /login/i });
+  const button = screen.getByTestId("login-button");
   userEvent.click(button);
-  const successMessage = screen.getByText(/valid password/i);
+  const successMessage = screen.getByTestId("password-error");
   expect(successMessage).toBeInTheDocument();
 });
 
 it("should render the error message when password inputs is empty and error message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole("textbox", { name: /password/i });
-  userEvent.type(passwordInput, "");
+  const passwordInput = screen.getByTestId("login-password");
 
-  const button = screen.getByRole("button", { name: /login/i });
+  const button = screen.getByTestId("login-button");
   userEvent.click(button);
-  const errorMessage = screen.getByText(/please enter a valid password/i);
+  const errorMessage = screen.getByTestId("password-error");
   expect(errorMessage).toBeInTheDocument();
 });
 
 it("should render the error message when password less than or equal to 8 characters and error message shown", () => {
   render(<LoginPage />);
 
-  const passwordInput = screen.getByRole("textbox", { name: /password/i });
-  userEvent.type(passwordInput, "••••••");
+  const passwordInput = screen.getByTestId("login-password");
+  userEvent.type(passwordInput, "BYH!");
 
-  const button = screen.getByRole("button", { name: /login/i });
+  const button = screen.getByTestId("login-button");
   userEvent.click(button);
-  const errorMessage = screen.getByText(
-    /Password should be more than 8 characters/i
-  );
+  const errorMessage = screen.getByTestId("password-error");
   expect(errorMessage).toBeInTheDocument();
 });

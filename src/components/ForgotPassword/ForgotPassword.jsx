@@ -2,7 +2,6 @@ import "./ForgotPassword.scss";
 
 import AuthenticationLeft from "../AuthenticationPageLeft/AuthenticationPageLeft";
 import React from "react";
-import { useParams } from "react-router-dom";
 
 const ForgotPassword = (props) => {
   const { handleInput, emailInput, handleSubmit, errorMessage } = props;

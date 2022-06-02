@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import "./App.scss";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
 import LoginPage from "./components/LoginPage/LoginPage";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
@@ -36,8 +37,6 @@ const App = () => {
   return (
     <div className="app">
       <LoginPage />
-      <AuthenticationPages />
-      <MainScreen />
     </div>
   );
 };

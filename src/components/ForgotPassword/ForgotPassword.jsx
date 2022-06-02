@@ -2,8 +2,10 @@ import "./ForgotPassword.scss";
 
 import AuthenticationLeft from "../../components/AuthenticationPageLeft/AuthenticationPageLeft";
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const ForgotPassword = () => {
+  const { ForgotPasswordID } = useParams();
   return (
     <section className="forgotten-password">
       <div className="authentication-left-Side">

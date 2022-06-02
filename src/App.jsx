@@ -29,15 +29,27 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 */
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="app">
-      <LoginPage />
-      <ForgotPassword />
-      <MainScreen />
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<LoginPage />}></Route>
+
+          <Route
+            path="/Forgot your password?/ :ForgotPasswordID"
+            element={<ForgotPassword />}
+          ></Route>
+
+          <Route
+            path="./containers/MainScreen/MainScreen.jsx"
+            element={<MainScreen />}
+          ></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

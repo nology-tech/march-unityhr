@@ -9,7 +9,7 @@ const ForgotPassword = (props) => {
     <section className="forgotten-password">
       <AuthenticationLeft />
 
-      <form className="forgotten-password-form" onSubmit={handleSubmit}>
+      <form data-testid="form-element"className="forgotten-password-form" onSubmit={handleSubmit}>
         <h2 className="forgotten-password-form__heading">
           Forgotten your Password{" "}
         </h2>
@@ -30,7 +30,7 @@ const ForgotPassword = (props) => {
           value={emailInput}
           onInput={handleInput}
         ></input>
-        <button className="forgotten-password-form__submitButton">
+        <button data-testid="button-element"className="forgotten-password-form__submitButton">
           Submit
         </button>
         <p className="forgotten-password-form__textMessage"> {errorMessage}</p>

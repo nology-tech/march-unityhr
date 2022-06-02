@@ -4,14 +4,15 @@ import "./App.scss";
 import LoginPage from "./components/LoginPage/LoginPage";
 
 
+
+
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 const App = () => {
   return (
     <div className="app">
-        <LoginPage />
-        
+      <LoginPage />
     </div>
   );
 };

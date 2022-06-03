@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
+import Settings from "./components/SettingsMenu/SettingsMenu";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/change-password" element={<ChangePassword />}></Route>
         </Routes>
       </div>
+      <Settings />
     </Router>
   );
 };

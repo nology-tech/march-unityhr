@@ -1,0 +1,30 @@
+@use "../../assets/sass/variables" as *;
+
+.setting-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  border: 20px solid red;
+
+  &__heading {
+    color: $color-light-grey;
+  }
+
+  &__image {
+    margin-right: 20px;
+  }
+
+  &--arrow {
+    padding-left: 100px;
+  }
+
+  &__item {
+    display: flex;
+    border: 3px solid blue;
+    width: 300px;
+  }
+  &--title {
+    margin-right: 200px;
+  }
+}

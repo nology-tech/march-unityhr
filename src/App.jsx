@@ -4,6 +4,7 @@ import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
 import LoginPage from "./components/LoginPage/LoginPage";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
+import EmployeeList from "./components/EmployeeList/EmployeeList";
 
 //test
 /*import { initializeApp } from "firebase/app";
@@ -32,14 +33,14 @@ const analytics = getAnalytics(app);
 */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 const App = () => {
   return (
     <div className="app">
-        <LoginPage />
-        <ForgotPassword />
-        <ChangePassword />
-        <MainScreen />
+      <LoginPage />
+      <ForgotPassword />
+      <ChangePassword />
+      <MainScreen />
+      <EmployeeList />
     </div>
   );
 };

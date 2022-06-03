@@ -1,0 +1,20 @@
+.employeeTable thead tr {
+  background-color: #eee;
+}
+
+.employeeTable td,
+.employeeTable th {
+  padding: 10px;
+}
+
+tbody tr {
+  border-bottom: 1px solid black;
+}
+
+.employeeTable {
+  border-collapse: collapse;
+}
+
+.pageContent {
+  padding-left: 100px;
+}

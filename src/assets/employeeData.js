@@ -5,7 +5,7 @@ const employeeData = [
     phone: "+94 3174 132114",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Tatum Soto",
@@ -13,7 +13,7 @@ const employeeData = [
     phone: "+16 2422 354234",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Sylvester Murray",
@@ -21,7 +21,7 @@ const employeeData = [
     phone: "+44 0252 485783",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Roth Wallace",
@@ -29,7 +29,7 @@ const employeeData = [
     phone: "+70 3833 918868",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Gannon Carey",
@@ -37,7 +37,7 @@ const employeeData = [
     phone: "+27 7603 771934",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Tate Ortiz",
@@ -45,7 +45,7 @@ const employeeData = [
     phone: "+51 4416 133767",
     User_Type: "Employee",
     Department: "Finance",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Sacha Reyes",
@@ -53,7 +53,7 @@ const employeeData = [
     phone: "+26 4325 381620",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Sylvia Stuart",
@@ -61,7 +61,7 @@ const employeeData = [
     phone: "+37 8416 743164",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Kylan Watkins",
@@ -69,7 +69,7 @@ const employeeData = [
     phone: "+57 1259 884154",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Benjamin Fulton",
@@ -77,7 +77,7 @@ const employeeData = [
     phone: "+39 4825 581583",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Igor George",
@@ -85,7 +85,7 @@ const employeeData = [
     phone: "+20 0828 525606",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Xantha Rocha",
@@ -93,7 +93,7 @@ const employeeData = [
     phone: "+17 1816 997167",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Kieran Cook",
@@ -101,7 +101,7 @@ const employeeData = [
     phone: "+16 6164 676068",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Melvin Bonner",
@@ -109,7 +109,7 @@ const employeeData = [
     phone: "+03 4684 242337",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Vance Evans",
@@ -117,7 +117,7 @@ const employeeData = [
     phone: "+47 7349 656272",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Laura Everett",
@@ -125,7 +125,7 @@ const employeeData = [
     phone: "+24 6761 885176",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Ruby King",
@@ -133,7 +133,7 @@ const employeeData = [
     phone: "+53 1766 915728",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Dahlia Barrett",
@@ -141,7 +141,7 @@ const employeeData = [
     phone: "+84 7473 920653",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Kyla Pennington",
@@ -149,7 +149,7 @@ const employeeData = [
     phone: "+05 2468 626877",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Mallory Sampson",
@@ -157,7 +157,7 @@ const employeeData = [
     phone: "+84 5018 484133",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "McKenzie Holmes",
@@ -165,7 +165,7 @@ const employeeData = [
     phone: "+43 7360 817238",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Galena Bright",
@@ -173,7 +173,7 @@ const employeeData = [
     phone: "+87 0660 793452",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Eugenia Frank",
@@ -181,7 +181,7 @@ const employeeData = [
     phone: "+19 1269 654463",
     User_Type: "HR",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Danielle Gilliam",
@@ -189,7 +189,7 @@ const employeeData = [
     phone: "+18 7212 414303",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Armando Russo",
@@ -197,7 +197,7 @@ const employeeData = [
     phone: "+75 2548 327718",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Odette Alvarado",
@@ -205,7 +205,7 @@ const employeeData = [
     phone: "+72 5103 664144",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Kylie Randolph",
@@ -213,7 +213,7 @@ const employeeData = [
     phone: "+46 2733 873487",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Karen Kane",
@@ -221,7 +221,7 @@ const employeeData = [
     phone: "+17 3033 854233",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Moses Ratliff",
@@ -229,7 +229,7 @@ const employeeData = [
     phone: "+32 2853 765128",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Rhiannon Waller",
@@ -237,7 +237,7 @@ const employeeData = [
     phone: "+33 2548 356677",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Hu Vance",
@@ -245,7 +245,7 @@ const employeeData = [
     phone: "+92 3342 825271",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Xander Kelley",
@@ -253,7 +253,7 @@ const employeeData = [
     phone: "+10 6374 542227",
     User_Type: "HR",
     Department: "Payroll",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Amal Wilder",
@@ -261,7 +261,7 @@ const employeeData = [
     phone: "+58 4361 121595",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Francis Shannon",
@@ -269,7 +269,7 @@ const employeeData = [
     phone: "+52 9211 766868",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Nissim Randall",
@@ -277,7 +277,7 @@ const employeeData = [
     phone: "+85 2824 571233",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Raya Powell",
@@ -285,7 +285,7 @@ const employeeData = [
     phone: "+81 4906 775446",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Darryl Kelley",
@@ -293,7 +293,7 @@ const employeeData = [
     phone: "+55 7175 545486",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Brent Fields",
@@ -301,7 +301,7 @@ const employeeData = [
     phone: "+04 6559 731424",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Rudyard Berg",
@@ -309,7 +309,7 @@ const employeeData = [
     phone: "+32 8166 253809",
     User_Type: "Employee",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Shoshana Peterson",
@@ -317,7 +317,7 @@ const employeeData = [
     phone: "+98 6723 567488",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Lunea Harvey",
@@ -325,7 +325,7 @@ const employeeData = [
     phone: "+02 6854 635764",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Julian Summers",
@@ -333,7 +333,7 @@ const employeeData = [
     phone: "+93 4679 054813",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Cruz Pitts",
@@ -341,7 +341,7 @@ const employeeData = [
     phone: "+01 6128 376557",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Joy Goff",
@@ -349,7 +349,7 @@ const employeeData = [
     phone: "+68 9615 482267",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Giselle Meyers",
@@ -357,7 +357,7 @@ const employeeData = [
     phone: "+43 1431 887472",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Kessie Bridges",
@@ -365,7 +365,7 @@ const employeeData = [
     phone: "+25 1417 401004",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Brendan Cash",
@@ -373,7 +373,7 @@ const employeeData = [
     phone: "+93 6054 159879",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Jerry O'donnell",
@@ -381,7 +381,7 @@ const employeeData = [
     phone: "+13 3435 737754",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Phelan Montgomery",
@@ -389,7 +389,7 @@ const employeeData = [
     phone: "+32 8906 773488",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Lester Lindsay",
@@ -397,7 +397,7 @@ const employeeData = [
     phone: "+38 1565 397234",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Roary Walter",
@@ -405,7 +405,7 @@ const employeeData = [
     phone: "+43 3168 985324",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Donovan Bridges",
@@ -413,7 +413,7 @@ const employeeData = [
     phone: "+34 2932 830577",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Camilla Kirk",
@@ -421,7 +421,7 @@ const employeeData = [
     phone: "+07 5640 162975",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Gannon Reeves",
@@ -429,7 +429,7 @@ const employeeData = [
     phone: "+16 8347 245344",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Ria Travis",
@@ -437,7 +437,7 @@ const employeeData = [
     phone: "+13 7607 364851",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Azalia Chandler",
@@ -445,7 +445,7 @@ const employeeData = [
     phone: "+01 8208 047577",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Cullen Powell",
@@ -453,7 +453,7 @@ const employeeData = [
     phone: "+34 4531 864422",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Quinn Morgan",
@@ -461,7 +461,7 @@ const employeeData = [
     phone: "+70 5585 718694",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Brenden Cortez",
@@ -469,7 +469,7 @@ const employeeData = [
     phone: "+85 6278 792872",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Joseph Mccormick",
@@ -477,7 +477,7 @@ const employeeData = [
     phone: "+51 9880 407142",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Alden Cleveland",
@@ -485,7 +485,7 @@ const employeeData = [
     phone: "+37 9715 426625",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Yuli Schultz",
@@ -493,7 +493,7 @@ const employeeData = [
     phone: "+92 8545 522392",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Dahlia Hendricks",
@@ -501,7 +501,7 @@ const employeeData = [
     phone: "+17 5772 851318",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Germaine Miller",
@@ -509,7 +509,7 @@ const employeeData = [
     phone: "+90 5869 202207",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Deanna Rocha",
@@ -517,7 +517,7 @@ const employeeData = [
     phone: "+82 5884 163764",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Marny Keller",
@@ -525,7 +525,7 @@ const employeeData = [
     phone: "+45 1653 139033",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Wendy Bentley",
@@ -533,7 +533,7 @@ const employeeData = [
     phone: "+64 6104 742133",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Barbara Golden",
@@ -541,7 +541,7 @@ const employeeData = [
     phone: "+67 9353 116732",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Ann Armstrong",
@@ -549,7 +549,7 @@ const employeeData = [
     phone: "+21 1503 421381",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Walter Odom",
@@ -557,7 +557,7 @@ const employeeData = [
     phone: "+75 2765 107296",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Amity Mckay",
@@ -565,7 +565,7 @@ const employeeData = [
     phone: "+79 1464 501178",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Tobias Waller",
@@ -573,7 +573,7 @@ const employeeData = [
     phone: "+62 6943 255683",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Rebecca Ward",
@@ -581,7 +581,7 @@ const employeeData = [
     phone: "+57 2777 460254",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Tad Figueroa",
@@ -589,7 +589,7 @@ const employeeData = [
     phone: "+78 8442 268568",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Camden Welch",
@@ -597,7 +597,7 @@ const employeeData = [
     phone: "+51 6188 232053",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Palmer O'Neill",
@@ -605,7 +605,7 @@ const employeeData = [
     phone: "+24 4637 950325",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Travis Gardner",
@@ -613,7 +613,7 @@ const employeeData = [
     phone: "+62 8672 359026",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Erica Young",
@@ -621,7 +621,7 @@ const employeeData = [
     phone: "+38 9865 752761",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Channing Moran",
@@ -629,7 +629,7 @@ const employeeData = [
     phone: "+31 4176 418816",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Justina Haley",
@@ -637,7 +637,7 @@ const employeeData = [
     phone: "+67 5274 861336",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Larissa Carpenter",
@@ -645,7 +645,7 @@ const employeeData = [
     phone: "+53 9576 940155",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Zoe Dickerson",
@@ -653,7 +653,7 @@ const employeeData = [
     phone: "+55 4557 858001",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "William Wiggins",
@@ -661,7 +661,7 @@ const employeeData = [
     phone: "+91 3687 789517",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Nicholas Mosley",
@@ -669,7 +669,7 @@ const employeeData = [
     phone: "+83 4224 574179",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Sybil Walters",
@@ -677,7 +677,7 @@ const employeeData = [
     phone: "+16 5476 834307",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Jonas Hoffman",
@@ -685,7 +685,7 @@ const employeeData = [
     phone: "+81 8777 447680",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Selma Graham",
@@ -693,7 +693,7 @@ const employeeData = [
     phone: "+13 1468 418204",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Alfreda Bauer",
@@ -701,7 +701,7 @@ const employeeData = [
     phone: "+41 9337 467222",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Kasimir Morris",
@@ -709,7 +709,7 @@ const employeeData = [
     phone: "+15 6358 873389",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Britanni Gay",
@@ -717,7 +717,7 @@ const employeeData = [
     phone: "+20 5612 577611",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Maxwell Noble",
@@ -725,7 +725,7 @@ const employeeData = [
     phone: "+15 4352 135035",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Aurelia Valenzuela",
@@ -733,7 +733,7 @@ const employeeData = [
     phone: "+57 4218 051737",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Jared Kramer",
@@ -741,7 +741,7 @@ const employeeData = [
     phone: "+92 6272 917109",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Ishmael Clayton",
@@ -749,7 +749,7 @@ const employeeData = [
     phone: "+42 7277 987237",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Kenyon Christensen",
@@ -757,7 +757,7 @@ const employeeData = [
     phone: "+37 3488 622556",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Lacey Eaton",
@@ -765,7 +765,7 @@ const employeeData = [
     phone: "+11 6854 288775",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Brady Howard",
@@ -773,7 +773,7 @@ const employeeData = [
     phone: "+41 2170 926457",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Lacy Padilla",
@@ -781,7 +781,7 @@ const employeeData = [
     phone: "+43 8750 203985",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Nathaniel Allison",
@@ -789,7 +789,7 @@ const employeeData = [
     phone: "+86 2614 504873",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Ainsley Roberts",
@@ -797,7 +797,7 @@ const employeeData = [
     phone: "+37 0378 815421",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Shelly Pitts",
@@ -805,7 +805,7 @@ const employeeData = [
     phone: "+34 1111 631979",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Hamilton White",
@@ -813,7 +813,7 @@ const employeeData = [
     phone: "+08 0898 635727",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Mallory Bradley",
@@ -821,7 +821,7 @@ const employeeData = [
     phone: "+36 2058 535818",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Maryam Lancaster",
@@ -829,7 +829,7 @@ const employeeData = [
     phone: "+23 2085 892896",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Lee Stevenson",
@@ -837,7 +837,7 @@ const employeeData = [
     phone: "+61 7281 757343",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Xena Lawson",
@@ -845,7 +845,7 @@ const employeeData = [
     phone: "+41 3701 739214",
     User_Type: "HR",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Bethany Robles",
@@ -853,7 +853,7 @@ const employeeData = [
     phone: "+88 3546 534725",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Mallory Hess",
@@ -861,7 +861,7 @@ const employeeData = [
     phone: "+27 4136 973113",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Theodore Strickland",
@@ -869,7 +869,7 @@ const employeeData = [
     phone: "+78 3231 343772",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Quintessa Gonzalez",
@@ -877,7 +877,7 @@ const employeeData = [
     phone: "+21 6019 884586",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Whilemina Grimes",
@@ -885,7 +885,7 @@ const employeeData = [
     phone: "+23 4662 768526",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Amaya Simon",
@@ -893,7 +893,7 @@ const employeeData = [
     phone: "+43 3613 432695",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Logan Johnston",
@@ -901,7 +901,7 @@ const employeeData = [
     phone: "+43 8877 343453",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Callie Gallagher",
@@ -909,7 +909,7 @@ const employeeData = [
     phone: "+68 7215 968000",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Cherokee Merritt",
@@ -917,7 +917,7 @@ const employeeData = [
     phone: "+37 5251 116824",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Adele Tucker",
@@ -925,7 +925,7 @@ const employeeData = [
     phone: "+46 5256 276937",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Louis Mccarthy",
@@ -933,7 +933,7 @@ const employeeData = [
     phone: "+75 2876 071772",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Yardley Evans",
@@ -941,7 +941,7 @@ const employeeData = [
     phone: "+70 8977 373550",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Xander Sherman",
@@ -949,7 +949,7 @@ const employeeData = [
     phone: "+54 7741 752734",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Octavia Dalton",
@@ -957,7 +957,7 @@ const employeeData = [
     phone: "+42 5322 355218",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Justin Paul",
@@ -965,7 +965,7 @@ const employeeData = [
     phone: "+74 5443 659477",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Brittany Shaffer",
@@ -973,7 +973,7 @@ const employeeData = [
     phone: "+74 2683 211717",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Maggie Bender",
@@ -981,7 +981,7 @@ const employeeData = [
     phone: "+49 7474 472691",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Alexandra Wilkinson",
@@ -989,7 +989,7 @@ const employeeData = [
     phone: "+19 1416 673059",
     User_Type: "HR",
     Department: "Payroll",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Lionel Benson",
@@ -997,7 +997,7 @@ const employeeData = [
     phone: "+31 4451 321145",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Louis Goodman",
@@ -1005,7 +1005,7 @@ const employeeData = [
     phone: "+47 6275 497860",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Beau Rosario",
@@ -1013,7 +1013,7 @@ const employeeData = [
     phone: "+55 3822 664426",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Ainsley Mack",
@@ -1021,7 +1021,7 @@ const employeeData = [
     phone: "+58 7752 657912",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "April Greene",
@@ -1029,7 +1029,7 @@ const employeeData = [
     phone: "+15 4870 466893",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Colt Sawyer",
@@ -1037,7 +1037,7 @@ const employeeData = [
     phone: "+72 0268 575851",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Alden Barton",
@@ -1045,7 +1045,7 @@ const employeeData = [
     phone: "+95 2371 159701",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Orson Harrell",
@@ -1053,7 +1053,7 @@ const employeeData = [
     phone: "+46 6753 527130",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Tanisha Peters",
@@ -1061,7 +1061,7 @@ const employeeData = [
     phone: "+56 1168 728913",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Cameron Rush",
@@ -1069,7 +1069,7 @@ const employeeData = [
     phone: "+95 3373 227587",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Melissa Johnson",
@@ -1077,7 +1077,7 @@ const employeeData = [
     phone: "+68 4164 322538",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Jameson Garrett",
@@ -1085,7 +1085,7 @@ const employeeData = [
     phone: "+79 4676 126712",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Abdul Nash",
@@ -1093,7 +1093,7 @@ const employeeData = [
     phone: "+69 7986 801276",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Cameron Church",
@@ -1101,7 +1101,7 @@ const employeeData = [
     phone: "+54 3318 858563",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Jayme Fleming",
@@ -1109,7 +1109,7 @@ const employeeData = [
     phone: "+88 0796 194513",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Martin Holder",
@@ -1117,7 +1117,7 @@ const employeeData = [
     phone: "+23 4161 266248",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Shafira Daugherty",
@@ -1125,7 +1125,7 @@ const employeeData = [
     phone: "+85 7235 428741",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Nelle French",
@@ -1133,7 +1133,7 @@ const employeeData = [
     phone: "+57 2681 886333",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Rosalyn Hays",
@@ -1141,7 +1141,7 @@ const employeeData = [
     phone: "+50 1270 818734",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Kibo Rich",
@@ -1149,7 +1149,7 @@ const employeeData = [
     phone: "+48 8373 325484",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Walter Reyes",
@@ -1157,7 +1157,7 @@ const employeeData = [
     phone: "+10 9636 166753",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Colette Petersen",
@@ -1165,7 +1165,7 @@ const employeeData = [
     phone: "+34 1455 771523",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Leandra Lyons",
@@ -1173,7 +1173,7 @@ const employeeData = [
     phone: "+02 2682 323353",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Sierra Martinez",
@@ -1181,7 +1181,7 @@ const employeeData = [
     phone: "+15 1547 347767",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Leila Rich",
@@ -1189,7 +1189,7 @@ const employeeData = [
     phone: "+16 6874 470936",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Hall Waters",
@@ -1197,7 +1197,7 @@ const employeeData = [
     phone: "+76 6874 063122",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Zachary Steele",
@@ -1205,7 +1205,7 @@ const employeeData = [
     phone: "+37 3746 351977",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Zahir Mclean",
@@ -1213,7 +1213,7 @@ const employeeData = [
     phone: "+22 8787 799582",
     User_Type: "HR",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Eaton Finley",
@@ -1221,7 +1221,7 @@ const employeeData = [
     phone: "+64 4170 235791",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Wesley Cash",
@@ -1229,7 +1229,7 @@ const employeeData = [
     phone: "+73 2437 369727",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Kyra Carroll",
@@ -1237,7 +1237,7 @@ const employeeData = [
     phone: "+58 8912 586852",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Ralph Sawyer",
@@ -1245,7 +1245,7 @@ const employeeData = [
     phone: "+96 7421 711957",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Ifeoma Tran",
@@ -1253,7 +1253,7 @@ const employeeData = [
     phone: "+22 3308 127170",
     User_Type: "HR",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Cooper Mclaughlin",
@@ -1261,7 +1261,7 @@ const employeeData = [
     phone: "+93 8487 216712",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Martin Stafford",
@@ -1269,7 +1269,7 @@ const employeeData = [
     phone: "+80 4750 336011",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Jescie Goodman",
@@ -1277,7 +1277,7 @@ const employeeData = [
     phone: "+25 0233 348741",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Clare Page",
@@ -1285,7 +1285,7 @@ const employeeData = [
     phone: "+52 8543 845635",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Amanda Cox",
@@ -1293,7 +1293,7 @@ const employeeData = [
     phone: "+58 7144 598048",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Jason Buchanan",
@@ -1301,7 +1301,7 @@ const employeeData = [
     phone: "+68 3185 827155",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Rogan Hudson",
@@ -1309,7 +1309,7 @@ const employeeData = [
     phone: "+84 2363 248272",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Tanisha Cruz",
@@ -1317,7 +1317,7 @@ const employeeData = [
     phone: "+26 6738 667101",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Yuli Yang",
@@ -1325,7 +1325,7 @@ const employeeData = [
     phone: "+82 4666 554101",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Hadley Wise",
@@ -1333,7 +1333,7 @@ const employeeData = [
     phone: "+36 1238 277027",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Brett Mcdonald",
@@ -1341,7 +1341,7 @@ const employeeData = [
     phone: "+61 2383 500300",
     User_Type: "Employee",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Wyatt Hanson",
@@ -1349,7 +1349,7 @@ const employeeData = [
     phone: "+44 1134 810877",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Shafira Lambert",
@@ -1357,7 +1357,7 @@ const employeeData = [
     phone: "+47 1984 722103",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Isaac Fernandez",
@@ -1365,7 +1365,7 @@ const employeeData = [
     phone: "+66 4054 016537",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Yuri Hurst",
@@ -1373,7 +1373,7 @@ const employeeData = [
     phone: "+73 4658 524716",
     User_Type: "Employee",
     Department: "HR ",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Farrah Rodriguez",
@@ -1381,7 +1381,7 @@ const employeeData = [
     phone: "+77 6484 864638",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Rebekah Shepherd",
@@ -1389,7 +1389,7 @@ const employeeData = [
     phone: "+75 6390 537803",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Jocelyn Cleveland",
@@ -1397,7 +1397,7 @@ const employeeData = [
     phone: "+98 5079 908050",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Nomlanga Valencia",
@@ -1405,7 +1405,7 @@ const employeeData = [
     phone: "+97 4362 777613",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Christen Pearson",
@@ -1413,7 +1413,7 @@ const employeeData = [
     phone: "+60 5256 326131",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Ignatius Crosby",
@@ -1421,7 +1421,7 @@ const employeeData = [
     phone: "+44 5547 731398",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Ross Hawkins",
@@ -1429,7 +1429,7 @@ const employeeData = [
     phone: "+18 4118 111491",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Candace Molina",
@@ -1437,7 +1437,7 @@ const employeeData = [
     phone: "+03 5228 248538",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Malachi Leon",
@@ -1445,7 +1445,7 @@ const employeeData = [
     phone: "+11 7637 553571",
     User_Type: "Employee",
     Department: "Finance",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Tanya Figueroa",
@@ -1453,7 +1453,7 @@ const employeeData = [
     phone: "+77 3192 443867",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Sybil Mckay",
@@ -1461,7 +1461,7 @@ const employeeData = [
     phone: "+98 9373 788800",
     User_Type: "Admin ",
     Department: "Marketing",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Bert Mayer",
@@ -1469,7 +1469,7 @@ const employeeData = [
     phone: "+82 2097 145737",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Ross Mcintosh",
@@ -1477,7 +1477,7 @@ const employeeData = [
     phone: "+37 1231 461953",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Aidan Kirkland",
@@ -1485,7 +1485,7 @@ const employeeData = [
     phone: "+66 0814 413564",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Claudia Alston",
@@ -1493,7 +1493,7 @@ const employeeData = [
     phone: "+94 8592 260247",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Sybil Potts",
@@ -1501,7 +1501,7 @@ const employeeData = [
     phone: "+75 8736 160473",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Ingrid Snow",
@@ -1509,7 +1509,7 @@ const employeeData = [
     phone: "+89 8372 651352",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Kameko Armstrong",
@@ -1517,7 +1517,7 @@ const employeeData = [
     phone: "+67 7135 293376",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Ciaran Mann",
@@ -1525,7 +1525,7 @@ const employeeData = [
     phone: "+63 9181 867633",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Shelly Ware",
@@ -1533,7 +1533,7 @@ const employeeData = [
     phone: "+10 7462 910328",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Amal Ortiz",
@@ -1541,7 +1541,7 @@ const employeeData = [
     phone: "+74 6312 655673",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Winifred Terry",
@@ -1549,7 +1549,7 @@ const employeeData = [
     phone: "+65 2544 186114",
     User_Type: "HR",
     Department: "Payroll",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Inez Deleon",
@@ -1557,7 +1557,7 @@ const employeeData = [
     phone: "+11 1150 231283",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Marny Mckay",
@@ -1565,7 +1565,7 @@ const employeeData = [
     phone: "+28 9428 816632",
     User_Type: "Accounting",
     Department: "HR ",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "September Buck",
@@ -1573,7 +1573,7 @@ const employeeData = [
     phone: "+37 7753 871148",
     User_Type: "Admin ",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Hermione Ferguson",
@@ -1581,7 +1581,7 @@ const employeeData = [
     phone: "+76 8942 348658",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Violet Johnson",
@@ -1589,7 +1589,7 @@ const employeeData = [
     phone: "+11 2533 108266",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Aquila Pratt",
@@ -1597,7 +1597,7 @@ const employeeData = [
     phone: "+56 8882 560763",
     User_Type: "Employee",
     Department: "Finance",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Tana Brock",
@@ -1605,7 +1605,7 @@ const employeeData = [
     phone: "+15 8840 655117",
     User_Type: "Accounting",
     Department: "IT Support",
-    "Job title": "HR Director",
+    jobTitle: "HR Director",
   },
   {
     name: "Nicholas Strong",
@@ -1613,7 +1613,7 @@ const employeeData = [
     phone: "+11 2306 387863",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Warren Butler",
@@ -1621,7 +1621,7 @@ const employeeData = [
     phone: "+49 9535 911484",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Fleur Booth",
@@ -1629,7 +1629,7 @@ const employeeData = [
     phone: "+63 9714 333420",
     User_Type: "HR",
     Department: "Marketing",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Lani Olson",
@@ -1637,7 +1637,7 @@ const employeeData = [
     phone: "+66 2659 062614",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Kirestin Clements",
@@ -1645,7 +1645,7 @@ const employeeData = [
     phone: "+17 0382 375635",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Xavier Maddox",
@@ -1653,7 +1653,7 @@ const employeeData = [
     phone: "+34 7791 657322",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Hedwig Hess",
@@ -1661,7 +1661,7 @@ const employeeData = [
     phone: "+38 4695 966797",
     User_Type: "Admin ",
     Department: "Finance",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Audrey Fleming",
@@ -1669,7 +1669,7 @@ const employeeData = [
     phone: "+46 1276 255708",
     User_Type: "Employee",
     Department: "Payroll",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Howard Tran",
@@ -1677,7 +1677,7 @@ const employeeData = [
     phone: "+61 2485 767245",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Alfreda Townsend",
@@ -1685,7 +1685,7 @@ const employeeData = [
     phone: "+07 2084 838939",
     User_Type: "HR",
     Department: "Recruitment",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Xaviera Ray",
@@ -1693,7 +1693,7 @@ const employeeData = [
     phone: "+79 1596 269454",
     User_Type: "Admin ",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Abel Walter",
@@ -1701,7 +1701,7 @@ const employeeData = [
     phone: "+89 2042 291424",
     User_Type: "Admin ",
     Department: "HR ",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Julian Lindsey",
@@ -1709,7 +1709,7 @@ const employeeData = [
     phone: "+05 7436 197652",
     User_Type: "Admin ",
     Department: "Payroll",
-    "Job title": "Consultant",
+    jobTitle: "Consultant",
   },
   {
     name: "Paki Stafford",
@@ -1717,7 +1717,7 @@ const employeeData = [
     phone: "+78 2893 561244",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Tate Brennan",
@@ -1725,7 +1725,7 @@ const employeeData = [
     phone: "+93 4886 585730",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Branden Marquez",
@@ -1733,7 +1733,7 @@ const employeeData = [
     phone: "+65 4445 123966",
     User_Type: "Accounting",
     Department: "Marketing",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Harrison Abbott",
@@ -1741,7 +1741,7 @@ const employeeData = [
     phone: "+07 4375 076668",
     User_Type: "Accounting",
     Department: "Recruitment",
-    "Job title": "Head of Recruitment ",
+    jobTitle: "Head of Recruitment ",
   },
   {
     name: "Carissa Mcgee",
@@ -1749,7 +1749,7 @@ const employeeData = [
     phone: "+15 5323 511047",
     User_Type: "Accounting",
     Department: "Finance",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Karyn Fleming",
@@ -1757,7 +1757,7 @@ const employeeData = [
     phone: "+12 9679 730081",
     User_Type: "HR",
     Department: "IT Support",
-    "Job title": "HR - Diversity",
+    jobTitle: "HR - Diversity",
   },
   {
     name: "Eliana Roman",
@@ -1765,7 +1765,7 @@ const employeeData = [
     phone: "+23 8529 522690",
     User_Type: "HR",
     Department: "HR ",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Nehru Spears",
@@ -1773,7 +1773,7 @@ const employeeData = [
     phone: "+82 9177 114405",
     User_Type: "Employee",
     Department: "IT Support",
-    "Job title": "IT Technician",
+    jobTitle: "IT Technician",
   },
   {
     name: "Jacqueline Frazier",
@@ -1781,7 +1781,7 @@ const employeeData = [
     phone: "+29 2046 583921",
     User_Type: "Employee",
     Department: "Marketing",
-    "Job title": "Pay",
+    jobTitle: "Pay",
   },
   {
     name: "Ulric Patel",
@@ -1789,7 +1789,7 @@ const employeeData = [
     phone: "+61 7881 891072",
     User_Type: "Accounting",
     Department: "Payroll",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
   {
     name: "Xenos Matthews",
@@ -1797,6 +1797,8 @@ const employeeData = [
     phone: "+81 2392 318631",
     User_Type: "Employee",
     Department: "Recruitment",
-    "Job title": "Accountant ",
+    jobTitle: "Accountant ",
   },
 ];
+
+export default employeeData;

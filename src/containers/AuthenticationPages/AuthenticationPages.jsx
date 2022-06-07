@@ -4,6 +4,7 @@ import ForgotPassword from "../../components/ForgotPassword/ForgotPassword";
 const AuthenticationPages = () => {
   const [input, setInput] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleInput = (event) => {
     const input = event.target.value;
@@ -11,8 +12,8 @@ const AuthenticationPages = () => {
   };
 
   const handleSubmit = (event) => {
-    const submittedInput = event.target[0].value;
     event.preventDefault();
+    const submittedInput = event.target[0].value;
 
     const positionAt = submittedInput.indexOf("@");
     if (
@@ -20,12 +21,16 @@ const AuthenticationPages = () => {
       submittedInput.includes(".") &&
       positionAt > 0
     ) {
-      if (positionAt < submittedInput.indexOf(".")) { 
+      if (positionAt < submittedInput.indexOf(".")) {
         //include backend process here//
+        setErrorMessage("");
+        setSuccessMessage("Your new password has been sent to your email");
       } else {
+        setSuccessMessage("");
         setErrorMessage("Please enter a valid Email Address");
       }
     } else {
+      setSuccessMessage("");
       setErrorMessage("Please enter a valid Email Address");
     }
   };
@@ -36,6 +41,7 @@ const AuthenticationPages = () => {
       emailInput={input}
       handleSubmit={handleSubmit}
       errorMessage={errorMessage}
+      successMessage={successMessage}
     />
   );
 };

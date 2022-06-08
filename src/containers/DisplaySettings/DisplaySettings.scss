@@ -34,10 +34,26 @@
     align-items: center;
   }
 
+  &__overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
   &__image {
     border-radius: 70%;
     width: 220px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
+
+  &__edit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
   &__desc {
     display: flex;
     flex-direction: column;
@@ -149,14 +165,3 @@
     }
   }
 }
-
-// .display-settings__employee--mode {
-//   position: absolute;
-//   top: 25px;
-//   left: 25px;
-//   // z-index: 2;
-// }
-// .display-settings__employee--button {
-//   position: relative;
-//   // z-index: 3;
-// }

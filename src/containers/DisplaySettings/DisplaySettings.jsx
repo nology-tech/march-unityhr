@@ -1,9 +1,11 @@
 import "./DisplaySettings.scss";
 
-import Employee from "../../assets/images/employee.png";
+import React from "react";
+import Employee from "../../assets/images/profile_picture.png";
 import Dark from "../../assets/images/dark-mode.png";
-import Mode from "../../assets/images/mode-change-rectangle.png";
-import Light from "../../assets/images/light-mode.png";
+import LightSun from "../../assets/images/light_mode_sun.png";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import ProfileEdit from "../../assets/images/profile_edit.png";
 
 const DisplaySettings = () => {
   return (
@@ -15,7 +17,19 @@ const DisplaySettings = () => {
           </h2>
         </div>
         <div className="display-settings__info">
-          <img className="display-settings__image" src={Employee} alt="Login" />
+          <div className="display-settings__overlay">
+            <img
+              className="display-settings__image"
+              src={Employee}
+              alt="Login"
+            />
+            <img
+              className="display-settings__edit"
+              src={ProfileEdit}
+              alt="Login"
+            />
+          </div>
+
           <div className="display-settings__desc">
             {" "}
             <p className="display-settings__desc--name">Name (Database)</p>
@@ -35,33 +49,10 @@ const DisplaySettings = () => {
           </div>
           <img
             className="display-settings__employee--light"
-            src={Light}
+            src={LightSun}
             alt="Light"
           />
-          {/* <img
-            className="display-settings__employee--button"
-            src={ButtonMode}
-            alt="Mode"
-          />
-          <img
-            className="display-settings__employee--mode"
-            src={Mode}
-            alt="Mode"
-          /> */}
-
-          <div>
-            <img
-              className="display-settings__employee--mode"
-              src={Mode}
-              alt=""
-            />
-            <img
-              className="display-settings__employee--button"
-              src={Light}
-              alt=""
-            />
-          </div>
-
+          <ToggleSwitch />
           <img
             className="display-settings__employee--dark"
             src={Dark}

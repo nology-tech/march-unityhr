@@ -1,6 +1,5 @@
 import React from "react";
 import "./SettingsMenu.scss";
-
 import Display from "../../assets/images/display.png";
 import User from "../../assets/images/user.png";
 import Login from "../../assets/images/login.png";
@@ -22,7 +21,6 @@ const SettingsMenu = () => {
           alt="Vector"
         />
       </div>
-
       <div className="setting-section__login">
         {" "}
         <img className="setting-section__image" src={Login} alt="Login" />
@@ -51,5 +49,4 @@ const SettingsMenu = () => {
     </div>
   );
 };
-
 export default SettingsMenu;

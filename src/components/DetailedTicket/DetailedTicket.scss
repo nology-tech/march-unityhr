@@ -1,59 +1,132 @@
 @use "../../assets/sass/variables" as *;
 .modal {
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   border-radius: 5%;
   position: fixed;
   z-index: 1;
   background-color: $color-white;
   left: 30%;
   top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__top {
     background-color: $ticket-color-bar-orange;
-    height: 2%;
-    width: 98%;
+    height: 1.5%;
+    width: 97%;
     border-top-left-radius: 45pt 25pt;
     border-top-right-radius: 45pt 25pt;
   }
 
-  &__close {
-    text-align: right;
-    margin: 2% 5%;
-  }
-
   &__main {
-    padding: 8%;
     display: flex;
+    flex-direction: column;
 
-    &__user {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 30%;
-
-      &--avatar {
-        background-color: $ticket-color-bar-blue;
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-      }
+    &__close {
+      padding-left: 90%;
+      margin: 2% 5%;
     }
 
-    &__details {
+    &-info {
       display: flex;
-      flex-direction: column;
 
-      &--category {
-        color: $ticket-color-bar-orange;
-        margin-bottom: 3%;
+      &__user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        font-size: $font-size-S;
+
+        &--avatar {
+          background-color: $ticket-color-bar-blue;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin-bottom: 8%;
+
+          &-name {
+            font-size: $font-size-SM;
+          }
+
+          &-role {
+            color: $color-dark-grey;
+          }
+
+          &-department {
+            color: $font-color-grey;
+          }
+        }
       }
 
-      &--summary {
-        margin-bottom: 3%;
-        color: $font-color-black;
-        font-size: $font-size-M;
-        font-weight: 100;
+      &__details {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 0 5%;
+
+        &--category {
+          color: $ticket-color-bar-orange;
+          margin-bottom: 2%;
+          font-weight: 600;
+        }
+
+        &--summary {
+          margin-bottom: 3%;
+          color: $font-color-black;
+          font-size: $font-size-L;
+          font-weight: 100;
+        }
+
+        &--text {
+          color: $font-color-grey;
+        }
+
+        &--additional-info {
+          margin-top: 5%;
+          display: flex;
+          font-size: $font-size-SM;
+
+          &__supporting-info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            h5 {
+              margin-bottom: 10px;
+            }
+
+            &__attachment {
+              display: flex;
+
+              img {
+                margin-right: 5%;
+              }
+
+              p {
+                color: $ticket-color-bar-blue;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+              }
+            }
+          }
+
+          &__date {
+            h5 {
+              margin-bottom: 10px;
+            }
+
+            p {
+              color: $font-color-grey;
+            }
+          }
+        }
+
+        hr {
+          margin-top: 5%;
+          border: 1px dotted $font-color-grey;
+        }
       }
     }
   }

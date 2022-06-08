@@ -1,20 +1,53 @@
+@use "../../assets/sass/_variables.scss" as *;
 .employeeTable thead tr {
   background-color: #eee;
 }
 
-.employeeTable td,
+.employeeTable td {
+  padding: 10px;
+  color: $font-color-grey;
+}
+.employee-name {
+  color: $font-color-light-black !important;
+}
+
 .employeeTable th {
   padding: 10px;
+  font-weight: normal;
+  text-align: left;
+  font-size: 0.8em;
+  color: $font-color-grey;
 }
 
 tbody tr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $color-light-grey;
 }
 
 .employeeTable {
   border-collapse: collapse;
+  border-radius: 4px;
 }
 
 .pageContent {
   padding-left: 100px;
+  background-color: $color-very-light-grey;
+  margin-right: 20px;
+  font-size: 0.6em;
+}
+.pagination-button {
+  padding: 4px 8px;
+  background-color: white;
+  border: 1px solid $color-light-grey;
+  border-radius: 3px;
+  margin: 15px 5px;
+}
+.top-buttons {
+  position: relative;
+  float: right;
+  height: 35px;
+  padding: 4px 8px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 15px 5px;
 }

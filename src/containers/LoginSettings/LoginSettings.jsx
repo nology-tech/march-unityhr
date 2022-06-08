@@ -83,6 +83,7 @@ const LoginSettings = () => {
             alt="Return"
             onClick={handleSubmit}
           />
+        
         </div>
         <span data-testid="password-error" className="errorText">
           {passwordErrorMessage}

@@ -4,8 +4,6 @@ import Employee from "../../assets/images/employee.png";
 import Dark from "../../assets/images/dark-mode.png";
 import Mode from "../../assets/images/mode-change-rectangle.png";
 import Light from "../../assets/images/light-mode.png";
-import ButtonMode from "../../assets/images/button-change-mode.png";
-import Return from "../../assets/images/return.png";
 
 const DisplaySettings = () => {
   return (

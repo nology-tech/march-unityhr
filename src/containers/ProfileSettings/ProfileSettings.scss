@@ -1,0 +1,147 @@
+@use "../../assets/sass/variables" as *;
+
+.profile-settings {
+  display: flex;
+  justify-content: space-evenly;
+  // border: 8px solid red;
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  background-color: $color-white;
+  border-radius: 5%;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    // border: 5px solid black;
+  }
+
+  &__details--heading {
+    color: $font-color-light-black;
+    padding-bottom: 30px;
+
+    padding-left: 20px;
+    font-size: $font-size-MM;
+    font-family: $font-poppins;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    border-radius: 70%;
+    width: 220px;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-poppins;
+    padding-top: 20px;
+  }
+
+  &__desc--name {
+    font-size: $font-size-SM;
+    font-weight: bold;
+    color: $font-color-dark-blue;
+  }
+
+  &__desc--job {
+    font-size: $font-size-SS;
+    font-weight: bold;
+    color: $font-color-grey;
+  }
+
+  &__desc--department {
+    font-size: $font-size-S;
+    color: $font-color-grey;
+  }
+
+  &__employee {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 30px;
+    // border: 5px solid blue;
+    color: $font-color-light-black;
+    font-size: $font-size-SS;
+    font-weight: bold;
+    font-family: $font-poppins;
+
+    &--dataP {
+      margin-left: 14px;
+    }
+
+    &--dataA {
+      margin-left: 12px;
+    }
+
+    &--dataM {
+      margin-right: 30px;
+    }
+
+    &--pronoun {
+      //border: 10px $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 500px;
+      height: 60px;
+      //margin-top: 20px;
+      border-bottom: 2px solid $color-light-grey;
+      background-color: $color-white;
+    }
+
+    &--firstname {
+      //border: 10px $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 500px;
+      height: 60px;
+      //margin-top: 20px;
+      border-bottom: 2px solid $color-light-grey;
+      background-color: $color-white;
+    }
+    &--lastname {
+      //border: 10px $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 500px;
+      height: 60px;
+      //margin-top: 20px;
+      border-bottom: 2px solid $color-light-grey;
+      background-color: $color-white;
+    }
+
+    &--address {
+      //border: 10px $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 500px;
+      height: 60px;
+      //margin-top: 20px;
+      border-bottom: 2px solid $color-light-grey;
+      background-color: $color-white;
+    }
+    &--mobile {
+      //border: 10px $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 500px;
+      height: 60px;
+      //margin-top: 20px;
+      border-bottom: 2px solid $color-light-grey;
+      background-color: $color-white;
+    }
+  }
+}

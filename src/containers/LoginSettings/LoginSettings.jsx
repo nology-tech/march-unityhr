@@ -10,24 +10,29 @@ import ProfileEdit from "../../assets/images/profile_edit.png";
 const LoginSettings = () => {
   const [password, setPassword] = useState("");
   const [passwordErrorMessage, setPasswordErrorMessage] = useState("");
-  // const [showReturn, setShowReturn] = useState(false);
   const [disablePassword, setDisablePassword] = useState(true);
-  // const [showEdit, setShowEdit] = useState(true);
+
+  const [showEdit, setShowEdit] = useState(true);
+  const [showReturn, setShowReturn] = useState(false);
 
   const handleDisablePassword = () => {
     setDisablePassword(!disablePassword);
   };
 
-  // const handleEditClick = () => {
-  //   setShowEdit(showEdit);
-  // };
-
-  // const handleReturnClick = () => {
-  //   setShowReturn(!showReturn);
-  // };
-
   const handlePassword = (event) => {
     setPassword(event.target.value);
+  };
+
+  const handleEditSubmit = () => {
+    if (showReturn === true) {
+      setShowEdit(!showEdit);
+    }
+  };
+
+  const handleReturnSubmit = () => {
+    if (showEdit === true) {
+      setShowReturn(!showReturn);
+    }
   };
 
   const handleSubmit = () => {
@@ -96,18 +101,24 @@ const LoginSettings = () => {
             onInput={handlePassword}
             className="login-settings__password--input"
           />
-          <img
-            className="profile-settings__employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisablePassword}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-            onClick={handleSubmit}
-          />
+          {showEdit && (
+            <img
+              className="profile-settings__employee-edit"
+              src={Edit}
+              alt="Edit"
+              onClick={handleDisablePassword}
+              onSubmit={handleEditSubmit}
+            />
+          )}
+          {showReturn && (
+            <img
+              className="profile-settings__employee-return"
+              src={Return}
+              alt="Return"
+              onClick={handleSubmit}
+              onSubmit={handleReturnSubmit}
+            />
+          )}
         </div>
         <span data-testid="password-error" className="errorText">
           {passwordErrorMessage}

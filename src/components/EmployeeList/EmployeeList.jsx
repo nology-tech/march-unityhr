@@ -31,7 +31,7 @@ const EmployeeList = () => {
       <button className="top-buttons">
         <img src={magnifyingGlass} alt="magnifying glass" />
       </button>
-      <h1>Employee List</h1>
+      <h1 className="title">Employee List</h1>
       <br></br>
       <table className="employeeTable">
         <thead>

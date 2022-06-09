@@ -1,4 +1,8 @@
 @use "../../assets/sass/_variables.scss" as *;
+
+.title {
+  padding-top: 20px;
+}
 .employeeTable thead tr {
   background-color: #eee;
 }
@@ -9,6 +13,7 @@
 }
 .employee-name {
   color: $font-color-light-black !important;
+  font-weight: bold;
 }
 
 .employeeTable th {

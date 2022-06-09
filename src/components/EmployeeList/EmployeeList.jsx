@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
+import magnifyingGlass from "../../assets/images/magnifying-glass.png";
+import filter from "../../assets/images/Filter.png";
 
 const EmployeeList = () => {
   const [page, setPage] = useState(0);
   let rowsPerPage = 9;
   let numberOfPages = Math.ceil(employeeData.length / rowsPerPage);
+  const firstPageHandler = () => {
+    setPage(0);
+  };
 
   const downHandler = () => {
     setPage(page - 1);
@@ -14,10 +19,19 @@ const EmployeeList = () => {
   const upHandler = () => {
     setPage(page + 1);
   };
+  const lastPageHandler = () => {
+    setPage(numberOfPages - 1);
+  };
 
   return (
     <div className="pageContent">
-      <h1>Employee List</h1>
+      <button className="top-buttons">
+        <img src={filter} alt="filter" /> Filters
+      </button>
+      <button className="top-buttons">
+        <img src={magnifyingGlass} alt="magnifying glass" />
+      </button>
+      <h1 className="title">Employee List</h1>
       <br></br>
       <table className="employeeTable">
         <thead>
@@ -39,7 +53,7 @@ const EmployeeList = () => {
                 <td>
                   <img />
                 </td>
-                <td>{employee.name}</td>
+                <td className="employee-name">{employee.name}</td>
                 <td>{employee.User_Type}</td>
                 <td>{employee.Department}</td>
                 <td>{employee.jobTitle}</td>
@@ -49,21 +63,34 @@ const EmployeeList = () => {
             ))}
         </tbody>
       </table>
-      <button disabled={page === 0} onClick={downHandler}>
+      <button
+        className="pagination-button"
+        disabled={page === 0}
+        onClick={firstPageHandler}
+      >
+        &lt;&lt;
+      </button>
+      <button
+        className="pagination-button"
+        disabled={page === 0}
+        onClick={downHandler}
+      >
         &lt;
       </button>
-      <span>
-        Page: {page + 1}{" "}
-        <button
-          onClick={() => {
-            setPage(2);
-          }}
-        >
-          3
-        </button>
-      </span>
-      <button disabled={page === numberOfPages - 1} onClick={upHandler}>
+      <span>Page: {page + 1} </span>
+      <button
+        className="pagination-button"
+        disabled={page === numberOfPages - 1}
+        onClick={upHandler}
+      >
         &gt;
+      </button>
+      <button
+        className="pagination-button"
+        disabled={page === numberOfPages - 1}
+        onClick={lastPageHandler}
+      >
+        &gt;&gt;
       </button>
     </div>
   );

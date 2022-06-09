@@ -3,22 +3,27 @@ import Ticket from "../../components/Ticket/Ticket";
 import DetailedTicket from "../../components/DetailedTicket/DetailedTicket";
 import React, { useState } from "react";
 
-
-
-
 const MyTicketsBoard = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [id, setId] = useState(0);
+  const ticketColorBarTurquoise="#0ab9c5";
+  const ticketColorBarOrange="#ff8000";
+  const ids = [1, 2, 3, 4, 5];
 
-const [showPopUp, setShowPopUp] = useState(false);
+  const togglePopUp = () => {
+    setShowPopUp(!showPopUp);
+  };
 
-const handleClick = () => {
-  console.log("Here");
-  setShowPopUp(!showPopUp);
-}
+  const ticketsListJSX = ids.map((index) => (
+    <div onClick={togglePopUp} key={"ticket" + index}>
+          <Ticket id={index} category="Sickness/Absence" color={ticketColorBarOrange}/>
+        </div>
+  ));
 
   return (
     <div className="my-tickets-board">
       <div className="my-tickets-board__modal">
-        {showPopUp && <DetailedTicket />}
+        {showPopUp && <DetailedTicket togglePopUp={togglePopUp} />}
       </div>
       <div className="my-tickets-board__top">
         <div className="my-tickets-board__top__header">
@@ -32,14 +37,7 @@ const handleClick = () => {
         <p className="my-tickets-board__main-header">Pending with HR</p>
         <p className="my-tickets-board__main-header">Pending with Employee</p>
         <p className="my-tickets-board__main-header">Resolved</p>
-        <div onClick={handleClick} >
-        <Ticket id="id1" />
-        </div>
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
+        {ticketsListJSX}
       </div>
       <div className="my-tickets-board__add-ticket">Add Ticket</div>
     </div>

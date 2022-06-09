@@ -1,14 +1,19 @@
 import "./Ticket.scss";
 import Dots from "../../assets/images/three-dots.png";
+import { useState } from "react";
 
-const Ticket = () => {
+
+const Ticket = (props) => {
+
+  const {id, color, category } = props;
+
   return (
     <>
     <div className="ticket">
-      <div className="ticket__top"></div>
+      <div className="ticket__top" style={{backgroundColor: color}}></div>
       <div className="ticket__main">
         <div className="ticket__main__category">
-          <h6>Sickness/Absence</h6>
+          <h6 style={{color: color}}>{category}</h6>
         </div>
         <div className="ticket__main__summary">
           <h4>Reason for sickness</h4>

@@ -88,17 +88,66 @@
     font-size: $font-size-SS;
     font-weight: bold;
     font-family: $font-poppins;
+    font-size: $font-size-SS;
+
+    &--dataF {
+      margin-right: 40px;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: center;
+      background-color: $color-white;
+      color: $color-dark-grey;
+      font-family: $font-poppins;
+      font-size: $font-size-SS;
+    }
+
+    &--dataL {
+      margin-right: 3px;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: center;
+      background-color: $color-white;
+      color: $color-dark-grey;
+      font-family: $font-poppins;
+      font-size: $font-size-SS;
+    }
 
     &--dataP {
       margin-left: 14px;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: center;
+      background-color: $color-white;
+      color: $color-dark-grey;
+      font-family: $font-poppins;
+      font-size: $font-size-SS;
     }
 
     &--dataA {
       margin-left: 12px;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: center;
+      background-color: $color-white;
+      color: $color-dark-grey;
+      font-family: $font-poppins;
+      font-size: $font-size-SS;
     }
 
     &--dataM {
       margin-right: 30px;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: center;
+      background-color: $color-white;
+      color: $color-dark-grey;
+      font-family: $font-poppins;
+      font-size: $font-size-SS;
     }
 
     &--pronoun {
@@ -142,7 +191,7 @@
       justify-content: space-between;
       align-items: flex-end;
       width: 500px;
-      height: 60px;
+      height: 80px;
       //margin-top: 20px;
       border-bottom: 2px solid $color-light-grey;
       background-color: $color-white;

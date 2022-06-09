@@ -6,7 +6,7 @@ import Edit from "../../assets/images/edit-pencil.png";
 import Return from "../../assets/images/return.png";
 import ProfileEdit from "../../assets/images/profile_edit.png";
 
-const ProfileSettings = () => {
+const ProfileSettings = ({ showProfile }) => {
   const [disableSection, setDisableSection] = useState(true);
 
   const handleDisableSection = () => {
@@ -47,11 +47,15 @@ const ProfileSettings = () => {
       <div className="profile-settings__employee">
         <div className="profile-settings__employee--pronoun">
           <p>Pronoun</p>
-          <div className="profile-settings__employee--dataP">(Database)</div>
+          <textarea
+            disabled={disableSection}
+            className="profile-settings__employee--dataP"
+          ></textarea>
           <img
             className="profile-settings__employee-edit"
             src={Edit}
             alt="Edit"
+            onClick={handleDisableSection}
           />
           <img
             className="profile-settings__employee-return"
@@ -61,16 +65,16 @@ const ProfileSettings = () => {
         </div>
         <div className="profile-settings__employee--firstname">
           <p>First Name</p>
-          <div
+          <textarea
+            type="text"
             disabled={disableSection}
             className="profile-settings__employee--dataF"
-          >
-            (Database)
-          </div>
+          ></textarea>
           <img
             className="profile-settings____employee-edit"
             src={Edit}
             alt="Edit"
+            onClick={handleDisableSection}
           />
           <img
             className="profile-settings__employee-return"
@@ -80,16 +84,15 @@ const ProfileSettings = () => {
         </div>
         <div className="profile-settings__employee--lastname">
           <p>Last Name</p>
-          <div
+          <textarea
             disabled={disableSection}
             className="profile-settings__employee--dataL"
-          >
-            (Database)
-          </div>
+          ></textarea>
           <img
             className="profile-settings__employee-edit"
             src={Edit}
             alt="Edit"
+            onClick={handleDisableSection}
           />
           <img
             className="profile-settings__employee-return"
@@ -99,16 +102,17 @@ const ProfileSettings = () => {
         </div>
         <div className="profile-settings__employee--address">
           <p>Address:</p>
-          <div
+          <textarea
+            rows="4"
+            cols="30"
             disabled={disableSection}
             className="profile-settings__employee--dataA"
-          >
-            (Database)
-          </div>
+          ></textarea>
           <img
             className="profile-settings__employee-edit"
             src={Edit}
             alt="Edit"
+            onClick={handleDisableSection}
           />
           <img
             className="profile-settings__employee-return"
@@ -118,12 +122,10 @@ const ProfileSettings = () => {
         </div>
         <div className="profile-settings__employee--mobile">
           <p>Mobile Number </p>
-          <div
+          <textarea
             disabled={disableSection}
             className="profile-settings__employee--dataM"
-          >
-            (Database)
-          </div>
+          ></textarea>
           <img
             className="profile-settings__employee-edit"
             src={Edit}

@@ -5,6 +5,7 @@ import Ticket from "../../assets/images/ticket.png";
 import Bell from "../../assets/images/bell.png";
 import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
+//import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 
 const Menu = () => {
   const [showSettings, setShowSettings] = useState(false);
@@ -27,11 +28,11 @@ const Menu = () => {
         <img src={Employees} alt="Employees" />
         <p>Employees</p>
       </div>
-      <div className="menu-section__item">
-        <img src={Setting} alt="Settings" onClick={handleSettings} />
+      <div className="menu-section__item" onClick={handleSettings}>
+        <img src={Setting} alt="Settings" />
         <p>Settings</p>
       </div>
-      <div>{showSettings}</div>
+      {/* {showSettings && <SettingsMenu />} */}
     </div>
   );
 };

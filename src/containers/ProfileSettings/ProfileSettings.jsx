@@ -6,7 +6,7 @@ import Edit from "../../assets/images/edit-pencil.png";
 import Return from "../../assets/images/return.png";
 import ProfileEdit from "../../assets/images/profile_edit.png";
 
-const ProfileSettings = ({ showProfile }) => {
+const ProfileSettings = () => {
   const [disableSection, setDisableSection] = useState(true);
 
   const handleDisableSection = () => {

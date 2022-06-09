@@ -15,28 +15,50 @@ const SettingsMenu = () => {
   const [showDisplay, setShowDisplay] = useState(false);
 
   const handleProfile = () => {
+    if (showLogin === true) {
+      setShowLogin(!showLogin);
+    }
+    if (showDisplay === true) {
+      setShowDisplay(!showDisplay);
+    }
     setShowProfile(!showProfile);
   };
+
   const handleLogin = () => {
+    if (showProfile === true) {
+      setShowProfile(!showProfile);
+    }
+    if (showDisplay === true) {
+      setShowDisplay(!showDisplay);
+    }
     setShowLogin(!showLogin);
   };
+
   const handleDisplay = () => {
+    if (showProfile === true) {
+      setShowProfile(!showProfile);
+    }
+    if (showLogin === true) {
+      setShowLogin(!showLogin);
+    }
     setShowDisplay(!showDisplay);
   };
   return (
     <div className="setting-section">
       <h3 className="setting-section__heading">Settings</h3>
-      <div className="setting-section__profile setting-section__item--selected">
+      <div
+        className="setting-section__profile setting-section__item--selected"
+        onClick={handleProfile}
+      >
         <img className="setting-section__image" src={User} alt="User" />
         <p className="setting-section__profile--title">Profile</p>
         <img
           className="setting-section__image--vector"
           src={Vector}
           alt="Vector"
-          onClick={handleProfile}
         />
       </div>
-      <div className="setting-section__login">
+      <div className="setting-section__login" onClick={handleLogin}>
         {" "}
         <img className="setting-section__image" src={Login} alt="Login" />
         <p className="setting-section__login--title">Login</p>
@@ -44,10 +66,9 @@ const SettingsMenu = () => {
           className="setting-section__image--vector"
           src={Vector}
           alt="Vector"
-          onClick={handleLogin}
         />
       </div>
-      <div className="setting-section__display">
+      <div className="setting-section__display" onClick={handleDisplay}>
         {" "}
         <img className="setting-section__image" src={Display} alt="Display" />
         <p className="setting-section__display--title">Display</p>
@@ -55,7 +76,6 @@ const SettingsMenu = () => {
           className="setting-section__image--vector"
           src={Vector}
           alt="Vector"
-          onClick={handleDisplay}
         />
       </div>
       <div>

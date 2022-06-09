@@ -1,0 +1,16 @@
+@use "../../assets/sass/variables" as *;
+.notifications-container {
+  background-color: $font-color-white;
+  color: $font-color-black;
+  height: 60%;
+  width: 100%;
+  border: solid;
+  border-color: red;
+  margin: 20px;
+
+  .notifications-container__heading {
+    font-size: $font-size-L - 8px;
+    font-family: $font-poppins;
+    font-weight: 600;
+  }
+}

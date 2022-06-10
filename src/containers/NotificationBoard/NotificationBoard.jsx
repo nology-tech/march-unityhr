@@ -3,6 +3,7 @@ import React from "react";
 import Notification from "../../components/Notification/Notification";
 
 const NotificationBoard = () => {
+  // unread notifications #
   console.log("Hello");
   return (
     <div className="notifications-container">

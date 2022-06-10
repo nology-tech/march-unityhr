@@ -10,29 +10,19 @@ import ProfileEdit from "../../assets/images/profile_edit.png";
 const LoginSettings = () => {
   const [password, setPassword] = useState("");
   const [passwordErrorMessage, setPasswordErrorMessage] = useState("");
-  const [disablePassword, setDisablePassword] = useState(true);
 
+  const [disablePassword, setDisablePassword] = useState(true);
   const [showEdit, setShowEdit] = useState(true);
   const [showReturn, setShowReturn] = useState(false);
-
-  const handleDisablePassword = () => {
-    setDisablePassword(!disablePassword);
-  };
 
   const handlePassword = (event) => {
     setPassword(event.target.value);
   };
 
-  const handleEditSubmit = () => {
-    if (showReturn === true) {
-      setShowEdit(!showEdit);
-    }
-  };
-
-  const handleReturnSubmit = () => {
-    if (showEdit === true) {
-      setShowReturn(!showReturn);
-    }
+  const handleEdit = () => {
+    setShowEdit(false);
+    setShowReturn(true);
+    setDisablePassword(!disablePassword);
   };
 
   const handleSubmit = () => {
@@ -42,6 +32,9 @@ const LoginSettings = () => {
       setPasswordErrorMessage("Password should be more than 8 characters");
     } else {
       setPasswordErrorMessage("Valid Password");
+      setShowReturn(false);
+      setShowEdit(true);
+      setDisablePassword(!disablePassword);
     }
   };
   return (
@@ -106,8 +99,7 @@ const LoginSettings = () => {
               className="profile-settings__employee-edit"
               src={Edit}
               alt="Edit"
-              onClick={handleDisablePassword}
-              onSubmit={handleEditSubmit}
+              onClick={handleEdit}
             />
           )}
           {showReturn && (
@@ -116,7 +108,6 @@ const LoginSettings = () => {
               src={Return}
               alt="Return"
               onClick={handleSubmit}
-              onSubmit={handleReturnSubmit}
             />
           )}
         </div>

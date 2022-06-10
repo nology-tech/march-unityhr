@@ -4,7 +4,7 @@ import React from "react";
 import Employee from "../../assets/images/profile_picture.png";
 import Dark from "../../assets/images/dark-mode.png";
 import LightSun from "../../assets/images/light_mode_sun.png";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import ToggleSwitch from "../../components/ToggleSwitch/ToggleSwitch";
 import ProfileEdit from "../../assets/images/profile_edit.png";
 
 const DisplaySettings = () => {
@@ -42,22 +42,24 @@ const DisplaySettings = () => {
       </div>
 
       <div className="display-settings__employee">
-        <div className="display-settings__employee--pronoun">
+        <div className="display-settings__employee--theme">
           <p>Theme</p>
           <div className="display-settings__employee--dataP">
             Light/Dark Mode
           </div>
-          <img
-            className="display-settings__employee--light"
-            src={LightSun}
-            alt="Light"
-          />
-          <ToggleSwitch />
-          <img
-            className="display-settings__employee--dark"
-            src={Dark}
-            alt="Dark"
-          />
+          <div className="display-settings__employee--mode">
+            <img
+              className="display-settings__employee--mode--light"
+              src={LightSun}
+              alt="Light"
+            />
+            <ToggleSwitch />
+            <img
+              className="display-settings__employee--mode--dark"
+              src={Dark}
+              alt="Dark"
+            />
+          </div>
         </div>
       </div>
     </div>

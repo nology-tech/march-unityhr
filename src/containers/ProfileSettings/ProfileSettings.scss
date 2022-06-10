@@ -90,40 +90,54 @@
     font-family: $font-poppins;
     font-size: $font-size-SS;
 
+    &--set {
+      background-color: $color-white;
+    }
+
     &--dataF {
-      margin-right: 40px;
       border: none;
       resize: none;
       outline: none;
       text-align: center;
+      border-radius: 5px;
       background-color: $color-white;
       color: $color-dark-grey;
       font-family: $font-poppins;
       font-size: $font-size-SS;
     }
-
+    &--dataF:enabled {
+      background-color: $color-light-blue;
+    }
     &--dataL {
       margin-right: 3px;
       border: none;
       resize: none;
       outline: none;
       text-align: center;
+      border-radius: 5px;
       background-color: $color-white;
       color: $color-dark-grey;
       font-family: $font-poppins;
       font-size: $font-size-SS;
     }
-
+    &--dataL:enabled {
+      background-color: $color-light-blue;
+    }
     &--dataP {
       margin-left: 14px;
       border: none;
       resize: none;
       outline: none;
       text-align: center;
+      border-radius: 5px;
       background-color: $color-white;
       color: $color-dark-grey;
       font-family: $font-poppins;
       font-size: $font-size-SS;
+    }
+
+    &--dataP:enabled {
+      background-color: $color-light-blue;
     }
 
     &--dataA {
@@ -132,10 +146,15 @@
       resize: none;
       outline: none;
       text-align: center;
+      border-radius: 5px;
       background-color: $color-white;
       color: $color-dark-grey;
       font-family: $font-poppins;
       font-size: $font-size-SS;
+    }
+
+    &--dataA:enabled {
+      background-color: $color-light-blue;
     }
 
     &--dataM {
@@ -144,17 +163,22 @@
       resize: none;
       outline: none;
       text-align: center;
+      border-radius: 5px;
       background-color: $color-white;
       color: $color-dark-grey;
       font-family: $font-poppins;
       font-size: $font-size-SS;
     }
 
+    &--dataM:enabled {
+      background-color: $color-light-blue;
+    }
+
     &--pronoun {
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
       height: 60px;
       //margin-top: 20px;
@@ -166,10 +190,10 @@
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
       height: 60px;
-      //margin-top: 20px;
+      margin-top: 15px;
       border-bottom: 2px solid $color-light-grey;
       background-color: $color-white;
     }
@@ -177,10 +201,10 @@
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
       height: 60px;
-      //margin-top: 20px;
+      margin-top: 15px;
       border-bottom: 2px solid $color-light-grey;
       background-color: $color-white;
     }
@@ -189,10 +213,10 @@
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
-      height: 80px;
-      //margin-top: 20px;
+      height: 100px;
+      margin-top: 20px;
       border-bottom: 2px solid $color-light-grey;
       background-color: $color-white;
     }
@@ -200,10 +224,10 @@
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
       height: 60px;
-      //margin-top: 20px;
+      margin-top: 15px;
       border-bottom: 2px solid $color-light-grey;
       background-color: $color-white;
     }

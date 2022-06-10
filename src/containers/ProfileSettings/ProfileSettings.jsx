@@ -8,10 +8,21 @@ import ProfileEdit from "../../assets/images/profile_edit.png";
 
 const ProfileSettings = () => {
   const [disableSection, setDisableSection] = useState(true);
+  const [showEdit, setShowEdit] = useState(true);
+  const [showReturn, setShowReturn] = useState(false);
 
-  const handleDisableSection = () => {
+  const handleEdit = () => {
+    setShowEdit(false);
+    setShowReturn(true);
     setDisableSection(!disableSection);
   };
+
+  const handleSubmit = () => {
+    setShowReturn(false);
+    setShowEdit(true);
+    setDisableSection(!disableSection);
+  };
+
   return (
     <div className="profile-settings">
       <div className="profile-settings__details">
@@ -48,95 +59,138 @@ const ProfileSettings = () => {
         <div className="profile-settings__employee--pronoun">
           <p>Pronoun</p>
           <textarea
+            rows="2"
+            cols="35"
             disabled={disableSection}
             className="profile-settings__employee--dataP"
           ></textarea>
-          <img
-            className="profile-settings__employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisableSection}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-          />
+          <div className="profile-settings__employee--set">
+            {showEdit && (
+              <img
+                className="profile-settings__employee--set--edit"
+                src={Edit}
+                alt="Edit"
+                onClick={handleEdit}
+              />
+            )}
+            {showReturn && (
+              <img
+                className="profile-settings__employee--set--return"
+                src={Return}
+                alt="Return"
+                onClick={handleSubmit}
+              />
+            )}
+          </div>
         </div>
         <div className="profile-settings__employee--firstname">
           <p>First Name</p>
           <textarea
+            rows="2"
+            cols="35"
             type="text"
             disabled={disableSection}
             className="profile-settings__employee--dataF"
           ></textarea>
-          <img
-            className="profile-settings____employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisableSection}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-          />
+          <div className="profile-settings__employee--set">
+            {showEdit && (
+              <img
+                className="profile-settings____employee--set--edit"
+                src={Edit}
+                alt="Edit"
+                onClick={handleEdit}
+              />
+            )}
+            {showReturn && (
+              <img
+                className="profile-settings__employee--set--return"
+                src={Return}
+                alt="Return"
+                onClick={handleSubmit}
+              />
+            )}
+          </div>
         </div>
         <div className="profile-settings__employee--lastname">
           <p>Last Name</p>
           <textarea
+            rows="2"
+            cols="35"
             disabled={disableSection}
             className="profile-settings__employee--dataL"
           ></textarea>
-          <img
-            className="profile-settings__employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisableSection}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-          />
+          <div className="profile-settings__employee--set">
+            {showEdit && (
+              <img
+                className="profile-settings__employee--set--edit"
+                src={Edit}
+                alt="Edit"
+                onClick={handleEdit}
+              />
+            )}
+            {showReturn && (
+              <img
+                className="profile-settings__employee--set--return"
+                src={Return}
+                alt="Return"
+                onClick={handleSubmit}
+              />
+            )}
+          </div>
         </div>
         <div className="profile-settings__employee--address">
           <p>Address:</p>
           <textarea
-            rows="4"
-            cols="30"
+            rows="5"
+            cols="35"
             disabled={disableSection}
             className="profile-settings__employee--dataA"
           ></textarea>
-          <img
-            className="profile-settings__employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisableSection}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-          />
+          <div className="profile-settings__employee--set">
+            {showEdit && (
+              <img
+                className="profile-settings__employee--set--edit"
+                src={Edit}
+                alt="Edit"
+                onClick={handleEdit}
+              />
+            )}
+            {showReturn && (
+              <img
+                className="profile-settings__employee--set--return"
+                src={Return}
+                alt="Return"
+                onClick={handleSubmit}
+              />
+            )}
+          </div>
         </div>
         <div className="profile-settings__employee--mobile">
           <p>Mobile Number </p>
           <textarea
+            rows="2"
+            cols="35"
             disabled={disableSection}
             className="profile-settings__employee--dataM"
           ></textarea>
-          <img
-            className="profile-settings__employee-edit"
-            src={Edit}
-            alt="Edit"
-            onClick={handleDisableSection}
-          />
-          <img
-            className="profile-settings__employee-return"
-            src={Return}
-            alt="Return"
-          />
+          <div className="profile-settings__employee--set">
+            {showEdit && (
+              <img
+                className="profile-settings__employee--set-edit"
+                src={Edit}
+                alt="Edit"
+                onClick={handleEdit}
+              />
+            )}
+            {showReturn && (
+              <img
+                className="profile-settings__employee--set--return"
+                src={Return}
+                alt="Return"
+                onClick={handleSubmit}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

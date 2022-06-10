@@ -113,6 +113,11 @@
       height: 40px;
       width: 400px;
       border: none;
+      background-color: $color-white;
+    }
+
+    &--input:enabled {
+      background-color: $color-light-blue;
     }
     &--label {
       margin-right: 60px;

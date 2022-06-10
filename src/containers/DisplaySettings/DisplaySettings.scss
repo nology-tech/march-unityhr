@@ -90,12 +90,23 @@
     font-weight: bold;
     font-family: $font-poppins;
 
-    &--button {
-      background-color: red;
+    &--mode {
+      background-color: $color-white;
+      margin-right: 40px;
+
+      &--light {
+        margin-right: 20px;
+      }
+
+      &--dark {
+        margin-left: 20px;
+      }
     }
 
     &--dataP {
       margin-left: 14px;
+      color: $font-color-grey;
+      font-family: $font-poppins;
     }
 
     &--dataA {
@@ -106,11 +117,11 @@
       margin-right: 30px;
     }
 
-    &--pronoun {
+    &--theme {
       //border: 10px $color-light-grey;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 500px;
       height: 60px;
       //margin-top: 20px;

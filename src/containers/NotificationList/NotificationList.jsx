@@ -18,6 +18,9 @@ const NotificationList = () => {
 export default NotificationList;
 
 // --------------------------------------------------------------------
+// fix the ticket title display
+// fix the time display
+
 // unread notification toggle with blue dot
 // number of unread notifications listed in heading
 

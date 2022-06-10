@@ -6,15 +6,19 @@ import NotificationList from "../NotificationList/NotificationList";
 
 const NotificationBoard = () => {
   {
-    /* // unread notication !! */
+    /* // unread notifcation !! */
   }
 
   return (
-    <div className="notifications-container">
-      <h2 className="notifications-container__heading">
-        Recent Notifications (2)
-      </h2>
-      <NotificationList />
+    <div className="notificationBoard">
+      <div className="notificationBoard__container">
+        <h2 className="notificationBoard__container__heading">
+          Recent Notifications (2)
+        </h2>
+        <div className="notificationBoard__container__listOfNotifications">
+          <NotificationList />
+        </div>
+      </div>
     </div>
   );
 };

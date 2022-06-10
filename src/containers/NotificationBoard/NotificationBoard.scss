@@ -1,16 +1,23 @@
 @use "../../assets/sass/variables" as *;
-.notifications-container {
-  background-color: $font-color-white;
-  color: $font-color-black;
+.notificationBoard {
   width: 100%;
-  border: solid;
-  border-color: gray;
-  margin: 40px;
+  height: auto;
+  background-color: $color-light-grey-shade1;
 
-  .notifications-container__heading {
-    font-size: $font-size-L - 12px;
-    font-family: $font-poppins;
-    font-weight: 600;
-    margin: 50px;
+  &__container {
+    background-color: $font-color-white;
+    color: $font-color-black;
+    margin: 1em;
+
+    &__heading {
+      font-size: $font-size-L - 12px;
+      font-family: $font-poppins;
+      font-weight: 600;
+      color: $font-color-black;
+      margin-left: 2%;
+    }
+    &__listOfNotifications {
+      margin: 1em;
+    }
   }
 }

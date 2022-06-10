@@ -1,15 +1,16 @@
 // 1.	User Pic :
 // 2.	User name :
 // 3.	comment
-// 4.	Ticket title
-// 5.	date & time
+// 4.	comment IsRead ?
+// 5.	Ticket title
+// 6.	date & time
 
 const employees = [
   {
     userPic: "",
     userName: "Greg Sauer",
     comment: "",
-    // isRead: True / false
+    commentIsRead: "true",
     ticketTitle: "Requesting Holiday",
     dateTime: "16:23",
   },
@@ -17,6 +18,7 @@ const employees = [
     userPic: "",
     userName: "Sam Shaw",
     comment: "",
+    commentIsRead: "true",
     ticketTitle: "Payed Too much Tax",
     dateTime: "14:07",
   },
@@ -24,6 +26,7 @@ const employees = [
     userPic: "",
     userName: "Flora Quigley",
     comment: "",
+    commentIsRead: "true",
     ticketTitle: "Payed Too Much Tax",
     dateTime: "09:30",
   },
@@ -31,6 +34,7 @@ const employees = [
     userPic: "",
     userName: "Chad Jaskolski",
     comment: "",
+    commentIsRead: "false",
     ticketTitle: "Payed Too Much Tax",
     dateTime: "16 hrs ago",
   },
@@ -38,6 +42,7 @@ const employees = [
     userPic: "",
     userName: "Cameron Deckow",
     comment: "",
+    commentIsRead: "false",
     ticketTitle: "Payed Too Much Tax",
     dateTime: "3 days ago",
   },
@@ -45,6 +50,7 @@ const employees = [
     userPic: "",
     userName: "Jamie Davis",
     comment: "",
+    commentIsRead: "false",
     ticketTitle: "Payed Too Much Tax",
     dateTime: "3 days ago",
   },
@@ -52,6 +58,7 @@ const employees = [
   //   userPic: "",
   //   userName: "" ,
   //   comment: "",
+  //   commentIsRead: "",
   //   ticketTitle: "",
   //   dateTime: "",
   // },

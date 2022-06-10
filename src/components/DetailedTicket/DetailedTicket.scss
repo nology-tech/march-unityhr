@@ -1,0 +1,271 @@
+@use "../../assets/sass/variables" as *;
+
+.area {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color:$color-popup-background;
+  left: 0;
+  top: 0;
+}
+
+.modal {
+  width: 600px;
+  height: 800px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 2;
+  background-color: $color-white;
+  left: 30%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    background-color: $ticket-color-bar-orange;
+    height: 1.5%;
+    width: 100%;
+    border-top-left-radius: 25pt 30pt;
+    border-top-right-radius: 25pt 30pt;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+
+    &__close {
+      padding-left: 85%;
+      margin: 2% 5%;
+    }
+
+    &-info {
+      display: flex;
+
+      &__user {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        font-size: $font-size-S;
+
+        &__top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &--avatar {
+            background-color: $ticket-color-bar-blue;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-bottom: 8%;
+
+            &-name {
+              font-size: $font-size-SM;
+            }
+
+            &-role {
+              color: $color-dark-grey;
+            }
+
+            &-department {
+              color: $font-color-grey;
+            }
+          }
+        }
+
+        &__bottom {
+          display: flex;
+          justify-content: space-around;
+          width: 50%;
+
+          &-circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;    
+
+            img {
+              height: 16px;
+              width: 16px;
+            }
+          }
+
+          .grey {
+            background-color: $color-light-grey;
+          }
+
+          .red {
+            background-color: $color-light-red;
+          }
+        }
+
+      }
+
+      &__details {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 0 5%;
+
+        &--category {
+          color: $ticket-color-bar-orange;
+          margin-bottom: 2%;
+          font-weight: 600;
+        }
+
+        &--summary {
+          margin-bottom: 3%;
+          color: $font-color-black;
+          font-size: $font-size-L;
+          font-weight: 100;
+        }
+
+        &--text {
+          color: $font-color-grey;
+        }
+
+        &--additional-info {
+          margin-top: 5%;
+          display: flex;
+          font-size: $font-size-SM;
+
+          &__supporting-info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            h5 {
+              margin-bottom: 10px;
+            }
+
+            &__attachment {
+              display: flex;
+
+              img {
+                margin-right: 5%;
+              }
+
+              p {
+                color: $ticket-color-bar-blue;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+              }
+            }
+          }
+
+          &__date {
+            h5 {
+              margin-bottom: 10px;
+            }
+
+            p {
+              color: $font-color-grey;
+            }
+          }
+        }
+
+        hr {
+          margin-top: 5%;
+          border: 1px solid $color-light-grey;
+        }
+
+        &--notifications {
+          padding: 5% 0;
+
+          &__table {
+            margin-top: 7%;
+            color: $font-color-grey;
+            font-size: $font-size-S;
+            display: grid;
+            grid-template-columns: 2fr 8fr 1fr;
+            grid-template-rows: auto;
+
+            &-avatar {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              &__dropdown {
+                height: 5px;
+                width: 7px;
+              }
+
+              &__user {
+                position: relative;
+
+                &-picture {
+                  background-color: $color-light-grey;
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                }
+
+                &-circle {
+                  position: absolute;
+                  left: 1%;
+                  top: 1%;
+                  z-index: 1;
+                }
+              }
+            }
+
+            &-caption {
+              &__name {
+                color: $color-dark-grey;
+              }
+
+              strong {
+                color: $color-dark-grey;
+              }
+            }
+
+            &-main {
+              margin-top: 3%;
+              color: $font-color-grey;
+              font-size: $font-size-S;
+
+              &-text {
+                white-space: pre-wrap;
+              }
+
+              &-date {
+                margin-top: 5%;
+              }
+            }
+          }
+        }
+
+        &--reply {
+          margin-top: 5%;
+
+          &-textarea {
+            width: 100%;
+            margin: 5% 0;
+            color: $font-color-grey;
+            resize: none;
+            outline: none;
+            border: 1px dashed $font-color-grey;
+            background-color: $color-very-light-grey;
+            padding: 5%;
+            box-sizing: border-box;
+            font-size: $font-size-S;
+          }
+        }
+
+        &--button {
+          padding: 3% 0;
+          border: none;
+          width: 100px;
+          border-radius: 5%;
+          color: $font-color-grey;
+        }
+      }
+    }
+  }  
+}

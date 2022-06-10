@@ -5,7 +5,7 @@ import Ticket from "../../assets/images/ticket.png";
 import Bell from "../../assets/images/bell.png";
 import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
-//import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 
 const Menu = () => {
   const [showSettings, setShowSettings] = useState(false);
@@ -32,7 +32,7 @@ const Menu = () => {
         <img src={Setting} alt="Settings" />
         <p>Settings</p>
       </div>
-      {/* {showSettings && <SettingsMenu />} */}
+      {showSettings && <SettingsMenu />}
     </div>
   );
 };

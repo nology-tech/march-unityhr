@@ -20,6 +20,12 @@ $color-very-light-grey: #f8fafb;
 $color-light-grey-shade1: #f0f1f1;
 $color-dark-grey: #455163;
 $color-light-blue: #ebf1f6;
+$color-light-red: rgb(253, 220, 220);
+$color-popup-background: rgba(
+  $color: #000000,
+  $alpha: 0.3,
+);
+
 $ticket-color-bar-blue: #16a6f8;
 $ticket-color-bar-blue-gradient: linear-gradient(
   90deg,

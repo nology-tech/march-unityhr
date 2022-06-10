@@ -2,18 +2,15 @@
 import "./App.scss";
 
 import LoginPage from "./components/LoginPage/LoginPage";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
-import DarkModeToggle from "./components/LightDarkMode/DarkModeToggle";
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        <DarkModeToggle />
         <Routes>
           <Route path="/" element={<LoginPage />}></Route>
 

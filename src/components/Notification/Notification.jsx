@@ -4,7 +4,10 @@ import downArrowHead from "../../assets/images/down-arrowHead.png";
 import userImage from "../../assets/images/user-image-GregSauer.png";
 import blueCircle from "../../assets/images/blue-circle.png";
 
-const Notification = () => {
+const Notification = ({ userName, ticketTitle, dateTime }) => {
+  console.log(userName);
+  console.log(ticketTitle);
+  console.log(dateTime);
   return (
     <section className="notification-section">
       <div className="container">
@@ -27,16 +30,16 @@ const Notification = () => {
           </div>
           <div className="container__notification-details">
             <div className="container__notification-details-username">
-              Greg Sauer
+              {userName}
             </div>
             <div className="container__notification-details-comments">
               Commented on your request
               <a className="container__notification-details-ticketLink" href="">
-                'Requested Holiday'
+                {ticketTitle}
               </a>
             </div>
           </div>
-          <div className="container__time">16:23</div>
+          <div className="container__time">{dateTime}</div>
         </div>
       </div>
       <div className="line"> </div>

@@ -65,6 +65,7 @@ const EmployeeList = () => {
       </table>
       <button
         className="pagination-button"
+        data-testid="firstPageButton"
         disabled={page === 0}
         onClick={firstPageHandler}
       >
@@ -72,14 +73,16 @@ const EmployeeList = () => {
       </button>
       <button
         className="pagination-button"
+        data-testid="pageDownButton"
         disabled={page === 0}
         onClick={downHandler}
       >
         &lt;
       </button>
-      <span>Page: {page + 1} </span>
+      <span data-testid="page">Page: {page + 1} </span>
       <button
         className="pagination-button"
+        data-testid="pageUpButton"
         disabled={page === numberOfPages - 1}
         onClick={upHandler}
       >
@@ -87,6 +90,7 @@ const EmployeeList = () => {
       </button>
       <button
         className="pagination-button"
+        data-testid="lastPageButton"
         disabled={page === numberOfPages - 1}
         onClick={lastPageHandler}
       >

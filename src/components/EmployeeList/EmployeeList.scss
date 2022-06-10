@@ -40,22 +40,26 @@ tbody tr {
     border-radius: 4px;
     width: 100%;
 
+    // image placeholder
     .circle {
-        background-color: #16a6f8;
-        height: 5vh;
-        width: 5vh;
-        border-radius: 50%;
+      background-color: #16a6f8;
+      height: 5vh;
+      width: 5vh;
+      border-radius: 50%;
     }
   }
 }
 
 .pagination-button {
+  height: 35px;
+  width: 35px;
   padding: 4px 8px;
   background-color: white;
   border: 1px solid $color-light-grey;
   border-radius: 3px;
   margin: 15px 5px;
 }
+
 .top-buttons {
   position: relative;
   float: right;

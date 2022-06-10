@@ -7,25 +7,48 @@ describe("<EmployeeList/> testing user interaction", () => {
 
   it("should go to next page once > button is clicked", () => {
     render(<EmployeeList />);
+
+    const pageUpButton = screen.getByTestId("pageUpButton");
+    userEvent.click(pageUpButton);
+    const page = screen.getByText(/Page: 2/i);
+
+    expect(page).toBeInTheDocument();
     
   });
   
   it("should go to previous page once < button is clicked", () => {
     render(<EmployeeList />);
+
+    const pageDownButton = screen.getByTestId("pageDownButton");
+    userEvent.click(pageDownButton);
+    const page = screen.getByText(/Page: 1/i);
+    expect(page).toBeInTheDocument();
   });
 
   it("should go to first page once << button is clicked", () => {
     render(<EmployeeList />);
 
-  })
-  userEvent.click(button)
-  });
+    const firstPageButton = screen.getByTestId("firstPageButton");
+    userEvent.click(firstPageButton);
 
+    const page = screen.getByText(/Page: 1/i);
+
+    expect(page).toBeInTheDocument();
+
+  })
+  
   it("should go to last page once >> button is clicked", () => {
     render(<EmployeeList />);
+
+    const lastPageButton = screen.getByTestId("lastPageButton");
+    userEvent.click(lastPageButton);
+
+    const page = screen.getByText(/Page: 25/i);
+
+    expect(page).toBeInTheDocument();
   });
 
-
-
+  
 });
+
 

@@ -18,21 +18,20 @@ const NotificationList = () => {
 export default NotificationList;
 
 // --------------------------------------------------------------------
-
-// 1.	User Image :
-// 2.	User name :
-// 3.	Ticket title
-// 4.	date & time
+// unread notification toggle with blue dot
+// number of unread notifications listed in heading
 
 // images to be updated
-// unread with blue dot / number of unread notifications listed in heading
-// time display in the list view
+
+// list only 15 latest notifications
+
+// time display different format in the list view
 
 // --------------------------------------------------------------------
 
 // Clicking anywhere in this area (between the horizontal lines) will toggle the dropdown menu
-// also button ....to reply to the comments
+// x- click to close (toggle)
 
-// -> 	comment
+// show comments , button ....to reply to the comments, text box to add comment + add comment function
 
 // ---------------------------------------------------------------------------------

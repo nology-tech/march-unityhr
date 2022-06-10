@@ -11,29 +11,50 @@ const employees = [
     comment: "",
     // isRead: True / false
     ticketTitle: "Requesting Holiday",
-    dateTime: "09:00",
+    dateTime: "16:23",
   },
   {
     userPic: "",
     userName: "Sam Shaw",
     comment: "",
     ticketTitle: "Payed Too much Tax",
-    dateTime: "12:30",
+    dateTime: "14:07",
   },
   {
     userPic: "",
     userName: "Flora Quigley",
     comment: "",
     ticketTitle: "Payed Too Much Tax",
-    dateTime: "15:45",
+    dateTime: "09:30",
   },
-  //   {
-  //     userPic: "",
-  //     userName: " ,
-  //     comment: "",
-  //     ticketTitle: "",
-  //     dateTime: "",
-  //   },
+  {
+    userPic: "",
+    userName: "Chad Jaskolski",
+    comment: "",
+    ticketTitle: "Payed Too Much Tax",
+    dateTime: "16 hrs ago",
+  },
+  {
+    userPic: "",
+    userName: "Cameron Deckow",
+    comment: "",
+    ticketTitle: "Payed Too Much Tax",
+    dateTime: "3 days ago",
+  },
+  {
+    userPic: "",
+    userName: "Jamie Davis",
+    comment: "",
+    ticketTitle: "Payed Too Much Tax",
+    dateTime: "3 days ago",
+  },
+  // {
+  //   userPic: "",
+  //   userName: "" ,
+  //   comment: "",
+  //   ticketTitle: "",
+  //   dateTime: "",
+  // },
 ];
 
 export default employees;

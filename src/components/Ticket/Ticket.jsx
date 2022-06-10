@@ -1,11 +1,9 @@
 import "./Ticket.scss";
 import Dots from "../../assets/images/three-dots.png";
-import { useState } from "react";
-
 
 const Ticket = (props) => {
 
-  const {id, color, category } = props;
+  const {color, category } = props;
 
   return (
     <>
@@ -31,7 +29,7 @@ const Ticket = (props) => {
             </div>
             </div>
           <div className="ticket__main__user--menu">
-            <img src={Dots} />
+            <img src={Dots} alt="dots"/>
           </div>
         </div>
       </div>

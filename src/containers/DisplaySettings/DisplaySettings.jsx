@@ -6,7 +6,6 @@ import Dark from "../../assets/images/dark-mode.png";
 import LightSun from "../../assets/images/light_mode_sun.png";
 import ToggleSwitch from "../../components/ToggleSwitch/ToggleSwitch";
 import ProfileEdit from "../../assets/images/profile_edit.png";
-import DarkModeToggle from "../../components/DarkMode/DarkModeToggle";
 
 const DisplaySettings = () => {
   return (

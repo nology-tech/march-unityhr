@@ -1,13 +1,23 @@
 import "./Notification.scss";
-import React from "react";
+
 import downArrowHead from "../../assets/images/down-arrowHead.png";
 import userImage from "../../assets/images/user-image-GregSauer.png";
 import blueCircle from "../../assets/images/blue-circle.png";
+import React, {useEffect } from "react";
 
-const Notification = ({ userName, ticketTitle, dateTime }) => {
+const Notification = ({ userName, ticketTitle, dateTime, isRead }) => {
+  
+ /*  const [showAsUnread, setShowAsUnread]=useState(false); */
+ 
   console.log(userName);
   console.log(ticketTitle);
   console.log(dateTime);
+   // read the record for the comment 
+   /* const toggleNotification =()=>{
+    if (isRead="true") {
+    setShowAsUnread(showAsUnread)
+    }
+  } */
   return (
     <section className="notification-section">
       <div className="container">
@@ -33,13 +43,16 @@ const Notification = ({ userName, ticketTitle, dateTime }) => {
               {userName}
             </div>
             <div className="container__notification-details-comments">
-              Commented on your request
-              <a
-                className="container__notification-details-ticketLink"
-                href="https://github.com/nology-tech/march-unityhr"
-              >
-                {ticketTitle}
-              </a>
+              <p>
+                Commented on your request '
+                <a
+                  className="container__notification-details-ticketLink"
+                  href="https://github.com/nology-tech/march-unityhr"
+                >
+                  {ticketTitle}
+                </a>{" "}
+                '{" "}
+              </p>
             </div>
           </div>
           <div className="container__time">{dateTime}</div>

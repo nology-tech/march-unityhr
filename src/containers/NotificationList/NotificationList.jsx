@@ -3,12 +3,16 @@ import React from "react";
 import Notification from "../../components/Notification/Notification";
 import employees from "../../data/employee";
 
+
 const NotificationList = () => {
+  // images to be updated
+  // list only 15 latest notifications 
   const notificationJSX = employees.map((employee, index) => (
     <Notification
       userName={employee.userName}
       ticketTitle={employee.ticketTitle}
       dateTime={employee.dateTime}
+      isRead={employee.commentIsRead}
     />
   ));
 
@@ -18,18 +22,18 @@ const NotificationList = () => {
 export default NotificationList;
 
 // --------------------------------------------------------------------
-// fix the ticket title display
-// fix the time display
+
+
 
 // unread notification toggle with blue dot
-// number of unread notifications listed in heading
 
-// images to be updated
 
-// list only 15 latest notifications
+
+
+
 
 // time display different format in the list view
-
+// fix the time display
 // --------------------------------------------------------------------
 
 // Clicking anywhere in this area (between the horizontal lines) will toggle the dropdown menu

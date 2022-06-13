@@ -2,7 +2,6 @@
 import "./App.scss";
 
 import LoginPage from "./components/LoginPage/LoginPage";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 import ChangePassword from "./components/ChangePassword/ChangePassword";

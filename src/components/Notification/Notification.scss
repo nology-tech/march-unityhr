@@ -1,0 +1,82 @@
+@use "../../assets/sass/variables" as *;
+
+.container {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+
+  &__notification {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__notification-arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__notification-images {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__notification-unread {
+    position: absolute;
+    z-index: 2;
+  }
+  &__notification-userPic {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__notification-details-username {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: $font-color-dark-blue;
+    font-weight: 500;
+    font-family: $font-poppins;
+    font-size: $font-size-SM;
+  }
+  &__notification-details-comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: $font-color-grey;
+    font-weight: 400;
+    font-family: $font-poppins;
+    font-size: $font-size-SM;
+  }
+  &__notification-details-ticketLink {
+    color: $font-color-dark-blue;
+    font-weight: 600;
+    font-family: $font-poppins;
+    font-size: $font-size-SM;
+    text-decoration-line: none;
+    text-decoration: underline;
+  }
+
+  &__time {
+    color: $font-color-grey;
+    font-weight: 500;
+    font-family: $font-poppins;
+    font-size: $font-size-S + 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.line {
+  height: 2px;
+  width: 90%;
+  background-color: $color-light-grey;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

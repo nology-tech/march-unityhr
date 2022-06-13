@@ -18,7 +18,6 @@ const App = () => {
             path="/forgot-your-password"
             element={<AuthenticationPages />}
           ></Route>
-
           <Route path="/dashboard" element={<MainScreen />}></Route>
           <Route path="/change-password" element={<ChangePassword />}></Route>
         </Routes>

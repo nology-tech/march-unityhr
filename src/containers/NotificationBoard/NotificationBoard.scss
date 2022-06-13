@@ -1,0 +1,23 @@
+@use "../../assets/sass/variables" as *;
+.notificationBoard {
+  width: 100%;
+  height: auto;
+  background-color: $color-light-grey-shade1;
+
+  &__container {
+    background-color: $font-color-white;
+    color: $font-color-black;
+    margin: 1em;
+
+    &__heading {
+      font-size: $font-size-L - 12px;
+      font-family: $font-poppins;
+      font-weight: 600;
+      color: $font-color-black;
+      margin-left: 2%;
+    }
+    &__listOfNotifications {
+      margin: 1em;
+    }
+  }
+}

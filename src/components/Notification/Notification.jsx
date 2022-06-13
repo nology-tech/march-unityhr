@@ -34,7 +34,10 @@ const Notification = ({ userName, ticketTitle, dateTime }) => {
             </div>
             <div className="container__notification-details-comments">
               Commented on your request
-              <a className="container__notification-details-ticketLink" href="">
+              <a
+                className="container__notification-details-ticketLink"
+                href="https://github.com/nology-tech/march-unityhr"
+              >
                 {ticketTitle}
               </a>
             </div>

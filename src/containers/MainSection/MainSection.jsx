@@ -1,8 +1,8 @@
 import "./MainSection.scss";
 import Menu from "../../components/Menu/Menu";
 import MyTicketsBoard from "../MyTicketsBoard/MyTicketsBoard";
-import EmployeeList from "../../components/EmployeeList/EmployeeList"
-import NotificationBoard from "../NotificationBoard/NotificationBoard";
+// import EmployeeList from "../../components/EmployeeList/EmployeeList"
+// import NotificationBoard from "../NotificationBoard/NotificationBoard";
 
 const MainSection = () => {
   return (

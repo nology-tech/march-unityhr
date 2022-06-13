@@ -8,7 +8,6 @@ const MainSection = () => {
     <div className="main-section">
       <Menu className="main-section__menu" />
       <MyTicketsBoard className="main-section__my-tickets-board" />
-      <SettingsMenu />
     </div>
   );
 };

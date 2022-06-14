@@ -76,9 +76,13 @@ const Notification = ({
             <div className="container__time">{dateTime}</div>
           </div>
         </div>
-        {showComments && comment}
+        <div className="comments">
+         <div className="comments__text"> {showComments && comment} </div>
+          <div className="comments__button">{showComments && <button >Reply</button> }</div>
+          <div className="comments__time">{showComments && <p>00/06/22 at {dateTime}</p>}</div>
+          </div>
         <div className="line"> </div>
-      </div>
+      </div>in 
     </section>
   );
 };

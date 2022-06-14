@@ -2,39 +2,23 @@ import "./NotificationList.scss";
 
 import Notification from "../../components/Notification/Notification";
 import employees from "../../data/employee";
-import React,{ useState } from "react";
-
+import React from "react";
 
 const NotificationList = () => {
-  /* const[showComments, setShowComments]=useState(false);
-  const handleClick=()=>{
-    setShowComments(!showComments)
-  }; */
+  // list only 15 latest notifications
   // images to be updated
-  // list only 15 latest notifications 
-  const notificationJSX = employees.map((employee, index) => (
- /*    <div onclick={handleClick}> */
+
+  const notificationJSX = employees.map((employee) => (
     <Notification
-    
       userName={employee.userName}
       ticketTitle={employee.ticketTitle}
       dateTime={employee.dateTime}
       isRead={employee.commentIsRead}
-    />/* </div> */
-  ));
-/*   const notificationWithCommentJSX = employees.map((employee, index) => (
-    <div onclick={handleClick}>
-    <Notification
-    
-      userName={employee.userName}
-      ticketTitle={employee.ticketTitle}
-      dateTime={employee.dateTime}
-      isRead={employee.commentIsRead}
+      ticketLink={employee.ticketLink}
+      comment={employee.comment}
     />
-    </div>
-    
   ));
- */
+
   return <div>{notificationJSX}</div>;
 };
 
@@ -42,17 +26,12 @@ export default NotificationList;
 
 // --------------------------------------------------------------------
 
-
-
 // unread notification toggle with blue dot
 
-
-
-
-
+// fix the time display
 
 // time display different format in the list view
-// fix the time display
+
 // --------------------------------------------------------------------
 
 // Clicking anywhere in this area (between the horizontal lines) will toggle the dropdown menu

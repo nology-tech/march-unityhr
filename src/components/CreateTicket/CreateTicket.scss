@@ -1,0 +1,101 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.create-ticket {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 600px;
+  height: 700px;
+
+  &__form {
+    border: 3px solid blue;
+    height: 700px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &--title {
+      color: $font-color-dark-blue;
+      font-size: $font-size-MM;
+      font-family: $font-poppins;
+      font-weight: lighter;
+    }
+
+    &--description {
+      color: $font-color-grey;
+      font-size: $font-size-SS;
+      font-family: $font-poppins;
+      font-weight: lighter;
+    }
+  }
+
+  &__type {
+    border: 2px solid green;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+
+    &--label {
+      margin-bottom: 5px;
+      font-size: $font-size-SS;
+    }
+    &--request {
+      width: 400px;
+      height: 40px;
+      font-size: $font-size-SS;
+      color: $font-color-grey;
+      border: none;
+      background-color: $color-very-light-grey;
+    }
+  }
+
+  &__title {
+    border: 2px solid brown;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+    margin-bottom: 20px;
+
+    &--label {
+      margin-bottom: 5px;
+      font-size: $font-size-SS;
+    }
+    &--input {
+      width: 400px;
+      height: 40px;
+      color: $font-color-grey;
+      border: none;
+      background-color: $color-very-light-grey;
+      font-size: $font-size-SS;
+    }
+  }
+
+  &__description {
+    border: 2px solid pink;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+
+    &--label {
+      margin-bottom: 10px;
+      font-size: $font-size-SS;
+    }
+    &--text {
+      color: $font-color-grey;
+      width: 400px;
+      background-color: $color-very-light-grey;
+      font-size: $font-size-SS;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+  }
+}

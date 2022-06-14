@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
+import CreateTicket from "./components/CreateTicket/CreateTicket";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           ></Route>
           <Route path="/dashboard" element={<MainScreen />}></Route>
           <Route path="/change-password" element={<ChangePassword />}></Route>
+          <Route path="/create-ticket" element={<CreateTicket />}></Route>
         </Routes>
       </div>
     </Router>

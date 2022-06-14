@@ -1,6 +1,7 @@
 import "./Notification.scss";
 
 import downArrowHead from "../../assets/images/down-arrowHead.png";
+import upArrowHead from "../../assets/images/up-arrowHead.png";
 import userImage from "../../assets/images/user-image-GregSauer.png";
 import blueCircle from "../../assets/images/blue-circle.png";
 import React, { useState } from "react";
@@ -15,19 +16,13 @@ const Notification = ({
 }) => {
   const [showComments, setShowComments] = useState(false);
   const handleClick = () => {
-    console.log("HELLO IT WORKS !");
     setShowComments(!showComments);
-    // if (showComments === false) {
-    //   setShowComments(showComments);
-    // } else {
-    //   setShowComments(!showComments);
-    // }
   };
   console.log(showComments);
 
   let isReadNotificationJSX = "";
 
-  if (isRead === "true") {
+  if (isRead === "false") {
     isReadNotificationJSX = (
       <div>
         <img
@@ -43,11 +38,14 @@ const Notification = ({
 
   return (
     <section className="notification-section">
-      <div onclick={handleClick}>
+      <div onClick={handleClick}>
         <div className="container">
           <div className="container__notification">
             <div className="container__notification-arrow">
-              <img src={downArrowHead} alt="down-arrow-head" />
+              {!showComments && (
+                <img src={downArrowHead} alt="down-arrow-head" />
+              )}
+              {showComments && <img src={upArrowHead} alt="up-arrow-head" />}
             </div>
             <div className="container__notification-images">
               {" "}
@@ -78,9 +76,7 @@ const Notification = ({
             <div className="container__time">{dateTime}</div>
           </div>
         </div>
-        {/* {showComments && <div onclick={handleClick}> {comment}</div>} */}
-        {/* <div onclick={handleClick}>{showComments && { comment }}</div> */}
-        {showComments && { comment }}
+        {showComments && comment}
         <div className="line"> </div>
       </div>
     </section>

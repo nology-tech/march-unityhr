@@ -1,5 +1,5 @@
 import "./Notification.scss";
-
+import arrowReplyButton from "../../assets/images/arrow-replyButton.png";
 import downArrowHead from "../../assets/images/down-arrowHead.png";
 import upArrowHead from "../../assets/images/up-arrowHead.png";
 import userImage from "../../assets/images/user-image-GregSauer.png";
@@ -78,7 +78,7 @@ const Notification = ({
         </div>
         <div className="comments">
          <div className="comments__text"> {showComments && comment} </div>
-          <div className="comments__button">{showComments && <button >Reply</button> }</div>
+          <div className="comments__button">{showComments && <button ><img src={arrowReplyButton}></img> Reply</button> }</div>
           <div className="comments__time">{showComments && <p>00/06/22 at {dateTime}</p>}</div>
           </div>
         <div className="line"> </div>

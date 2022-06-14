@@ -38,3 +38,14 @@
 .toggle-switch input[type="checkbox"]:checked + .switch {
   background-color: $toggle-color-blue;
 }
+
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #10171d;
+  color: #dfdfdf;
+}

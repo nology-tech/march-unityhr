@@ -1,0 +1,72 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.title {
+  padding-top: 20px;
+}
+.employeeTable thead tr {
+  background-color: #eee;
+}
+
+.employeeTable td {
+  padding: 10px;
+  color: $font-color-grey;
+}
+.employee-name {
+  color: $font-color-light-black !important;
+  font-weight: bold;
+}
+
+.employeeTable th {
+  padding: 10px;
+  font-weight: normal;
+  text-align: left;
+  font-size: 0.8em;
+  color: $font-color-grey;
+}
+
+tbody tr {
+  border-bottom: 1px solid $color-light-grey;
+}
+
+.pageContent {
+  padding-left: 100px;
+  background-color: $color-very-light-grey;
+  margin-right: 20px;
+  font-size: 0.8em;
+  width: 80%;
+
+  .employeeTable {
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 100%;
+
+    // image placeholder
+    .circle {
+      background-color: #16a6f8;
+      height: 5vh;
+      width: 5vh;
+      border-radius: 50%;
+    }
+  }
+}
+
+.pagination-button {
+  height: 35px;
+  width: 35px;
+  padding: 4px 8px;
+  background-color: white;
+  border: 1px solid $color-light-grey;
+  border-radius: 3px;
+  margin: 15px 5px;
+}
+
+.top-buttons {
+  position: relative;
+  float: right;
+  height: 35px;
+  padding: 4px 8px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 15px 5px;
+}

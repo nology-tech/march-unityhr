@@ -28,9 +28,12 @@ const EmployeeList = () => {
       <button className="top-buttons">
         <img src={filter} alt="filter" /> Filters
       </button>
-      <button className="top-buttons">
-        <img src={magnifyingGlass} alt="magnifying glass" />
-      </button>
+      
+      <input
+      type="text"
+      placeholder="Search employee..."
+      className="search-employee"
+    />
       <h1 className="title">Employee List</h1>
       <br></br>
       <table className="employeeTable">
@@ -51,7 +54,7 @@ const EmployeeList = () => {
             .map((employee, index) => (
               <tr key={index}>
                 <td>
-                  <img className="circle" alt="userImage"/>
+                  <img className="circle" alt=""/>
                 </td>
                 <td className="employee-name">{employee.name}</td>
                 <td>{employee.User_Type}</td>

@@ -1,0 +1,1 @@
+{/* <input type="text" placeholder="Search title" onInput={handleEvent} className="search-box__input"/> */}

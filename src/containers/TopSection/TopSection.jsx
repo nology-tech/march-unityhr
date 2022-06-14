@@ -2,7 +2,7 @@ import "./TopSection.scss";
 import Logo from "../../assets/images/dashboard-logo.png";
 import DropDown from "../../assets/images/drop-down.png";
 import Search from "../../components/Search/Search";
-
+  
 const TopSection = () => {
   return (
     <div className="top-section">

@@ -19,8 +19,12 @@ $color-light-grey: #e8eaeb;
 $color-very-light-grey: #f8fafb;
 $color-light-grey-shade1: #f0f1f1;
 $color-dark-grey: #455163;
+$color-light-blue: #ebf1f6;
 $color-light-red: rgb(253, 220, 220);
-$color-popup-background: rgba($color: #000000, $alpha: 0.3);
+$color-popup-background: rgba(
+  $color: #000000,
+  $alpha: 0.3,
+);
 
 $ticket-color-bar-blue: #16a6f8;
 $ticket-color-bar-blue-gradient: linear-gradient(
@@ -41,11 +45,14 @@ $button-color-blue: linear-gradient(180deg, #71d1f7 0%, #4bc7f7 100%);
 $button-color-red: linear-gradient(180deg, #f87171, 0%, #ff4242 100%);
 $button-color-gray: #f0f4f5;
 
+$toggle-color-blue: #336699;
+
 $validation-message-red: #ff4242;
 
 $font-size-S: 10px;
 $font-size-SS: 11px;
 $font-size-SM: 15px;
 $font-size-M: 20px;
+$font-size-MM: 23px;
 $font-size-ML: 25px;
 $font-size-L: 32px;

@@ -9,7 +9,7 @@ const CreateTicket = ({ togglePopUp }) => {
     <div className="ticket">
       <div className="create-ticket">
         <form className="create-ticket__form" name="create">
-          <div className="modal__main__close">
+          <div className="create__ticket__cross">
             <img src={Cross} alt="cross" onClick={togglePopUp} />
           </div>
           <div className="create-ticket__info">

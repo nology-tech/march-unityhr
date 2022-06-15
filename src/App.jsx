@@ -7,7 +7,7 @@ import AuthenticationPages from "./containers/AuthenticationPages/Authentication
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
 import CreateTicket from "./components/CreateTicket/CreateTicket";
-
+import EditTicket from "./components/EditTicket/EditTicket";
 const App = () => {
   return (
     <Router>
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/dashboard" element={<MainScreen />}></Route>
           <Route path="/change-password" element={<ChangePassword />}></Route>
           <Route path="/create-ticket" element={<CreateTicket />}></Route>
+          <Route path="/edit-ticket" element={<EditTicket />}></Route>
         </Routes>
       </div>
     </Router>

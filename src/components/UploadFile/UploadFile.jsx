@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./UploadFile.scss";
 
 const UploadFile = () => {
-  const [images, setImage] = useState([]);
+  // const [images, setImage] = useState([]);
 
-  const handleSelectImage = (event) => {
-    const file = event.target.files[0];
-    setImage(file);
-  };
+  // const handleSelectImage = (event) => {
+  //   const file = event.target.files[0];
+  //   setImage(file);
+  // };
 
-  const handleImageUpload = () => {
-    setImage(images);
-  };
+  // const handleImageUpload = () => {
+  //   setImage(images);
+  // };
 
   return (
     <div className="file-upload">
@@ -20,7 +20,7 @@ const UploadFile = () => {
         Choose File
         <input
           type="file"
-          onChange={handleSelectImage}
+          // onChange={handleSelectImage}
           className="file-upload__input"
         />
       </label>

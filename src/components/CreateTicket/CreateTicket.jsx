@@ -4,13 +4,14 @@ import Cross from "../../assets/images/cross.png";
 import UploadFile from "../UploadFile/UploadFile";
 import Attachment from "../../assets/images/attachment.png";
 
-const CreateTicket = () => {
+const CreateTicket = (props) => {
+  const { toggleTicket } = props;
   return (
     <div className="create">
       <div className="create-ticket">
         <form className="create-ticket__form" name="create">
           <div className="create-ticket__cross">
-            <img src={Cross} alt="cross" onClick="onClick" />
+            <img src={Cross} alt="cross" onClick={toggleTicket} />
           </div>
           <div className="create-ticket__info">
             <h1 className="create-ticket__info--title">Create Ticket</h1>

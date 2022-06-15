@@ -2,14 +2,20 @@ import "./MyTicketsBoard.scss";
 import Ticket from "../../components/Ticket/Ticket";
 import DetailedTicket from "../../components/DetailedTicket/DetailedTicket";
 import React, { useState } from "react";
+import CreateTicket from "../../components/CreateTicket/CreateTicket";
 
 const MyTicketsBoard = () => {
   const [showPopUp, setShowPopUp] = useState(false);
+  const [showCreateTicket, setShowCreateTicket] = useState(false);
   const ticketColorBarOrange = "#ff8000";
   const ids = [1, 2, 3, 4, 5];
 
   const togglePopUp = () => {
     setShowPopUp(!showPopUp);
+  };
+
+  const toggleTicket = () => {
+    setShowCreateTicket(!showCreateTicket);
   };
 
   const ticketsListJSX = ids.map((index) => (
@@ -37,7 +43,12 @@ const MyTicketsBoard = () => {
         <p className="my-tickets-board__main-header">Resolved</p>
         {ticketsListJSX}
       </div>
-      <div className="my-tickets-board__add-ticket">Add Ticket</div>
+      <div className="my-tickets-board__add-ticket" onClick={toggleTicket}>
+        Add Ticket
+      </div>
+      <div className="my-tickets-board__add-ticket-create">
+        {showCreateTicket && <CreateTicket toggleTicket={toggleTicket} />}
+      </div>
     </div>
   );
 };

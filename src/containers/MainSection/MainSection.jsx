@@ -11,6 +11,7 @@ const MainSection = () => {
       <MyTicketsBoard className="main-section__my-tickets-board" />
       <NotificationBoard className="main-section__my-notification-board" />
       <SettingsMenu />
+      
     </div>
   );
 };

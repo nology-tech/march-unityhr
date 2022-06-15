@@ -5,7 +5,7 @@
   height: 100%;
   z-index: 1;
   position: fixed;
-  background-color:$color-popup-background;
+  background-color: $color-popup-background;
   left: 0;
   top: 0;
 }
@@ -82,13 +82,13 @@
           justify-content: space-around;
           width: 50%;
 
-          &-circle{
+          &-circle {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 30px;
             height: 30px;
-            border-radius: 50%;    
+            border-radius: 50%;
 
             img {
               height: 16px;
@@ -104,7 +104,6 @@
             background-color: $color-light-red;
           }
         }
-
       }
 
       &__details {
@@ -267,5 +266,5 @@
         }
       }
     }
-  }  
+  }
 }

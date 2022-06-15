@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const MyTicketsBoard = () => {
   const [showPopUp, setShowPopUp] = useState(false);
-  const ticketColorBarOrange="#ff8000";
+  const ticketColorBarOrange = "#ff8000";
   const ids = [1, 2, 3, 4, 5];
 
   const togglePopUp = () => {
@@ -14,8 +14,8 @@ const MyTicketsBoard = () => {
 
   const ticketsListJSX = ids.map((index) => (
     <div onClick={togglePopUp} key={"ticket" + index}>
-          <Ticket category="Sickness/Absence" color={ticketColorBarOrange}/>
-        </div>
+      <Ticket category="Sickness/Absence" color={ticketColorBarOrange} />
+    </div>
   ));
 
   return (

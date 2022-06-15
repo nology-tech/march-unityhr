@@ -1,0 +1,23 @@
+@use "../../assets/sass/variables" as *;
+
+.file-upload {
+  &__label {
+    margin-top: 20px;
+    // border: 1px red solid;
+    margin-bottom: 20px;
+    font-size: $font-size-SSS;
+    border-bottom: dotted;
+    border-bottom-color: $button-color-blue;
+    color: $choose-file-color;
+    font-family: $font-poppins;
+    cursor: pointer;
+  }
+  &__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+}

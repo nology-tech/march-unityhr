@@ -5,7 +5,7 @@
   font-family: $font-poppins;
 }
 
-.ticket {
+.create {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,11 @@
   width: 600px;
   height: 750px;
   padding: 20px;
+
+  &__cross {
+    padding-left: 85%;
+    margin: 2% 5%;
+  }
 
   &__form {
     height: 900px;

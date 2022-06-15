@@ -4,13 +4,13 @@ import Cross from "../../assets/images/cross.png";
 import UploadFile from "../UploadFile/UploadFile";
 import Attachment from "../../assets/images/attachment.png";
 
-const CreateTicket = ({ togglePopUp }) => {
+const CreateTicket = () => {
   return (
-    <div className="ticket">
+    <div className="create">
       <div className="create-ticket">
         <form className="create-ticket__form" name="create">
-          <div className="create__ticket__cross">
-            <img src={Cross} alt="cross" onClick={togglePopUp} />
+          <div className="create-ticket__cross">
+            <img src={Cross} alt="cross" onClick="onClick" />
           </div>
           <div className="create-ticket__info">
             <h1 className="create-ticket__info--title">Create Ticket</h1>

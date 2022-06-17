@@ -5,11 +5,20 @@ import Employee from "../../assets/images/profile_picture.png";
 import Edit from "../../assets/images/edit-pencil.png";
 import Return from "../../assets/images/return.png";
 import ProfileEdit from "../../assets/images/profile_edit.png";
+import UploadImage from "../../components/UploadImage/UploadImage";
 
 const ProfileSettings = () => {
   const [disableSection, setDisableSection] = useState(true);
   const [showEdit, setShowEdit] = useState(true);
   const [showReturn, setShowReturn] = useState(false);
+  const [showUpload, setShowUpload] = useState(false);
+
+  const handleImageEdit = () => {
+    if (showUpload === true) {
+      setShowUpload(showUpload);
+    }
+    setShowUpload(!showUpload);
+  };
 
   const handleEdit = () => {
     setShowEdit(false);
@@ -42,6 +51,7 @@ const ProfileSettings = () => {
               className="profile-settings__edit"
               src={ProfileEdit}
               alt="Login"
+              onClick={handleImageEdit}
             />
           </div>
 
@@ -52,6 +62,7 @@ const ProfileSettings = () => {
             <p className="profile-settings__desc--department">
               Department (Database)
             </p>
+            <div>{showUpload && <UploadImage />}</div>
           </div>
         </div>
       </div>

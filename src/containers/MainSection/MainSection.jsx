@@ -6,6 +6,7 @@ import MyTicketsBoard from "../MyTicketsBoard/MyTicketsBoard";
  import NotificationBoard from "../NotificationBoard/NotificationBoard";
  import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 import Dashboard from "../Dashboard/Dashboard";
+import Workspace from "../Workspace/Workspace";
 
 const MainSection = () => {
   return (
@@ -13,6 +14,7 @@ const MainSection = () => {
 
       <Menu className="main-section__menu"/>
       <Dashboard className="main-section-Dashboard"/>
+      <Workspace className="main-section-Workspace"/>
 
       <MyTicketsBoard className="main-section__my-tickets-board" />
      

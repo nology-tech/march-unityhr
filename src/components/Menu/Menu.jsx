@@ -7,6 +7,8 @@ import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
 import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 
+import Dashboard from "../../assets/images/dashboard.png";
+
 const Menu = () => {
   const [showSettings, setShowSettings] = useState(false);
 
@@ -16,6 +18,10 @@ const Menu = () => {
 
   return (
     <div className="menu-section">
+       <div className="menu-section__item">
+        <img src={Dashboard} alt="Dashboard" />
+        <p>Dashboard</p>
+      </div>
       <div className="menu-section__item menu-section__item--selected">
         <img src={Ticket} alt="Ticket" />
         <p>My Tickets</p>

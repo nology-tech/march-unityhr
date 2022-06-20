@@ -53,7 +53,7 @@ const Notification = ({
               <img
                 className="container__notification-userPic"
                 src={userImage}
-                alt="userPic"
+                alt="user profile"
               />
             </div>
             <div className="container__notification-details">

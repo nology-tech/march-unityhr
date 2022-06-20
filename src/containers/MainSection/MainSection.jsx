@@ -2,19 +2,26 @@ import "./MainSection.scss";
 import Menu from "../../components/Menu/Menu";
 import MyTicketsBoard from "../MyTicketsBoard/MyTicketsBoard";
 
-// import EmployeeList from "../../components/EmployeeList/EmployeeList"
-// import NotificationBoard from "../NotificationBoard/NotificationBoard";
-// import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+ import EmployeeList from "../../components/EmployeeList/EmployeeList"
+ import NotificationBoard from "../NotificationBoard/NotificationBoard";
+ import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+import Dashboard from "../Dashboard/Dashboard";
+import Workspace from "../Workspace/Workspace";
 
 const MainSection = () => {
   return (
     <div className="main-section">
+
       <Menu className="main-section__menu"/>
+      <Dashboard className="main-section-Dashboard"/>
+      <Workspace className="main-section-Workspace"/>
+
       <MyTicketsBoard className="main-section__my-tickets-board" />
-      {/* <NotificationBoard 
+     
+      <NotificationBoard 
       className="main-section__my-notification-board" />
       <EmployeeList /> 
-      <SettingsMenu /> */}
+      <SettingsMenu />
     </div>
   );
 };

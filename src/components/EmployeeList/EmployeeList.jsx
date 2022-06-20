@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
 import magnifyingGlass from "../../assets/images/magnifying-glass.png";
-import filter from "../../assets/images/filter.png";
+import filter from "../../assets/images/Filter.png";
 
 const EmployeeList = () => {
   const [page, setPage] = useState(0);

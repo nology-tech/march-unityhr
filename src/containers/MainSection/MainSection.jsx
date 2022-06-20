@@ -1,11 +1,6 @@
 import "./MainSection.scss";
 import Menu from "../../components/Menu/Menu";
-import MyTicketsBoard from "../MyTicketsBoard/MyTicketsBoard";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-
-import NotificationBoard from "../NotificationBoard/NotificationBoard";
-// import EmployeeList from "../../components/EmployeeList/EmployeeList"
-// import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+import { BrowserRouter as Outlet } from "react-router-dom";
 
 const MainSection = () => {
   return (

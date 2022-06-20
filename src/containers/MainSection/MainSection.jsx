@@ -13,8 +13,8 @@ const MainSection = () => {
       <MyTicketsBoard className="main-section__my-tickets-board" />
       {/* <NotificationBoard 
       className="main-section__my-notification-board" />
-      <EmployeeList /> 
-      <SettingsMenu /> */}
+      <EmployeeList />  */}
+      {/* <SettingsMenu /> */}
     </div>
   );
 };

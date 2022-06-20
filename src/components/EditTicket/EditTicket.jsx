@@ -4,13 +4,14 @@ import Cross from "../../assets/images/cross.png";
 import UploadFile from "../UploadFile/UploadFile";
 import Attachment from "../../assets/images/attachment.png";
 
-const EditTicket = () => {
+const EditTicket = (props) => {
+  const { toggleEditTicket } = props;
   return (
     <div className="edit">
       <div className="edit-ticket">
         <form className="edit-ticket__form" name="edit">
           <div className="edit-ticket__cross">
-            <img src={Cross} alt="cross" onClick="OnClick" />
+            <img src={Cross} alt="cross" onClick={toggleEditTicket} />
           </div>
           <div className="edit-ticket__info">
             <h1 className="edit-ticket__info--title">Edit Ticket</h1>

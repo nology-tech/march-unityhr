@@ -1,6 +1,6 @@
 import "./MainSection.scss";
 import Menu from "../../components/Menu/Menu";
-import { BrowserRouter as Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const MainSection = () => {
   return (

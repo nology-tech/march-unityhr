@@ -6,8 +6,10 @@ import GridMenu from "../../assets/images/menu-grid.png";
 import ListMenu from "../../assets/images/bullet-list.png";
 import Filter from "../../assets/images/Filter.png";
 
-const Workspace = (props) => {
-  const { color, category } = props;
+const Workspace = () => {
+  // const Workspace = (props) => {
+
+  // const { color, category } = props;
 
   const [showPopUp, setShowPopUp] = useState(false);
 

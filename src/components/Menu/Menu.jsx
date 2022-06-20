@@ -1,14 +1,13 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Menu.scss";
 import Ticket from "../../assets/images/ticket.png";
 import Bell from "../../assets/images/bell.png";
 import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
-import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+// import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 
-import Dashboard from "../../assets/images/dashboard.png";
 import Workspace from "../../assets/images/request-workspace.png";
 
 const Menu = () => {

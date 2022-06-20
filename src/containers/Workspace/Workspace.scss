@@ -1,2 +1,36 @@
 @use "../../assets/sass/variables" as *;
 
+.my-tickets-board {
+  &__top {
+    height: 55px;
+    &__GridMenu {
+      //     border: 5px solid red;
+      // border-style: solid red;
+      // border-color: red;
+
+      padding: 10px;
+      margin: 5px;
+      background-color: white;
+    }
+    &__ListMenu {
+      padding: 10px;
+      margin: 5px;
+    }
+    &__filters {
+      padding: 10px;
+      margin: 5px;
+
+      background-color: white;
+    }
+  }
+  /* &__main {
+    display: flex;
+    /*  flex-direction: column; */
+  /* .titles {
+      display: flex;
+      justify-content: space-between;
+  
+    }
+    
+  }  */
+}

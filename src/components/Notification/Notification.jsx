@@ -53,7 +53,7 @@ const Notification = ({
               <img
                 className="container__notification-userPic"
                 src={userImage}
-                alt="userPic"
+                alt="user profile"
               />
             </div>
             <div className="container__notification-details">
@@ -78,7 +78,7 @@ const Notification = ({
         </div>
         <div className="comments">
          <div className="comments__text"> {showComments && comment} </div>
-          <div className="comments__button">{showComments && <button ><img src={arrowReplyButton}></img> Reply</button> }</div>
+          <div className="comments__button">{showComments && <button ><img src={arrowReplyButton} alt='comments'></img> Reply</button> }</div>
           <div className="comments__time">{showComments && <p>00/06/22 at {dateTime}</p>}</div>
           </div>
         <div className="line"> </div>

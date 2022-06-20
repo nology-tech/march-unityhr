@@ -77,6 +77,45 @@
   width: 90%;
   background-color: $color-light-grey;
   margin-left: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+ 
+}
+.comments{
+  padding: 5px;
+  margin: 6px;
+
+
+  display: flex;
+  flex-direction: column;
+  
+  &__text{
+ color:$font-color-grey;
+ font-family: $font-poppins; 
+ font-size: $font-size-S;
+ padding: 5px;
+
+  }
+  &__button{
+    padding: 5px 5px;
+    margin: 10px 5px;
+    width: 10%;
+   button{
+     color:$font-color-grey;
+     background-color:$color-light-grey;
+     width: 85px;
+     height: 30px;
+     border-style: none;
+     border-radius: 4px;
+     font-size: $font-size-XS +3px;
+   }
+
+  }
+  &__time{
+    padding: 5px 10px;
+    margin: 10px;
+    color: $font-color-grey;
+    font-family: $font-poppins;
+    font-size: $font-size-XS;
+
+
+  }
 }

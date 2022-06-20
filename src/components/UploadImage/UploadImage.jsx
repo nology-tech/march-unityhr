@@ -25,9 +25,6 @@ const UploadImage = () => {
     <div className="profile-image">
       <label htmlfor="image-upload" className="profile-image__input">
         <input type="file" onChange={handleSelectImage} />
-        {/* {imageURLs.map((imageSrc) => (
-          <img src={imageSrc} />
-        ))} */}
       </label>
       <div className="profile-image__button">
         <button

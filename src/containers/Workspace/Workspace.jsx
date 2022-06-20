@@ -47,17 +47,12 @@ const Workspace = (props) => {
         </div>
       </div>
       <div className="my-tickets-board__main">
-        <div className="my-tickets-board__main-titles">
-          <p className="my-tickets-board__main-header">Backlog</p>
-          <p className="my-tickets-board__main-header">Unresolved</p>
-          <p className="my-tickets-board__main-header">In Review</p>
-          <p className="my-tickets-board__main-header">Resolved</p>
-          <p className="my-tickets-board__main-header">Archive</p>
-        </div>
-        <div className="my-tickets-board__main-tickets">
-          {" "}
-          {workspaceTicketsJSX}
-        </div>
+        <p className="my-tickets-board__main-header">Backlog</p>
+        <p className="my-tickets-board__main-header">Unresolved</p>
+        <p className="my-tickets-board__main-header">In Review</p>
+        <p className="my-tickets-board__main-header">Resolved</p>
+        <p className="my-tickets-board__main-header">Archive</p>{" "}
+        {workspaceTicketsJSX}
       </div>
       <div className="my-tickets-board__add-ticket">Add Ticket</div>
     </div>

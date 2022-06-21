@@ -11,6 +11,8 @@ import MyTicketsBoard from "./containers/MyTicketsBoard/MyTicketsBoard";
 import EmployeeList from "./components/EmployeeList/EmployeeList";
 import SettingsMenu from "./components/SettingsMenu/SettingsMenu";
 import Workspace from "./containers/Workspace/Workspace";
+import EditTicket from "./components/EditTicket/EditTicket";
+import CreateTicket from "./components/CreateTicket/CreateTicket";
 
 const App = () => {
   return (

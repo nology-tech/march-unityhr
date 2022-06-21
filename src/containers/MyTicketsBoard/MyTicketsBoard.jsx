@@ -6,6 +6,8 @@ import CreateTicket from "../../components/CreateTicket/CreateTicket";
 
 const MyTicketsBoard = () => {
   const [showPopUp, setShowPopUp] = useState(false);
+  const [showCreateTicket, setShowCreateTicket] = useState(false);
+
   const ticketColorBarOrange = "#ff8000";
 
   const ids = [1, 2, 3, 4, 5];

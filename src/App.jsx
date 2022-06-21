@@ -6,17 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationPages from "./containers/AuthenticationPages/AuthenticationPages";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MainScreen from "./containers/MainScreen/MainScreen";
-<<<<<<< HEAD
-import CreateTicket from "./components/CreateTicket/CreateTicket";
-import EditTicket from "./components/EditTicket/EditTicket";
-=======
 import NotificationBoard from "./containers/NotificationBoard/NotificationBoard";
 import MyTicketsBoard from "./containers/MyTicketsBoard/MyTicketsBoard";
 import EmployeeList from "./components/EmployeeList/EmployeeList";
 import SettingsMenu from "./components/SettingsMenu/SettingsMenu";
 import Workspace from "./containers/Workspace/Workspace";
 
->>>>>>> 71770d01be8b9d945b1a6eb97e96fbdffc89d116
 const App = () => {
   return (
     <Router>

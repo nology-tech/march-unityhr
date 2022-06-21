@@ -4,10 +4,16 @@ import DetailedTicket from "../../components/DetailedTicket/DetailedTicket";
 import React, { useState } from "react";
 import CreateTicket from "../../components/CreateTicket/CreateTicket";
 
+
 const MyTicketsBoard = () => {
   const [showPopUp, setShowPopUp] = useState(false);
+<<<<<<< HEAD
   const [showCreateTicket, setShowCreateTicket] = useState(false);
   const ticketColorBarOrange = "#ff8000";
+=======
+  const ticketColorBarOrange="#ff8000";
+  
+>>>>>>> 71770d01be8b9d945b1a6eb97e96fbdffc89d116
   const ids = [1, 2, 3, 4, 5];
 
   const togglePopUp = () => {

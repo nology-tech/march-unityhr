@@ -5,8 +5,8 @@ import { Outlet } from "react-router-dom";
 const MainSection = () => {
   return (
     <div className="main-section">
-        <Menu className="main-section__menu" />
-        <Outlet />
+      <Menu className="main-section__menu" />
+      <Outlet />
     </div>
   );
 };

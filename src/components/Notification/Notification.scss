@@ -16,11 +16,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 5%;
   }
 
   &__notification-images {
     display: flex;
     align-items: flex-start;
+    width: 10%;
   }
 
   &__notification-unread {
@@ -77,45 +79,39 @@
   width: 90%;
   background-color: $color-light-grey;
   margin-left: 20px;
- 
 }
-.comments{
+.comments {
   padding: 5px;
   margin: 6px;
 
-
   display: flex;
   flex-direction: column;
-  
-  &__text{
- color:$font-color-grey;
- font-family: $font-poppins; 
- font-size: $font-size-S;
- padding: 5px;
 
+  &__text {
+    color: $font-color-grey;
+    font-family: $font-poppins;
+    font-size: $font-size-S;
+    padding: 5px;
   }
-  &__button{
+  &__button {
     padding: 5px 5px;
     margin: 10px 5px;
     width: 10%;
-   button{
-     color:$font-color-grey;
-     background-color:$color-light-grey;
-     width: 85px;
-     height: 30px;
-     border-style: none;
-     border-radius: 4px;
-     font-size: $font-size-XS +3px;
-   }
-
+    button {
+      color: $font-color-grey;
+      background-color: $color-light-grey;
+      width: 85px;
+      height: 30px;
+      border-style: none;
+      border-radius: 4px;
+      font-size: $font-size-XS + 3px;
+    }
   }
-  &__time{
+  &__time {
     padding: 5px 10px;
     margin: 10px;
     color: $font-color-grey;
     font-family: $font-poppins;
     font-size: $font-size-XS;
-
-
   }
 }

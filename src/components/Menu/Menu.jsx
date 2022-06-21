@@ -1,19 +1,21 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Menu.scss";
 import Ticket from "../../assets/images/ticket.png";
 import Bell from "../../assets/images/bell.png";
 import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
-import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+// import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+
+import Workspace from "../../assets/images/request-workspace.png";
 
 const Menu = () => {
-  const [showSettings, setShowSettings] = useState(false);
+  //   const [showSettings, setShowSettings] = useState(false);
 
-  const handleSettings = () => {
-    setShowSettings(!showSettings);
-  };
+  //   const handleSettings = () => {
+  //     setShowSettings(!showSettings);
+  //   };
 
   let activeStyle = {
     backgroundColor: "#f0f1f1",
@@ -23,6 +25,14 @@ const Menu = () => {
   //changes
   return (
     <div className="menu-section">
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/workspace"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <img src={Workspace} alt="Workspace" />
+        Workspace
+      </NavLink>
       <NavLink
         className="menu-section__item menu-section__item__link"
         to="/dashboard/tickets"
@@ -51,13 +61,13 @@ const Menu = () => {
       <NavLink
         className="menu-section__item menu-section__item__link"
         to="/dashboard/settings"
-        onClick={handleSettings}
+        // onClick={handleSettings}
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
       >
         <img src={Setting} alt="Settings" />
         Settings
       </NavLink>
-      {showSettings && <SettingsMenu />}
+      {/* {showSettings && <SettingsMenu />} */}
     </div>
   );
 };

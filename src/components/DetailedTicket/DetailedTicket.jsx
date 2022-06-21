@@ -1,13 +1,21 @@
 import "./DetailedTicket.scss";
+import React, { useState } from "react";
 import Cross from "../../assets/images/cross.png";
 import Attachment from "../../assets/images/attachment.png";
 import DropDown from "../../assets/images/drop-down.png";
 import Circle from "../../assets/images/blue-circle.png";
 import Pencil from "../../assets/images/edit-pencil.png";
 import Bin from "../../assets/images/bin.png";
+import EditTicket from "../EditTicket/EditTicket";
 
 const DetailedTicket = (props) => {
   const { togglePopUp } = props;
+
+  const [showEditTicket, setShowEditTicket] = useState(false);
+
+  const toggleEditTicket = () => {
+    setShowEditTicket(!showEditTicket);
+  };
   return (
     <>
       <div className="area"></div>
@@ -32,7 +40,12 @@ const DetailedTicket = (props) => {
               </div>
               <div className="modal__main-info__user__bottom">
                 <div className="modal__main-info__user__bottom-circle grey">
-                  <img src={Pencil} alt="Edit" />
+                  <img src={Pencil} alt="Edit" onClick={toggleEditTicket} />
+                </div>
+                <div className="my-tickets-board__add-ticket-create">
+                  {showEditTicket && (
+                    <EditTicket toggleEditTicket={toggleEditTicket} />
+                  )}
                 </div>
                 <div className="modal__main-info__user__bottom-circle red">
                   <img src={Bin} alt="Delete" />

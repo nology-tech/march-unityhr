@@ -1,7 +1,7 @@
 import "./DisplaySettings.scss";
 
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Employee from "../../assets/images/profile_picture.png";
 import Dark from "../../assets/images/dark-mode.png";
 import LightSun from "../../assets/images/light_mode_sun.png";
@@ -11,6 +11,23 @@ import UploadImage from "../../components/UploadImage/UploadImage";
 
 const DisplaySettings = () => {
   const [showUpload, setShowUpload] = useState(false);
+  const [employee, setEmployee] = useState(false);
+  const getEmployee = () => {
+    fetch("http://localhost:8080/employee/1")
+      .then(res => res.json())
+      .then(json =>setEmployee(json))
+      .catch(err => console.log(err))
+  }
+
+  useEffect(() => {
+    getEmployee();
+  }, []);
+  if(employee)
+  {
+ const firstName= employee.first_name;
+ 
+  }
+
 
   const handleImageEdit = () => {
     if (showUpload === true) {
@@ -43,10 +60,10 @@ const DisplaySettings = () => {
 
           <div className="display-settings__desc">
             {" "}
-            <p className="display-settings__desc--name">Name (Database)</p>
-            <p className="display-settings__desc--job">JobTitle (Database)</p>
+            <p className="display-settings__desc--name">Name {employee.first_name}</p>
+            <p className="display-settings__desc--job">JobTitle {employee.job_title}</p>
             <p className="display-settings__desc--department">
-              Department (Database)
+              Department  {employee.department}
             </p>
             <div>{showUpload && <UploadImage />}</div>
           </div>

@@ -70,26 +70,3 @@ tbody tr {
   border-radius: 3px;
   margin: 15px 5px;
 }
-
-.search-employee {
-  position: relative;
-  float: right;
-  height: 35px;
-  padding: 4px 8px;
-  background-color: white;
-  border: none;
-  border-radius: 3px;
-  margin: 15px 5px;
-  
-  display: inline-block;
-  border: 2px solid $color-light-grey;
-  border-radius: 0.5em;
-  box-sizing: border-box;
-  background-image: url("../../assets/images/magnifying-glass.png");
-  background-position: 200px 5px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 5%;
-  background-color: $color-very-light-grey;
-
-}
-

@@ -1,0 +1,79 @@
+@use "../../assets/sass/variables" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.my-tickets-board {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: $color-light-grey-shade1;
+
+  &__top {
+    display: flex;
+    width: 100%;
+    height: 10%;
+
+&__header-title{
+  font-weight: bold;
+  font-size: $font-size-M;
+  margin : 2px;
+  padding: 5px;
+}
+    &__header {
+      &-options{
+        display:flex;
+        margin :5px;
+        padding: 5px;
+       
+      }
+      width: 75%;
+      margin-bottom: 2%;
+      display: flex;
+     
+      &-options-selected {
+        font-weight: bold;
+        font-size: $font-size-S;
+        font-family: $font-poppins;
+      }
+      &-options-unselected {
+       
+        font-size: $font-size-S;
+        font-family: $font-poppins;
+      }
+    }
+
+    &__schemas {
+      width: 15%;
+    }
+
+    &__filters {
+      width: 10%;
+    }
+  }
+
+  &__main {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+
+    &-header {
+      font-weight: 700;
+      color: $color-dark-grey;
+    }
+  }
+
+  &__add-ticket {
+    margin-top: 15px;
+    border: 1px dashed $color-dark-grey;
+    border-radius: 5px;
+    width: 20%;
+    padding: 1%;
+    background-color: $color-very-light-grey;
+  }
+}

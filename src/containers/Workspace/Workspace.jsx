@@ -6,10 +6,8 @@ import GridMenu from "../../assets/images/menu-grid.png";
 import ListMenu from "../../assets/images/bullet-list.png";
 import Filter from "../../assets/images/Filter.png";
 
-const Workspace = () => {
-  // const Workspace = (props) => {
+const Workspace = () => { 
 
-  // const { color, category } = props;
 
   const [showPopUp, setShowPopUp] = useState(false);
 
@@ -42,9 +40,9 @@ const Workspace = () => {
           <img src={ListMenu} alt="ListMenu"></img>
         </div>
         <div className="my-tickets-board__top__filters">
-          {/* <button className="my-tickets-board__top__filters-button"> */}
+          
           <img className="" src={Filter} alt="Filter"></img>
-          {/* </button> */}
+         
           Filters
         </div>
       </div>

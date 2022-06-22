@@ -11,6 +11,7 @@ import MyTicketsBoard from "./containers/MyTicketsBoard/MyTicketsBoard";
 import EmployeeList from "./components/EmployeeList/EmployeeList";
 import SettingsMenu from "./components/SettingsMenu/SettingsMenu";
 import Workspace from "./containers/Workspace/Workspace";
+import Dashboard from "./containers/Dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -22,7 +23,9 @@ const App = () => {
             path="/forgot-your-password"
             element={<AuthenticationPages />}
           ></Route>
-          <Route path="/dashboard" element={<MainScreen />}>
+          <Route path="/dashboard" element={< MainScreen/>}>
+          <Route path="/dashboard/hr-dashboard" element={< Dashboard/>}/>
+      
             <Route path="/dashboard/Workspace" element={<Workspace />} />
             <Route index element={<MyTicketsBoard />} />
             <Route path="/dashboard/tickets" element={<MyTicketsBoard />} />

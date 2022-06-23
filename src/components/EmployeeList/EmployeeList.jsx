@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
-import magnifyingGlass from "../../assets/images/magnifying-glass.png";
 import filter from "../../assets/images/Filter.png";
 import Search from "./EmployeeSearch/EmployeeSearch";
 
@@ -29,7 +28,7 @@ const EmployeeList = () => {
     setSearchedEmployees(
       employeeData.filter((employee) => {
         if (
-          employee.name.toLowerCase().indexOf(searchedName.toLowerCase()) != -1
+          employee.name.toLowerCase().indexOf(searchedName.toLowerCase()) !== -1
         ) {
           return true;
         } else {

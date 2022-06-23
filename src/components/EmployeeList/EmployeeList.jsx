@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import employeeData from "../../assets/employeeData";
+import React, { useState, useEffect } from "react";
+// import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
 import magnifyingGlass from "../../assets/images/magnifying-glass.png";
 import filter from "../../assets/images/Filter.png";
 
 const EmployeeList = () => {
+  const url = "http://localhost:8080/employees";
   const [page, setPage] = useState(0);
+  const [employees, setEmployees] = useState([]);
   let rowsPerPage = 9;
-  let numberOfPages = Math.ceil(employeeData.length / rowsPerPage);
+  let numberOfPages = Math.ceil(employees.length / rowsPerPage);
   const firstPageHandler = () => {
     setPage(0);
   };
@@ -23,6 +25,17 @@ const EmployeeList = () => {
     setPage(numberOfPages - 1);
   };
 
+  const getEmployees = async () => {
+    let finalUrl = url;
+    const response = await fetch(finalUrl);
+    const data = await response.json();
+    setEmployees(data);
+  };
+
+  useEffect(() => {
+    getEmployees(employees);
+  }, [employees]);
+
   return (
     <div className="pageContent">
       <button className="top-buttons">
@@ -37,7 +50,8 @@ const EmployeeList = () => {
         <thead>
           <tr>
             <th>&nbsp;</th>
-            <th>Employee Name</th>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
             <th>User Type</th>
             <th>Department</th>
             <th>Job Title</th>
@@ -46,19 +60,20 @@ const EmployeeList = () => {
           </tr>
         </thead>
         <tbody>
-          {employeeData
+          {employees
             .slice(page * rowsPerPage, (page + 1) * rowsPerPage)
-            .map((employee, index) => (
-              <tr key={index}>
+            .map((employee, id) => (
+              <tr key={employee + id}>
                 <td>
-                  <img className="circle" alt="user profile"/>
+                  <img className="circle" alt="user profile" />
                 </td>
-                <td className="employee-name">{employee.name}</td>
-                <td>{employee.User_Type}</td>
-                <td>{employee.Department}</td>
-                <td>{employee.jobTitle}</td>
-                <td>{employee.email}</td>
-                <td>{employee.phone}</td>
+                <td className="employee-name">{employee.first_name}</td>
+                <td className="employee-name">{employee.last_name}</td>
+                <td>{employee.user_type}</td>
+                <td>{employee.job_title}</td>
+                <td>{employee.department}</td>
+                <td>{employee.email_address}</td>
+                <td>{employee.mobile_number}</td>
               </tr>
             ))}
         </tbody>

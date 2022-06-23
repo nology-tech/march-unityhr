@@ -1801,4 +1801,16 @@ const employeeData = [
   },
 ];
 
-export default employeeData;
+export default employeeData.map(el => {
+  const { name, email, phone, User_Type, Department, jobTitle } = el;
+  const [first_name, last_name] = name.split(" ");
+  return {
+    first_name,
+    last_name,
+    email_address: email,
+    mobile_number: phone,
+    user_type: User_Type,
+    department: Department,
+    job_title: jobTitle,
+  };
+});

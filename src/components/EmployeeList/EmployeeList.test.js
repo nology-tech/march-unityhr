@@ -1,62 +1,101 @@
-import { render, screen } from "@testing-library/react";
+/* eslint-disable testing-library/no-unnecessary-act */
+/* eslint-disable testing-library/await-async-utils */
+import { render, screen, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { waitFor } from "@testing-library/react";
 
 import EmployeeList from "./EmployeeList";
+import employeeData from "../../assets/employeeData";
+const globalFetch = global.fetch;
 
 describe("<EmployeeList/> testing user interaction", () => {
-  it("should go to next page once > button is clicked", () => {
-    render(<EmployeeList />);
-
-    const pageUpButton = screen.getByTestId("pageUpButton");
-    userEvent.click(pageUpButton);
-    const page = screen.getByText(/Page: 2/i);
-
-    expect(page).toBeInTheDocument();
+  beforeEach(() => {
+    global.fetch = jest.fn(() => Promise.resolve({ json: () => employeeData }));
   });
 
-  it("should go to previous page once < button is clicked", () => {
-    render(<EmployeeList />);
-
-    const pageDownButton = screen.getByTestId("pageDownButton");
-    userEvent.click(pageDownButton);
-    const page = screen.getByText(/Page: 1/i);
-    expect(page).toBeInTheDocument();
-  });
-
-  it("should go to first page once << button is clicked", () => {
-    render(<EmployeeList />);
-
-    const firstPageButton = screen.getByTestId("firstPageButton");
-    userEvent.click(firstPageButton);
-
-    const page = screen.getByText(/Page: 1/i);
-
-    expect(page).toBeInTheDocument();
-  });
-
-  it("should go to last page once >> button is clicked", () => {
-    render(<EmployeeList />);
-
-    const lastPageButton = screen.getByTestId("lastPageButton");
-    userEvent.click(lastPageButton);
-
-    const page = screen.getByText(/Page: 25/i);
-
-    expect(page).toBeInTheDocument();
-  });
-
-  it("should show the results once a name is entered into the searchbox", () => {
-    render(<EmployeeList />);
-
-    const searchTermInput = screen.getByTestId("searchTerm");
-    const searchTerm = "yvette waller";
-
-    userEvent.type(searchTermInput, searchTerm);
-
-    const output = screen.getByRole("cell", {
-      name: /yvette waller/i,
+  it("should go to next page once > button is clicked", async () => {
+    act(() => {
+      render(<EmployeeList />);
     });
 
-    expect(output).toBeInTheDocument();
+    await act(async () => {
+      const pageUpButton = await screen.findByTestId("pageUpButton");
+      userEvent.click(pageUpButton);
+    });
+
+    await act(async () => {
+      expect(await screen.findByText(/Page: 2/i)).toBeInTheDocument();
+    });
   });
+
+  it("should go to previous page once < button is clicked", async () => {
+    act(() => {
+      render(<EmployeeList />);
+    });
+
+    await act(async () => {
+      const pageDownButton = await screen.findByTestId("pageDownButton");
+      userEvent.click(pageDownButton);
+    });
+
+    await act(async () => {
+      expect(await screen.findByText(/Page: 1/i)).toBeInTheDocument();
+    });
+  });
+
+  it("should go to first page once << button is clicked", async () => {
+    act(() => {
+      render(<EmployeeList />);
+    });
+
+    await act(async () => {
+      const firstPageButton = await screen.findByTestId("firstPageButton");
+      userEvent.click(firstPageButton);
+    });
+
+    await act(async () => {
+      expect(await screen.findByText(/Page: 1/i)).toBeInTheDocument();
+    });
+  });
+
+  it("should go to last page once >> button is clicked", async () => {
+    await act(() => {
+      render(<EmployeeList />);
+    });
+
+    await act(async () => {
+      const lastPageButton = await screen.findByRole("button", {
+        name: />>/i,
+      });
+      userEvent.click(lastPageButton);
+    });
+
+    await act(async () => {
+      expect(await screen.findByText(/Page: 25/i)).toBeInTheDocument();
+    });
+  });
+
+  it("should show the results once a name is entered into the searchbox", async () => {
+    act(() => {
+      render(<EmployeeList />);
+    });
+
+    await act(async () => {
+      const searchTermInput = await screen.findByTestId("searchTerm");
+      const searchTerm = "yvette waller";
+      userEvent.type(searchTermInput, searchTerm);
+    });
+
+    waitFor(() => {
+      expect(
+        screen.getByRole("cell", {
+          name: /yvette waller/i,
+        })
+      ).toBeInTheDocument();
+    });
+  });
+});
+
+afterAll(() => {
+  global.fetch = globalFetch;
 });

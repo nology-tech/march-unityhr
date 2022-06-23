@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import employeeData from "../../assets/employeeData";
+import React, { useState, useEffect } from "react";
 import "./EmployeeList.scss";
 import filter from "../../assets/images/Filter.png";
 import Search from "./EmployeeSearch/EmployeeSearch";
+import employeeData from "../../assets/employeeData";
 
 const EmployeeList = () => {
   const [page, setPage] = useState(0);
-  const [searchedEmployees, setSearchedEmployees] = useState(employeeData);
+  const [employees, setEmployees] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   let rowsPerPage = 9;
-  let numberOfPages = Math.ceil(employeeData.length / rowsPerPage);
+  let numberOfPages = Math.ceil(employees.length / rowsPerPage);
   const firstPageHandler = () => {
     setPage(0);
   };
@@ -21,22 +22,40 @@ const EmployeeList = () => {
   const upHandler = () => {
     setPage(page + 1);
   };
+
   const lastPageHandler = () => {
     setPage(numberOfPages - 1);
   };
-  const handleSearch = (searchedName) => {
-    setSearchedEmployees(
-      employeeData.filter((employee) => {
-        if (
-          employee.name.toLowerCase().indexOf(searchedName.toLowerCase()) !== -1
-        ) {
-          return true;
-        } else {
-          return false;
-        }
-      })
-    );
+
+  const handleSearch = searchedName => {
+    setSearchTerm(searchedName);
   };
+
+  const getEmployees = async () => {
+    try {
+      const url = "http://localhost:8080/employees";
+      const response = await fetch(url);
+      const data = await response.json();
+      setEmployees(data);
+    } catch {
+      setEmployees(employeeData);
+    }
+  };
+
+  useEffect(() => {
+    getEmployees();
+  }, []);
+
+  const filteredEmployees = employees.filter(employee => {
+    if (
+      employee.first_name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1 ||
+      employee.last_name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  });
 
   return (
     <div className="pageContent">
@@ -51,7 +70,8 @@ const EmployeeList = () => {
         <thead>
           <tr>
             <th>&nbsp;</th>
-            <th>Employee Name</th>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
             <th>User Type</th>
             <th>Department</th>
             <th>Job Title</th>
@@ -60,21 +80,20 @@ const EmployeeList = () => {
           </tr>
         </thead>
         <tbody>
-          {searchedEmployees
-            .slice(page * rowsPerPage, (page + 1) * rowsPerPage)
-            .map((employee, index) => (
-              <tr key={index}>
-                <td>
-                  <img className="circle" alt="user profile"/>
-                </td>
-                <td className="employee-name">{employee.name}</td>
-                <td>{employee.User_Type}</td>
-                <td>{employee.Department}</td>
-                <td>{employee.jobTitle}</td>
-                <td>{employee.email}</td>
-                <td>{employee.phone}</td>
-              </tr>
-            ))}
+          {filteredEmployees.slice(page * rowsPerPage, (page + 1) * rowsPerPage).map((employee, id) => (
+            <tr key={employee + id}>
+              <td>
+                <img className="circle" alt="user profile" />
+              </td>
+              <td className="employee-name">{employee.first_name}</td>
+              <td className="employee-name">{employee.last_name}</td>
+              <td>{employee.user_type}</td>
+              <td>{employee.job_title}</td>
+              <td>{employee.department}</td>
+              <td>{employee.email_address}</td>
+              <td>{employee.mobile_number}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
       <button
@@ -85,12 +104,7 @@ const EmployeeList = () => {
       >
         &lt;&lt;
       </button>
-      <button
-        className="pagination-button"
-        data-testid="pageDownButton"
-        disabled={page === 0}
-        onClick={downHandler}
-      >
+      <button className="pagination-button" data-testid="pageDownButton" disabled={page === 0} onClick={downHandler}>
         &lt;
       </button>
       <span data-testid="page">Page: {page + 1} </span>

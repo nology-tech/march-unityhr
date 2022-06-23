@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
-import magnifyingGlass from "../../assets/images/magnifying-glass.png";
 import filter from "../../assets/images/Filter.png";
+import Search from "./EmployeeSearch/EmployeeSearch";
 
 const EmployeeList = () => {
   const [page, setPage] = useState(0);
+  const [searchedEmployees, setSearchedEmployees] = useState(employeeData);
+
   let rowsPerPage = 9;
   let numberOfPages = Math.ceil(employeeData.length / rowsPerPage);
   const firstPageHandler = () => {
@@ -22,15 +24,27 @@ const EmployeeList = () => {
   const lastPageHandler = () => {
     setPage(numberOfPages - 1);
   };
+  const handleSearch = (searchedName) => {
+    setSearchedEmployees(
+      employeeData.filter((employee) => {
+        if (
+          employee.name.toLowerCase().indexOf(searchedName.toLowerCase()) !== -1
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      })
+    );
+  };
 
   return (
     <div className="pageContent">
       <button className="top-buttons">
         <img src={filter} alt="filter" /> Filters
       </button>
-      <button className="top-buttons">
-        <img src={magnifyingGlass} alt="magnifying glass" />
-      </button>
+
+      <Search onChange={handleSearch} />
       <h1 className="title">Employee List</h1>
       <br></br>
       <table className="employeeTable">
@@ -46,7 +60,7 @@ const EmployeeList = () => {
           </tr>
         </thead>
         <tbody>
-          {employeeData
+          {searchedEmployees
             .slice(page * rowsPerPage, (page + 1) * rowsPerPage)
             .map((employee, index) => (
               <tr key={index}>

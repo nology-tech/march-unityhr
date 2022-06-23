@@ -60,10 +60,10 @@ const DisplaySettings = () => {
 
           <div className="display-settings__desc">
             {" "}
-            <p className="display-settings__desc--name">Name {employee.first_name}</p>
-            <p className="display-settings__desc--job">JobTitle {employee.job_title}</p>
+            <p className="display-settings__desc--name">{employee.first_name}</p>
+            <p className="display-settings__desc--job">{employee.job_title}</p>
             <p className="display-settings__desc--department">
-              Department  {employee.department}
+              {employee.department}
             </p>
             <div>{showUpload && <UploadImage />}</div>
           </div>

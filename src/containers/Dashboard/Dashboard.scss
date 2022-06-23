@@ -20,6 +20,9 @@
       &__header {
         width: 75%;
         margin-bottom: 2%;
+        display: flex;
+       
+       
       }
   
       &__schemas {
@@ -41,6 +44,7 @@
       &-header {
         font-weight: 700;
         color: $color-dark-grey;
+    
       }
     }
   

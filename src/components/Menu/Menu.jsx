@@ -9,6 +9,7 @@ import Setting from "../../assets/images/setting.png";
 // import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
 
 import Workspace from "../../assets/images/request-workspace.png";
+import Dashboard from "../../assets/images/dashboard.png";
 
 const Menu = () => {
   //   const [showSettings, setShowSettings] = useState(false);
@@ -27,12 +28,21 @@ const Menu = () => {
     <div className="menu-section">
       <NavLink
         className="menu-section__item menu-section__item__link"
+        to="/dashboard/hr-dashboard"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <img src={Dashboard} alt="dashboard" />
+        Dashboard
+      </NavLink>
+      <NavLink
+        className="menu-section__item menu-section__item__link"
         to="/dashboard/workspace"
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
       >
         <img src={Workspace} alt="Workspace" />
         Workspace
       </NavLink>
+
       <NavLink
         className="menu-section__item menu-section__item__link"
         to="/dashboard/tickets"

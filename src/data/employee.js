@@ -1,9 +1,10 @@
 const employees = [
   {
     userPic: "",
-    userName: "Greg Sauer",
     comment:
       "Hi James, I'm just messaging to let you know that I've approved your holiday request from 13/07/22 to 20/07/22. Hope you're off to somewhere nice! I've marked your request as resolved. Kind regards, Greg",
+    first_name: "Greg",
+    last_name: "Sauer",
     commentIsRead: "false",
     ticketTitle: "Requesting Holiday",
     ticketLink: "",
@@ -11,8 +12,9 @@ const employees = [
   },
   {
     userPic: "",
-    userName: "Sam Shaw",
     comment: "test",
+    first_name: "Sam",
+    last_name: "Shaw",
     commentIsRead: "false",
     ticketTitle: "Payed Too much Tax",
     ticketLink: "",
@@ -20,8 +22,9 @@ const employees = [
   },
   {
     userPic: "",
-    userName: "Flora Quigley",
     comment: "another test",
+    first_name: "Flora",
+    last_name: "Quigley",
     commentIsRead: "false",
     ticketTitle: "Payed Too Much Tax",
     ticketLink: "",
@@ -29,8 +32,9 @@ const employees = [
   },
   {
     userPic: "",
-    userName: "Chad Jaskolski",
     comment: "",
+    first_name: "Chad",
+    last_name: "Jaskolski",
     commentIsRead: "true",
     ticketTitle: "Payed Too Much Tax",
     ticketLink: "",
@@ -38,8 +42,9 @@ const employees = [
   },
   {
     userPic: "",
-    userName: "Cameron Deckow",
     comment: "",
+    first_name: "Cameron",
+    last_name: "Deckow",
     commentIsRead: "true",
     ticketTitle: "Payed Too Much Tax",
     ticketLink: "",
@@ -47,22 +52,14 @@ const employees = [
   },
   {
     userPic: "",
-    userName: "Jamie Davis",
     comment: "",
+    first_name: "Jamie",
+    last_name: "Davis",
     commentIsRead: "true",
     ticketTitle: "Payed Too Much Tax",
     ticketLink: "",
     dateTime: "3 days ago",
   },
-  // {
-  //   userPic: "",
-  //   userName: "" ,
-  //   comment: "",
-  //   commentIsRead: "",
-  //   ticketTitle: "",
-  //   ticketLink: "",
-  //   dateTime: "",
-  // },
 ];
 
 export default employees;

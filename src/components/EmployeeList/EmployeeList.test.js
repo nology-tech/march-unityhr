@@ -4,7 +4,6 @@ import userEvent from "@testing-library/user-event";
 import EmployeeList from "./EmployeeList";
 
 describe("<EmployeeList/> testing user interaction", () => {
-
   it("should go to next page once > button is clicked", () => {
     render(<EmployeeList />);
 
@@ -13,9 +12,8 @@ describe("<EmployeeList/> testing user interaction", () => {
     const page = screen.getByText(/Page: 2/i);
 
     expect(page).toBeInTheDocument();
-    
   });
-  
+
   it("should go to previous page once < button is clicked", () => {
     render(<EmployeeList />);
 
@@ -34,9 +32,8 @@ describe("<EmployeeList/> testing user interaction", () => {
     const page = screen.getByText(/Page: 1/i);
 
     expect(page).toBeInTheDocument();
+  });
 
-  })
-  
   it("should go to last page once >> button is clicked", () => {
     render(<EmployeeList />);
 
@@ -48,7 +45,18 @@ describe("<EmployeeList/> testing user interaction", () => {
     expect(page).toBeInTheDocument();
   });
 
-  
+  it("should show the results once a name is entered into the searchbox", () => {
+    render(<EmployeeList />);
+
+    const searchTermInput = screen.getByTestId("searchTerm");
+    const searchTerm = "yvette waller";
+
+    userEvent.type(searchTermInput, searchTerm);
+
+    const output = screen.getByRole("cell", {
+      name: /yvette waller/i,
+    });
+
+    expect(output).toBeInTheDocument();
+  });
 });
-
-

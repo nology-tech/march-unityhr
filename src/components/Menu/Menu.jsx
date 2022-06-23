@@ -1,38 +1,83 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Menu.scss";
 import Ticket from "../../assets/images/ticket.png";
 import Bell from "../../assets/images/bell.png";
 import Employees from "../../assets/images/users-employees.png";
 import Setting from "../../assets/images/setting.png";
-import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+// import SettingsMenu from "../../components/SettingsMenu/SettingsMenu";
+
+import Workspace from "../../assets/images/request-workspace.png";
+import Dashboard from "../../assets/images/dashboard.png";
 
 const Menu = () => {
-  const [showSettings, setShowSettings] = useState(false);
+  //   const [showSettings, setShowSettings] = useState(false);
 
-  const handleSettings = () => {
-    setShowSettings(!showSettings);
+  //   const handleSettings = () => {
+  //     setShowSettings(!showSettings);
+  //   };
+
+  let activeStyle = {
+    backgroundColor: "#f0f1f1",
+    color: "black",
   };
 
+  //changes
   return (
     <div className="menu-section">
-      <div className="menu-section__item menu-section__item--selected">
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/hr-dashboard"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <img src={Dashboard} alt="dashboard" />
+        Dashboard
+      </NavLink>
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/workspace"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <img src={Workspace} alt="Workspace" />
+        Workspace
+      </NavLink>
+
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/tickets"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
         <img src={Ticket} alt="Ticket" />
-        <p>My Tickets</p>
-      </div>
-      <div className="menu-section__item">
+        My Tickets
+      </NavLink>
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/notifications"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
         <img src={Bell} alt="Bell" />
-        <p>Notifications</p>
-      </div>
-      <div className="menu-section__item">
+        Notifications
+      </NavLink>
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/employees"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
         <img src={Employees} alt="Employees" />
-        <p>Employees</p>
-      </div>
-      <div className="menu-section__item" onClick={handleSettings}>
+        Employees
+      </NavLink>
+
+      <NavLink
+        className="menu-section__item menu-section__item__link"
+        to="/dashboard/settings"
+        // onClick={handleSettings}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
         <img src={Setting} alt="Settings" />
-        <p>Settings</p>
-      </div>
-      {showSettings && <SettingsMenu />}
+        Settings
+      </NavLink>
+      {/* {showSettings && <SettingsMenu />} */}
     </div>
   );
 };

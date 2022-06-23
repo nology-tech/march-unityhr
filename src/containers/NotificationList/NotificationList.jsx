@@ -1,14 +1,21 @@
 import "./NotificationList.scss";
-import React from "react";
+
 import Notification from "../../components/Notification/Notification";
 import employees from "../../data/employee";
+import React from "react";
 
 const NotificationList = () => {
-  const notificationJSX = employees.map((employee, index) => (
+  // list only 15 latest notifications  - Later after API
+  // images to be updated  - Later after API
+
+  const notificationJSX = employees.map((employee) => (
     <Notification
       userName={employee.userName}
       ticketTitle={employee.ticketTitle}
       dateTime={employee.dateTime}
+      isRead={employee.commentIsRead}
+      ticketLink={employee.ticketLink}
+      comment={employee.comment}
     />
   ));
 
@@ -18,22 +25,12 @@ const NotificationList = () => {
 export default NotificationList;
 
 // --------------------------------------------------------------------
-// fix the ticket title display
+
 // fix the time display
 
-// unread notification toggle with blue dot
-// number of unread notifications listed in heading
-
-// images to be updated
-
-// list only 15 latest notifications
-
-// time display different format in the list view
+// time display different format in the list view - Later after API
 
 // --------------------------------------------------------------------
-
-// Clicking anywhere in this area (between the horizontal lines) will toggle the dropdown menu
-// x- click to close (toggle)
 
 // show comments , button ....to reply to the comments, text box to add comment + add comment function
 

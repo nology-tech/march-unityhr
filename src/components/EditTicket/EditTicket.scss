@@ -1,0 +1,198 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+::placeholder {
+  font-size: $font-size-SS;
+  font-family: $font-poppins;
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 0px;
+  position: fixed;
+  background-color: $color-popup-background;
+  left: 0;
+  top: 0;
+}
+
+.edit-ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-white;
+  border: 2px solid $choose-file-color;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+  width: 600px;
+  height: 750px;
+  padding: 20px;
+
+  &__cross {
+    padding-left: 85%;
+    margin: 2% 5%;
+  }
+
+  &__form {
+    height: 900px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &--title {
+      color: $font-color-dark-blue;
+      font-size: $font-size-MM;
+      font-family: $font-poppins;
+      font-weight: lighter;
+    }
+
+    &--description {
+      color: $font-color-grey;
+      font-size: $font-size-SSS;
+      font-family: $font-poppins;
+      font-weight: lighter;
+    }
+  }
+
+  &__type {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+
+    &--label {
+      margin-bottom: 5px;
+      font-size: $font-size-SSS;
+    }
+    &--request {
+      width: 400px;
+      height: 40px;
+      font-size: $font-size-SSS;
+      color: $font-color-grey;
+      border: none;
+      background-color: $color-very-light-grey;
+    }
+  }
+
+  &__title {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+    margin-bottom: 10px;
+    font-size: $font-size-SS;
+
+    &--label {
+      margin-bottom: 5px;
+      font-size: $font-size-SSS;
+    }
+    &--input {
+      width: 400px;
+      height: 40px;
+      color: $color-dark-grey;
+      border: none;
+      background-color: $color-very-light-grey;
+      font-size: $font-size-SSS;
+    }
+  }
+
+  &__description {
+    // border: 2px solid pink;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+
+    &--label {
+      margin-bottom: 10px;
+      font-size: $font-size-SSS;
+    }
+    &--text {
+      color: $color-dark-grey;
+      width: 400px;
+      background-color: $color-very-light-grey;
+      font-size: $font-size-SSS;
+      border: none;
+      resize: none;
+      outline: none;
+    }
+  }
+
+  &__attachment {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-poppins;
+
+    &--title {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size: $font-size-SSS;
+      color: $color-dark-grey;
+    }
+
+    &--file {
+      display: flex;
+      justify-content: space-between;
+      font-size: $font-size-SSS;
+      color: $color-dark-grey;
+    }
+    &--file--image {
+      height: 20px;
+    }
+
+    &--file--remove {
+      width: 60px;
+      height: 20px;
+      border: none;
+      margin-right: 180px;
+      font-size: $font-size-SSS;
+      border-bottom: dotted;
+      border-bottom-color: $button-color-blue;
+      background: none;
+      color: $validation-message-red;
+      font-family: $font-poppins;
+    }
+  }
+
+  &__confirm {
+    display: flex;
+    justify-content: flex-start;
+
+    &--save {
+      margin-top: 30px;
+      width: 140px;
+      height: 60px;
+      border-radius: 6px;
+      border: none;
+      background: $button-color-blue;
+      font-weight: bold;
+      color: $color-white;
+      margin-right: 20px;
+    }
+
+    &--cancel {
+      margin-top: 30px;
+      width: 140px;
+      height: 60px;
+      border-radius: 6px;
+      border: $color-light-grey solid 2px;
+      background: $color-white;
+      font-weight: bold;
+      color: $color-dark-grey;
+    }
+  }
+}
+.file-buttons {
+  display: flex;
+  justify-content: space-between;
+}

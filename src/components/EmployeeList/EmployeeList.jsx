@@ -66,7 +66,7 @@ const EmployeeList = () => {
             .map((employee, index) => (
               <tr key={index}>
                 <td>
-                  <img className="circle" alt="" />
+                  <img className="circle" alt="user profile"/>
                 </td>
                 <td className="employee-name">{employee.name}</td>
                 <td>{employee.User_Type}</td>

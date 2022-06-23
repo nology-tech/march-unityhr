@@ -1,20 +1,41 @@
 @use "../../assets/sass/variables" as *;
 
 .profile-image {
-  //   border: 3px solid red;
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 
   &__input {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
   }
 
   &__button--upload {
-    width: 85px;
-    height: 25px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    margin-top: 2px;
+    background: $font-color-dark-blue;
+    color: $color-white;
+    font-family: $font-poppins;
   }
+}
+::file-selector-button {
+  border: none;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  background: $font-color-dark-blue;
+  font-family: $font-poppins;
+  color: $color-white;
+  transition: 1s;
+  width: 100px;
+  height: 35px;
 }

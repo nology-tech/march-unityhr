@@ -1,0 +1,22 @@
+@use "../../assets/sass/variables" as *;
+
+.my-tickets-board {
+  &__top {
+    height: 55px;
+    &__GridMenu {
+      padding: 10px;
+      margin: 5px;
+      background-color: white;
+    }
+    &__ListMenu {
+      padding: 10px;
+      margin: 5px;
+    }
+    &__filters {
+      padding: 10px;
+      margin: 5px;
+
+      background-color: white;
+    }
+  }
+}

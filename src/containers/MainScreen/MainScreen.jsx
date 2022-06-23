@@ -7,7 +7,6 @@ const MainScreen = () => {
     <div className="main-screen">
       <TopSection className="main-screen__top-section" />
       <MainSection className="main-screen__main-section" />
-     
     </div>
   );
 };

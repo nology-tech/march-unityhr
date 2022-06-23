@@ -13,6 +13,7 @@ const Search = (props) => {
   return (
     <div>
       <input
+        data-testid="searchTerm"
         className="search-employee"
         type="text"
         placeholder="Search employee"

@@ -3,7 +3,7 @@ import employeeData from "../../assets/employeeData";
 import "./EmployeeList.scss";
 import magnifyingGlass from "../../assets/images/magnifying-glass.png";
 import filter from "../../assets/images/Filter.png";
-import Search from "../EmployeeSearch/EmployeeSearch";
+import Search from "./EmployeeSearch/EmployeeSearch";
 
 const EmployeeList = () => {
   const [page, setPage] = useState(0);
